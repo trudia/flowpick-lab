@@ -1,3 +1,4 @@
-v10-2026-05-22
-base=trendflow_site_v9_home_update.zip
-minimal-space=forced-v10
+v11-2026-05-22
+base=trendflow_site_v10_sync_minimal_fix.zip
+deep-categories=ai-focus-shopping
+minimal-space=v10-kept
