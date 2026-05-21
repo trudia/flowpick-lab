@@ -16,3 +16,18 @@
 4. Commit changes
 5. Cloudflare Pages 배포 확인
 6. 시크릿 창 또는 Ctrl+F5로 확인
+
+
+## v8 minimal hub update
+
+반영 내용:
+- 공간 & 미니멀 카테고리의 아이템 섹션을 설명 + 버튼 구조로 변경
+- Before / After 섹션 추가
+- 아이템별 구매 전 체크리스트 구체화
+- 사이드바의 순서와 링크를 분리
+- SEO용 설명 문단 추가
+- CSS 캐시 버스터 v8 적용
+
+확인 경로:
+- /categories/minimal-space.html
+- /categories/minimal-space
