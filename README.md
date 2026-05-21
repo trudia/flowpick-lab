@@ -48,3 +48,22 @@
 확인 경로:
 - /
 - /index.html
+
+
+## v10-2026-05-22 sync fix
+
+확인 결과:
+- 홈페이지 v9는 정상 반영되어 있음.
+- 공간 & 미니멀 카테고리에는 v8에서 추가했던 Before / After, 아이템별 설명, 아이템별 구매 전 체크리스트, 사이드바 분리 구조가 누락되어 있음.
+
+이번 v10 반영:
+- categories/minimal-space.html을 v10 최종본으로 강제 교체
+- styles.css에 v10 전용 CSS 재추가
+- 모든 HTML의 CSS 캐시 버스터를 v10으로 변경
+- version.txt 추가
+
+업로드 시 주의:
+1. 반드시 categories/minimal-space.html을 덮어쓰기
+2. 반드시 styles.css도 덮어쓰기
+3. Cloudflare Pages 배포 후 Ctrl+F5 또는 시크릿 창에서 확인
+4. /version.txt가 v10으로 보이면 업로드 성공
