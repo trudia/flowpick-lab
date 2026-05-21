@@ -23,3 +23,118 @@
 .side-step span{font-size:14px;line-height:1.55;color:#334155;font-weight:780}
 .seo-note{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;margin:22px 0;color:#475569;line-height:1.85}
 @media(max-width:900px){.before-after-grid,.item-detail-grid{grid-template-columns:1fr}}
+
+
+/* v9 homepage improvements */
+.update-meta{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:10px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  color:#475569;
+  font-size:13px;
+  font-weight:900;
+}
+.update-meta b{color:var(--accent)}
+.criteria-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+.criteria-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:20px;
+}
+.criteria-card b{
+  width:34px;
+  height:34px;
+  border-radius:13px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--dark);
+  color:#fff;
+  margin-bottom:12px;
+}
+.criteria-card h3{
+  font-size:18px;
+  margin:0 0 8px;
+}
+.criteria-card p{
+  color:#475569;
+  line-height:1.7;
+  margin:0;
+  font-size:14px;
+}
+.topic-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.topic-chip{
+  display:inline-flex;
+  align-items:center;
+  padding:12px 14px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  color:#334155;
+  font-weight:900;
+  font-size:14px;
+}
+.topic-chip:hover{
+  background:var(--accent-soft);
+  border-color:#bfdbfe;
+  color:var(--accent);
+}
+.problem-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:24px;
+}
+.problem-card h3{
+  font-size:22px;
+  margin:12px 0 10px;
+  line-height:1.35;
+}
+.problem-card p{
+  color:#475569;
+  line-height:1.7;
+}
+.problem-card ul{
+  list-style:none;
+  padding:0;
+  margin:18px 0;
+}
+.problem-card li{
+  padding:8px 0;
+  color:#334155;
+  font-weight:780;
+}
+.problem-card li:before{
+  content:"✓";
+  color:var(--good);
+  font-weight:950;
+  margin-right:10px;
+}
+.home-note{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:28px;
+}
+.home-note p{
+  color:#475569;
+  line-height:1.85;
+  margin-bottom:0;
+}
+@media(max-width:900px){
+  .criteria-grid{grid-template-columns:1fr}
+}
