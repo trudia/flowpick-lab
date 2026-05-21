@@ -9,8 +9,8 @@
     </filter>
   </defs>
   <rect width="1200" height="720" rx="46" fill="url(#g)"/>
-  <circle cx="960" cy="130" r="150" fill="#ffffff" opacity=".55"/>
-  <circle cx="165" cy="600" r="170" fill="#ffffff" opacity=".5"/>
+  <circle cx="950" cy="130" r="150" fill="#fff" opacity=".55"/>
+  <circle cx="165" cy="600" r="170" fill="#fff" opacity=".5"/>
   <g filter="url(#shadow)">
     <rect x="165" y="155" width="870" height="390" rx="38" fill="#fff" opacity=".94"/>
     <rect x="222" y="226" width="315" height="198" rx="26" fill="#dcfce7" opacity=".95"/>
@@ -20,5 +20,5 @@
     <rect x="586" y="392" width="180" height="50" rx="25" fill="#14532d"/>
   </g>
   <text x="225" y="650" fill="#14532d" font-family="Arial, sans-serif" font-size="44" font-weight="800">케이블 수납 시스템</text>
-  <text x="225" y="688" fill="#14532d" opacity=".75" font-family="Arial, sans-serif" font-size="22">책상 주변 전선과 충전기를 정리하는 수납 흐름</text>
+  <text x="225" y="688" fill="#14532d" opacity=".75" font-family="Arial, sans-serif" font-size="22">전선과 충전기를 정리하는 수납 흐름</text>
 </svg>
