@@ -199,3 +199,15 @@ v15 full sync 반영 내용:
 - 현재 사이트는 정적 HTML 사이트입니다.
 - content JSON을 수정해도 기존 HTML이 자동으로 바뀌지는 않습니다.
 - 새 글은 editor.html로 HTML을 생성해 posts 폴더에 추가하는 방식을 권장합니다.
+
+
+## v21-pasona-stabilization-2026-05-22
+
+v21 안정화 업데이트:
+- 전체 글에 파소나(PASONA) 기반 문제→공감→해결→제안→대상→행동 구조 추가
+- 카테고리별 5개 글 노출 구조 재정리
+- 검색 페이지에 빠른 키워드 버튼 추가
+- 제휴 안내 문구를 사용자 친화적으로 수정
+- editor-guide.html에 파소나 작성법 추가
+- content/pasona-template.json 추가
+- 전체 헤더/버전/스타일 동기화

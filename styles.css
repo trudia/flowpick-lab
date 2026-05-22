@@ -368,3 +368,19 @@
 .legal code{background:#f1f5f9;border:1px solid var(--line);border-radius:8px;padding:2px 6px;font-size:.95em}
 .editor-panel label{display:block;font-weight:900;margin:14px 0 7px;color:#334155}
 .editor-panel button{margin-top:16px}
+
+
+/* v21 PASONA + stabilization update */
+.pasona-box{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;margin:24px 0}
+.pasona-box h2{margin:6px 0 16px}
+.pasona-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pasona-steps div{background:#f8fafc;border:1px solid var(--line);border-radius:18px;padding:15px}
+.pasona-steps b{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:12px;background:#0f172a;color:#fff;margin-bottom:8px}
+.pasona-steps strong{display:block;margin-bottom:6px}
+.pasona-steps p{font-size:14px;line-height:1.65;color:#475569;margin:0}
+.quick-keywords{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px}
+.quick-keywords strong{display:block;margin-bottom:10px}
+.quick-keywords div{display:flex;flex-wrap:wrap;gap:8px}
+.quick-keywords button{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:9px 12px;font-weight:800;cursor:pointer}
+.quick-keywords button:hover{background:#eff6ff;color:#2563eb}
+@media(max-width:900px){.pasona-steps{grid-template-columns:1fr}.five-card-list{grid-template-columns:1fr!important}}

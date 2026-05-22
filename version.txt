@@ -1,7 +1,8 @@
-v20-editor-mode-2026-05-22
-base=trendflow_site_v19_asset_optimized_unique_images.zip
-editor-mode=enabled
-editable-content=content/posts.json,content/categories.json,content/affiliate-products.json
-uploads=assets/uploads/
-html-generator=editor.html
-guide=editor-guide.html,EDITING_GUIDE.md
+v21-pasona-stabilization-2026-05-22
+base=trendflow_site_v20_editor_mode.zip
+pasona=applied-to-posts
+category-pages=5-guides-synced
+search=quick-keywords
+affiliate=user-friendly-copy
+editor=pasona-template-added
+content=pasona-template.json
