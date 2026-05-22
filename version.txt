@@ -1,7 +1,8 @@
-v23-natural-conversion-final-2026-05-22
-base=trendflow_site_v22_natural_copy_update.zip
-public-pasona-terms=removed
-home-copy=action-oriented
-search=quick-buttons-visible
-purchase-box=recommend-skip-tryfirst
-affiliate-copy=user-friendly
+v24-visitor-copy-cleanup-2026-05-23
+base=trendflow_site_v23_natural_conversion_final.zip
+visitor-copy=cleaned
+category-operator-copy=removed
+post-guide-flow=naturalized
+affiliate-page=visitor-only
+purchase-box=target-not-needed-first-try
+search-buttons=emphasized
