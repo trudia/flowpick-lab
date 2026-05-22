@@ -1,7 +1,7 @@
-v22-natural-copy-update-2026-05-22
-base=trendflow_site_v21_pasona_stabilization.zip
-pasona=internal-writing-framework-only
+v23-natural-conversion-final-2026-05-22
+base=trendflow_site_v22_natural_copy_update.zip
 public-pasona-terms=removed
-copy-tone=action-oriented
-post-flow=natural-problem-solution
-editor-guide=updated
+home-copy=action-oriented
+search=quick-buttons-visible
+purchase-box=recommend-skip-tryfirst
+affiliate-copy=user-friendly
