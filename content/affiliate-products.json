@@ -1,5 +1,5 @@
 {
-  "version": "v26-unique-post-images-optimized-2026-05-23",
+  "version": "v28-clean-assets-unique-images-2026-05-23",
   "note": "product_url의 수정예정을 실제 쿠팡파트너스 링크로 교체하세요.",
   "categories": {
     "ai-productivity": [
@@ -130,5 +130,6 @@
         "product_url": "수정예정"
       }
     ]
-  }
+  },
+  "image_policy": "Displayed image files are rebuilt into assets/clean-v28 and each displayed image path is used once."
 }

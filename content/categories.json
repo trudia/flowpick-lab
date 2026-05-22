@@ -1,5 +1,5 @@
 {
-  "version": "v26-unique-post-images-optimized-2026-05-23",
+  "version": "v28-clean-assets-unique-images-2026-05-23",
   "categories": [
     {
       "slug": "ai-productivity",
@@ -53,5 +53,6 @@
         "촬영 소품"
       ]
     }
-  ]
+  ],
+  "image_policy": "Displayed image files are rebuilt into assets/clean-v28 and each displayed image path is used once."
 }
