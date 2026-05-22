@@ -429,3 +429,17 @@
 .disclosure-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;margin:22px 0}
 @media(max-width:900px){.purchase-check-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.purchase-check-grid{grid-template-columns:1fr}.quick-keywords div{display:grid;grid-template-columns:1fr 1fr}.quick-keywords button{width:100%;padding:11px 10px}}
+
+
+/* v25 comparison visual update */
+.compare-figure-box{margin:28px 0;background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px}
+.compare-figure-box h2{margin:0 0 14px}
+.compare-figure{margin:0}
+.compare-figure img{width:100%;display:block;border-radius:18px;border:1px solid var(--line)}
+.compare-figure figcaption{font-size:14px;line-height:1.7;color:#475569;margin-top:10px}
+.compare-tip{margin:12px 0 0;color:#334155;background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:14px 16px;line-height:1.7}
+
+
+/* v26 unique covers + optimized visuals */
+.thumb-wrap img.card-cover{object-fit:cover}
+.compare-figure img{image-rendering:auto}
