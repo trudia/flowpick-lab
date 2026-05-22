@@ -1,5 +1,5 @@
 {
-  "version": "v38-ui-stabilized-content-trim-2026-05-23",
+  "version": "v39-real-images-ui-refine-2026-05-23",
   "posts": [
     {
       "slug": "affiliate-product-bundle-v18.html",
@@ -1817,5 +1817,5 @@
   ],
   "image_policy": "V37은 자동 생성 이미지를 제거하고, 사용자가 제공할 실사/고화질 이미지를 삽입하기 위한 placeholder 구조로 전환했습니다.",
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
-  "ui_policy": "V38: 홈/카테고리/글 상세 UI 안정화, 자동 생성 이미지 제거, 사용자 제공 이미지 삽입 준비"
+  "ui_policy": "V39: 실제 제공 이미지 반영, 카테고리 이미지 높이 축소, 영문 라벨 정리, 카드 구조 보정"
 }
