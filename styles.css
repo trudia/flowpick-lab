@@ -465,10 +465,25 @@
 /* v33 post folders hq update: each article has its own V33 folder/image, category hero images stay consistent, and all previous raster assets are removed. */
 
 
-/* v36 visual recovery stable */
-.hero.hero-compact{background:linear-gradient(180deg,#f8fafc 0%,#f1f5f9 100%)}
+
+
+
+/* v37 UI recovery + image-ready structure */
+.hero.hero-compact{background:linear-gradient(180deg,#f8fafc 0%,#eef4fb 100%)}
+.hero.hero-compact:before{content:"";position:absolute;left:50%;top:-260px;width:680px;height:680px;transform:translateX(-50%);border-radius:999px;background:linear-gradient(135deg,#dbeafe,#f8fafc);filter:blur(86px);opacity:.82}
+.category-card,.article-row,.card{overflow:hidden}
 .card-cover{aspect-ratio:16/10;object-fit:cover}
-.category-card .card-cover,
-.article-row .card-cover,
-.card .card-cover{max-height:240px}
-.post .image-wrap img{max-height:560px;object-fit:cover}
+.category-card .card-cover,.article-row .card-cover,.card .card-cover{max-height:230px}
+.tf-image-placeholder{width:100%;aspect-ratio:16/10;border:1px dashed #cbd5e1;border-radius:20px;background:linear-gradient(135deg,#f8fafc,#eef2f7);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:18px;color:#334155}
+.tf-image-placeholder span{display:inline-flex;width:fit-content;border-radius:999px;background:#fff;border:1px solid #e2e8f0;padding:7px 11px;font-size:12px;font-weight:950;color:#64748b;margin-bottom:10px}
+.tf-image-placeholder strong{font-size:16px;line-height:1.35;letter-spacing:-.03em}
+.tf-image-placeholder.ai{background:linear-gradient(135deg,#eff6ff,#f8fafc)}
+.tf-image-placeholder.focus{background:linear-gradient(135deg,#ecfeff,#f8fafc)}
+.tf-image-placeholder.space{background:linear-gradient(135deg,#f0fdf4,#f8fafc)}
+.tf-image-placeholder.shopping{background:linear-gradient(135deg,#fff7ed,#f8fafc)}
+.post .image-wrap{background:#fff;border:1px solid var(--line);border-radius:26px;padding:0;overflow:hidden}
+.post .image-wrap .tf-image-placeholder{border:0;border-radius:0;min-height:320px}
+.stable-post-cta{margin:30px 0;background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid var(--line);border-radius:28px;padding:24px}
+.stable-post-cta h2{margin:8px 0 10px}
+.stable-post-cta p{color:#475569;line-height:1.75}
+.stable-post-cta .cta-stack a.primary{background:#0f172a;color:#fff}

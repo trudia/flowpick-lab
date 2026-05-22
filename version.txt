@@ -1,8 +1,7 @@
-v36-visual-recovery-stable-2026-05-23
-base=trendflow_site_v35_unique_hq_image_policy.zip
-visual-fix=removed-busy-home-hero-background
-removed-background-images=1
-post-category-images=kept
-missing-image-refs=0
-raster-assets-total=53
-asset-size-mb=9.32
+v37-ui-recovery-image-ready-2026-05-23
+base=trendflow_site_v36_visual_recovery_stable.zip
+ui=recovered-simple-structure
+generated-images=removed
+remaining-raster-assets=0
+missing-img-refs=0
+image-mode=user-provided-placeholders
