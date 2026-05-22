@@ -1,5 +1,5 @@
 {
-  "version": "v36-visual-recovery-stable-2026-05-23",
+  "version": "v37-ui-recovery-image-ready-2026-05-23",
   "categories": [
     {
       "slug": "ai-productivity",
@@ -54,6 +54,6 @@
       ]
     }
   ],
-  "image_policy": "중복 이미지는 사용하지 않습니다. 홈 배경, 카테고리 대표 이미지, 각 글 대표 이미지는 서로 다른 V35 이미지로 갱신합니다. 이후 업데이트 시 기존 이미지가 이미 있으면 신규 이미지를 추가 생성하지 않는 것을 기본 원칙으로 합니다.",
+  "image_policy": "V37은 자동 생성 이미지를 제거하고, 사용자가 제공할 실사/고화질 이미지를 삽입하기 위한 placeholder 구조로 전환했습니다.",
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다."
 }
