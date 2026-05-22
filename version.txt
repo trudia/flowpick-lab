@@ -1,6 +1,7 @@
-v39-real-images-ui-refine-2026-05-23
+v40-compact-ui-no-images-2026-05-23
 base=trendflow_site_v38_ui_stabilized_content_trim.zip
-real-images-cropped-from-sheet=18
-remaining-raster-assets=18
+ui=compact-one-screen-category
+images=not-included
+remaining-raster-assets=0
 missing-img-refs=0
-category-image-height=reduced
+search-js=fixed
