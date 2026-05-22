@@ -1,5 +1,7 @@
-v19-2026-05-22
-base=trendflow_site_v18_category_5posts_visual_update.zip
-assets=optimized-and-deduplicated
-large-pngs=removed-or-replaced
-images=unique-references-only
+v20-editor-mode-2026-05-22
+base=trendflow_site_v19_asset_optimized_unique_images.zip
+editor-mode=enabled
+editable-content=content/posts.json,content/categories.json,content/affiliate-products.json
+uploads=assets/uploads/
+html-generator=editor.html
+guide=editor-guide.html,EDITING_GUIDE.md

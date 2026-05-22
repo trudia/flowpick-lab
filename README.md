@@ -181,3 +181,21 @@ v15 full sync 반영 내용:
 - 홈/카테고리/글에 사용되는 핵심 이미지들을 압축 최적화
 - 동일한 이미지 참조를 각 글의 고유 이미지 또는 보조 이미지로 재배치
 - 깃허브 업로드를 쉽게 하기 위해 불필요한 대용량 에셋 정리
+
+
+## v20-editor-mode-2026-05-22
+
+반영 내용:
+- 사용자가 직접 수정할 수 있는 `content/` 폴더 추가
+- `content/posts.json`: 전체 글의 제목/요약/이미지/섹션 원본
+- `content/categories.json`: 카테고리 원본
+- `content/affiliate-products.json`: 쿠팡파트너스 링크 교체용 원본
+- `assets/uploads/`: 직접 사진을 올리는 폴더
+- `editor-guide.html`: 운영자 편집 가이드
+- `editor.html`: 새 글 HTML 생성기
+- `EDITING_GUIDE.md`: GitHub에서 수정하는 방법
+
+주의:
+- 현재 사이트는 정적 HTML 사이트입니다.
+- content JSON을 수정해도 기존 HTML이 자동으로 바뀌지는 않습니다.
+- 새 글은 editor.html로 HTML을 생성해 posts 폴더에 추가하는 방식을 권장합니다.
