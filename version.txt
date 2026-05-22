@@ -1,7 +1,7 @@
-v12-fixed-2026-05-22
-base=trendflow_site_v11_deep_category_update.zip
-fixed=true
-search=enabled
-faq=enabled
-shorts-flow=enabled
-hub-posts=5
+v15-2026-05-22
+base=trendflow_site_v14_category_posts_images.zip
+affiliate-comparison=enabled
+product-boxes=all-posts-and-categories
+home-conversion-flow=enabled
+affiliate-template=data/affiliate-links-template.json
+actual-coupang-links=placeholder
