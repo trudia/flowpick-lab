@@ -1,7 +1,5 @@
-v18-2026-05-22
-base=trendflow_site_v17_mobile_category_affiliate.zip
-new-posts=20
-category-posts=5-each
-images=webp-ai-realistic-variants
-home=simplified
-affiliate-products=data/affiliate-products.json
+v19-2026-05-22
+base=trendflow_site_v18_category_5posts_visual_update.zip
+assets=optimized-and-deduplicated
+large-pngs=removed-or-replaced
+images=unique-references-only
