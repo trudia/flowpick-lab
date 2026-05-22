@@ -464,5 +464,11 @@
 
 /* v33 post folders hq update: each article has its own V33 folder/image, category hero images stay consistent, and all previous raster assets are removed. */
 
-/* v35 unique hq image policy */
-.hero.hero-v35{background-image:linear-gradient(180deg,rgba(248,250,252,.82),rgba(248,250,252,.92)),var(--hero-bg);background-size:cover;background-position:center}.hero.hero-v35:before{display:none}
+
+/* v36 visual recovery stable */
+.hero.hero-compact{background:linear-gradient(180deg,#f8fafc 0%,#f1f5f9 100%)}
+.card-cover{aspect-ratio:16/10;object-fit:cover}
+.category-card .card-cover,
+.article-row .card-cover,
+.card .card-cover{max-height:240px}
+.post .image-wrap img{max-height:560px;object-fit:cover}

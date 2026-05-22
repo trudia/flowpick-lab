@@ -1,10 +1,8 @@
-v35-unique-hq-image-policy-2026-05-23
-base=trendflow_site_v33_post_folder_hq_update.zip
-home-background-images=1
-category-images=4
-post-images=49
-raster-assets-total=54
-non-v35-raster-assets=0
+v36-visual-recovery-stable-2026-05-23
+base=trendflow_site_v35_unique_hq_image_policy.zip
+visual-fix=removed-busy-home-hero-background
+removed-background-images=1
+post-category-images=kept
 missing-image-refs=0
-duplicate-binary-images=0
-asset-size-mb=9.64
+raster-assets-total=53
+asset-size-mb=9.32
