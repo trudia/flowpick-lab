@@ -1,4 +1,5 @@
-v11-2026-05-22
-base=trendflow_site_v10_sync_minimal_fix.zip
-deep-categories=ai-focus-shopping
-minimal-space=v10-kept
+
+v12-2026-05-22
+faq=enabled
+search=enabled
+mobile-speed=optimized
