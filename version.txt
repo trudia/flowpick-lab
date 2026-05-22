@@ -1,8 +1,7 @@
-v21-pasona-stabilization-2026-05-22
-base=trendflow_site_v20_editor_mode.zip
-pasona=applied-to-posts
-category-pages=5-guides-synced
-search=quick-keywords
-affiliate=user-friendly-copy
-editor=pasona-template-added
-content=pasona-template.json
+v22-natural-copy-update-2026-05-22
+base=trendflow_site_v21_pasona_stabilization.zip
+pasona=internal-writing-framework-only
+public-pasona-terms=removed
+copy-tone=action-oriented
+post-flow=natural-problem-solution
+editor-guide=updated

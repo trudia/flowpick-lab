@@ -384,3 +384,16 @@
 .quick-keywords button{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:9px 12px;font-weight:800;cursor:pointer}
 .quick-keywords button:hover{background:#eff6ff;color:#2563eb}
 @media(max-width:900px){.pasona-steps{grid-template-columns:1fr}.five-card-list{grid-template-columns:1fr!important}}
+
+
+/* v22 natural copy update */
+.natural-flow-box{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;margin:24px 0}
+.natural-flow-box h2{margin:6px 0 16px}
+.natural-flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.natural-flow-grid div{background:#f8fafc;border:1px solid var(--line);border-radius:18px;padding:16px}
+.natural-flow-grid strong{display:block;margin-bottom:8px;font-size:16px}
+.natural-flow-grid p{font-size:14px;line-height:1.7;color:#475569;margin:0}
+.natural-action{margin-top:12px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:18px;padding:16px}
+.natural-action p{margin:6px 0 0;color:#1e3a8a;line-height:1.7}
+.pasona-box{display:none}
+@media(max-width:900px){.natural-flow-grid{grid-template-columns:1fr}}
