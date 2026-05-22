@@ -1,11 +1,6 @@
-v38-ui-stabilized-content-trim-2026-05-23
-base=trendflow_site_v37_ui_recovery_image_ready.zip
-ui=stabilized
-post-content=trimmed
-public-operator-links=removed
-english-template-labels=koreanized
-search-page=recommended-cards-added
-generated-images=removed
-remaining-raster-assets=0
+v39-real-images-ui-refine-2026-05-23
+base=trendflow_site_v38_ui_stabilized_content_trim.zip
+real-images-cropped-from-sheet=18
+remaining-raster-assets=18
 missing-img-refs=0
-image-mode=user-provided-placeholders
+category-image-height=reduced
