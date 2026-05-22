@@ -1,7 +1,6 @@
-v15-full-sync-2026-05-22
-base=trendflow_site_v14_category_posts_images.zip
-home=v15-full-sync
-categories=priority+trend-analysis+affiliate-box
-posts=affiliate-box+conversion-cta+disclosure
-policy-pages=header-consistency
-affiliate-template=data/affiliate-links-template.json
+v17-2026-05-22
+base=trendflow_site_v16_simplified_home_diverse_images.zip
+category-pages=simplified
+thumbnail-labels=unified
+affiliate-products=data/affiliate-products.json
+mobile=optimized

@@ -1,0 +1,86 @@
+{
+  "version": "v17-2026-05-22",
+  "how_to_use": "product_url 값을 실제 쿠팡파트너스 링크로 교체하고, 글의 쿠팡 링크 등록 예정 버튼 href에도 같은 링크를 넣으세요.",
+  "groups": {
+    "ai_productivity": [
+      {
+        "name": "입문용 마이크",
+        "use_case": "쇼츠 음성 녹음",
+        "priority": 1,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "소형 조명",
+        "use_case": "촬영 밝기 개선",
+        "priority": 2,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "외장 저장장치",
+        "use_case": "영상 파일 보관",
+        "priority": 3,
+        "product_url": "수정예정"
+      }
+    ],
+    "focus_wellbeing": [
+      {
+        "name": "아날로그 타이머",
+        "use_case": "퇴근 후 30분 집중",
+        "priority": 1,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "폰 보관함",
+        "use_case": "스마트폰 시야 분리",
+        "priority": 2,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "수면등",
+        "use_case": "수면 전 조도 낮추기",
+        "priority": 3,
+        "product_url": "수정예정"
+      }
+    ],
+    "minimal_space": [
+      {
+        "name": "케이블 정리함",
+        "use_case": "책상 위 전선 정리",
+        "priority": 1,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "책상 선반",
+        "use_case": "상하 공간 분리",
+        "priority": 2,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "수납박스",
+        "use_case": "원룸 잡동사니 정리",
+        "priority": 3,
+        "product_url": "수정예정"
+      }
+    ],
+    "trend_shopping": [
+      {
+        "name": "책상 조명",
+        "use_case": "퇴근 후 부업 시작 신호",
+        "priority": 1,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "핀마이크",
+        "use_case": "AI 영상/쇼츠 음성",
+        "priority": 2,
+        "product_url": "수정예정"
+      },
+      {
+        "name": "제습기",
+        "use_case": "자취방 생활 개선",
+        "priority": 3,
+        "product_url": "수정예정"
+      }
+    ]
+  }
+}

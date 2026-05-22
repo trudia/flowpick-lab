@@ -143,3 +143,22 @@ v15 full sync 반영 내용:
 - /posts/sidehustle-gear-priority.html
 - /affiliate.html
 - /version.txt
+
+
+## v16 simplified home + diverse image update
+- 메인 홈 화면을 핵심 요약 중심으로 단순화
+- 상세 설명은 카테고리 페이지로 유도
+- 글별 대표 이미지를 더 다양하게 조정
+- 일부 이미지에 크롭/톤 변형을 적용해 시각적 반복감 완화
+- 카드/설명 문장 line clamp 적용으로 정보 과다감 축소
+
+
+## v17-2026-05-22
+
+반영 내용:
+- 카테고리 페이지를 상세 설명 과다 구조에서 짧은 허브형으로 축약
+- 카테고리별 먼저 읽을 글 3개 중심으로 재구성
+- 썸네일 라벨 문구를 `TrendFlow Guide`, `Category Overview`로 통일
+- 글 대표 이미지에 썸네일 배지 적용
+- `data/affiliate-products.json` 추가: 쿠팡파트너스 실제 링크 삽입용 상품군 구조
+- 모바일 헤더/카드/버튼/표 가독성 최적화
