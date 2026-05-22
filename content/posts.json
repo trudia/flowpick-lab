@@ -1,5 +1,5 @@
 {
-  "version": "v28-clean-assets-unique-images-2026-05-23",
+  "version": "v35-unique-hq-image-policy-2026-05-23",
   "posts": [
     {
       "slug": "affiliate-product-bundle-v18.html",
@@ -1815,5 +1815,5 @@
       "editable_note": "title, summary, image, sections를 수정해도 됩니다. 실제 사이트 반영은 기존 HTML 수정 또는 editor.html 생성기를 사용하세요."
     }
   ],
-  "image_policy": "Displayed image files are rebuilt into assets/clean-v28 and each displayed image path is used once."
+  "image_policy": "중복 이미지는 사용하지 않습니다. 홈 배경, 카테고리 대표 이미지, 각 글 대표 이미지는 서로 다른 V35 이미지로 갱신합니다. 이후 업데이트 시 기존 이미지가 이미 있으면 신규 이미지를 추가 생성하지 않는 것을 기본 원칙으로 합니다."
 }
