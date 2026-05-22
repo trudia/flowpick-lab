@@ -1,6 +1,7 @@
-v17-2026-05-22
-base=trendflow_site_v16_simplified_home_diverse_images.zip
-category-pages=simplified
-thumbnail-labels=unified
+v18-2026-05-22
+base=trendflow_site_v17_mobile_category_affiliate.zip
+new-posts=20
+category-posts=5-each
+images=webp-ai-realistic-variants
+home=simplified
 affiliate-products=data/affiliate-products.json
-mobile=optimized
