@@ -175,3 +175,22 @@
 .deep-note strong{color:#0f172a}
 .quick-choice-wide{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
 @media(max-width:900px){.deep-flow-grid,.quick-choice-wide{grid-template-columns:1fr}}
+
+
+/* v12 fixed growth patch */
+.search-box{display:flex;gap:10px;margin-top:16px}
+.search-box input{flex:1;padding:15px 16px;border:1px solid var(--line);border-radius:16px;font:inherit}
+.search-box a{white-space:nowrap}
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.faq-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px}
+.faq-card h3{font-size:18px;margin:0 0 8px}
+.faq-card p{color:#475569;line-height:1.7;margin:0}
+.shorts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.shorts-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px}
+.shorts-card h3{font-size:18px;margin:0 0 8px}
+.shorts-card p{color:#475569;line-height:1.7}
+.shorts-card a{font-weight:950;color:var(--accent)}
+.hub-link-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.hub-link{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;font-weight:950;color:#334155}
+.hub-link:hover{background:var(--accent-soft);color:var(--accent);border-color:#bfdbfe}
+@media(max-width:900px){.faq-grid,.shorts-grid,.hub-link-grid{grid-template-columns:1fr}.search-box{flex-direction:column}}
