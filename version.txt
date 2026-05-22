@@ -1,6 +1,10 @@
-v37-ui-recovery-image-ready-2026-05-23
-base=trendflow_site_v36_visual_recovery_stable.zip
-ui=recovered-simple-structure
+v38-ui-stabilized-content-trim-2026-05-23
+base=trendflow_site_v37_ui_recovery_image_ready.zip
+ui=stabilized
+post-content=trimmed
+public-operator-links=removed
+english-template-labels=koreanized
+search-page=recommended-cards-added
 generated-images=removed
 remaining-raster-assets=0
 missing-img-refs=0
