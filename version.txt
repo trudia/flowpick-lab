@@ -1,7 +1,5 @@
-v40-compact-ui-no-images-2026-05-23
-base=trendflow_site_v38_ui_stabilized_content_trim.zip
-ui=compact-one-screen-category
-images=not-included
-remaining-raster-assets=0
-missing-img-refs=0
-search-js=fixed
+v41-category-images-ui-refresh-2026-05-23
+base=trendflow_site_v40_compact_ui_no_images.zip
+category-images=4
+home-category-ui=visual-cards
+category-pages=visual-hero+clean-list
