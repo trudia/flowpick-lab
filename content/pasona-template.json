@@ -1,5 +1,5 @@
 {
-  "version": "v21-pasona-stabilization-2026-05-22",
+  "version": "v22-natural-copy-update-2026-05-22",
   "template": {
     "P_problem": "방문자가 겪는 불편함을 한 문장으로 씁니다.",
     "A_affinity": "그 문제가 의지 부족이 아니라 환경/구조 문제일 수 있다고 공감합니다.",
@@ -7,5 +7,14 @@
     "O_offer": "이 글에서 제공하는 비교표/체크리스트/우선순위를 안내합니다.",
     "N_narrowing": "이 글이 특히 필요한 사람을 명확히 좁힙니다.",
     "A_action": "카테고리 보기, 관련 글 읽기, 구매 전 비교 박스 확인 등 다음 행동을 제시합니다."
+  },
+  "public_writing_rule": "PASONA는 내부 구조로만 사용하고, 공개 글에는 PASONA/P/A/S/O/N/A 용어를 직접 표시하지 않습니다.",
+  "public_heading_examples": {
+    "P_problem": "이런 문제가 있다면",
+    "A_affinity": "사실 의지 문제가 아닙니다",
+    "S_solution": "먼저 이것부터 바꿔보세요",
+    "O_offer": "이 글에서는 이렇게 정리했습니다",
+    "N_narrowing": "이런 사람에게 특히 좋아요",
+    "A_action": "지금 바로 하나만 확인하세요"
   }
 }
