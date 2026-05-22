@@ -1,8 +1,10 @@
-v28-clean-assets-unique-images-2026-05-23
-base=trendflow_site_v27_single_use_images.zip
-displayed-image-refs=95
-unique-displayed-image-refs=95
-duplicate-displayed-image-refs=0
+v35-unique-hq-image-policy-2026-05-23
+base=trendflow_site_v33_post_folder_hq_update.zip
+home-background-images=1
+category-images=4
+post-images=49
+raster-assets-total=54
+non-v35-raster-assets=0
 missing-image-refs=0
-old-raster-assets-outside-clean-v28=0
-asset-size-mb=1.96
+duplicate-binary-images=0
+asset-size-mb=9.64

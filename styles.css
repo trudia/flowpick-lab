@@ -448,3 +448,21 @@
 .slot-image-note{display:none}
 
 /* v28 clean assets: all displayed raster images are stored only in assets/clean-v28 and referenced once. */
+
+/* v29 rebuilt images balanced: fewer files, higher clarity, old raster assets removed, one image per post + 4 category hero images. */
+
+/* v30 unified hq images: only V30 image files are used, with unified tone and higher-quality WebP output. */
+
+/* v31 image-copy-cta optimization */
+.v31-image-note{margin-top:10px;color:#64748b;font-size:14px;line-height:1.65}
+.v31-smart-cta{margin:30px 0;background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid var(--line);border-radius:28px;padding:24px}
+.v31-smart-cta h2{margin:8px 0 10px}
+.v31-smart-cta p{color:#475569;line-height:1.75}
+.v31-smart-cta .cta-stack a.primary{background:#0f172a;color:#fff}
+
+/* v32 post image unification: category hero images stay consistent, while each article gets its own high-quality V32 image reused across home/category/post. */
+
+/* v33 post folders hq update: each article has its own V33 folder/image, category hero images stay consistent, and all previous raster assets are removed. */
+
+/* v35 unique hq image policy */
+.hero.hero-v35{background-image:linear-gradient(180deg,rgba(248,250,252,.82),rgba(248,250,252,.92)),var(--hero-bg);background-size:cover;background-position:center}.hero.hero-v35:before{display:none}
