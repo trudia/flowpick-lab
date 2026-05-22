@@ -126,11 +126,20 @@
 - 글 카드 UI를 이미지 중심으로 보강
 
 
-## v15 affiliate conversion update
-- 전체 글에 구매 전 비교 박스 추가
-- 카테고리 페이지에 상품 비교 박스 추가
-- 홈페이지에 쇼츠 → 상세 글 → 구매 전 비교 → 파트너스 연결 전환 흐름 추가
-- 글 하단 CTA 강화
-- affiliate.html에 쿠팡파트너스 링크 교체 방법 추가
+## v15-full-sync-2026-05-22
+
+v15 full sync 반영 내용:
+- v14의 실제 글 12개, 이미지, 추천 우선순위, 트렌드 비교 분석 구조 유지
+- 홈페이지에 전환 흐름 섹션과 v15 full sync 표시 추가
+- 카테고리 페이지 4개에 상품 비교 박스 동기화
+- 전체 글에 구매 전 비교 박스, 다음 행동 CTA, 제휴 고지 동기화
+- 정책/제휴/검색 페이지의 헤더 문구 일관성 보강
 - data/affiliate-links-template.json 추가
-- 실제 쿠팡파트너스 링크는 사용자가 발급한 링크로 교체 필요
+- version.txt로 배포 확인 가능
+
+업로드 후 확인:
+- /
+- /categories/trend-shopping.html
+- /posts/sidehustle-gear-priority.html
+- /affiliate.html
+- /version.txt

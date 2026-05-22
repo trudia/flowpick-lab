@@ -1,7 +1,7 @@
-v15-2026-05-22
+v15-full-sync-2026-05-22
 base=trendflow_site_v14_category_posts_images.zip
-affiliate-comparison=enabled
-product-boxes=all-posts-and-categories
-home-conversion-flow=enabled
+home=v15-full-sync
+categories=priority+trend-analysis+affiliate-box
+posts=affiliate-box+conversion-cta+disclosure
+policy-pages=header-consistency
 affiliate-template=data/affiliate-links-template.json
-actual-coupang-links=placeholder
