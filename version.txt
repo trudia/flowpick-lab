@@ -1,5 +1,8 @@
-v26-unique-post-images-optimized-2026-05-23
-base=trendflow_site_v25_comparison_visual_update.zip
-unique-post-covers=49
-compare-images=compressed-webp
-asset-optimization=enabled
+v28-clean-assets-unique-images-2026-05-23
+base=trendflow_site_v27_single_use_images.zip
+displayed-image-refs=95
+unique-displayed-image-refs=95
+duplicate-displayed-image-refs=0
+missing-image-refs=0
+old-raster-assets-outside-clean-v28=0
+asset-size-mb=1.96

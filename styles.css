@@ -443,3 +443,8 @@
 /* v26 unique covers + optimized visuals */
 .thumb-wrap img.card-cover{object-fit:cover}
 .compare-figure img{image-rendering:auto}
+
+/* v27 single-use image slots */
+.slot-image-note{display:none}
+
+/* v28 clean assets: all displayed raster images are stored only in assets/clean-v28 and referenced once. */
