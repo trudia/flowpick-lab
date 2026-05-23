@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$Url = "https://trend.it.kr/version.txt",
   [string]$Expected = ""
 )

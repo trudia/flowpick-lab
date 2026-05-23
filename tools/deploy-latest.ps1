@@ -1,4 +1,4 @@
-﻿param(
+﻿﻿param(
   [string]$RepoPath = (Resolve-Path ".").Path,
   [string]$DownloadsPath = "$env:USERPROFILE\Downloads",
   [switch]$NoPush,

@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][string]$BackupFolder,[string]$RepoPath=(Resolve-Path ".").Path)
+﻿param([Parameter(Mandatory=$true)][string]$BackupFolder,[string]$RepoPath=(Resolve-Path ".").Path)
 $ErrorActionPreference='Stop'
 $BackupFolder=[System.IO.Path]::GetFullPath($BackupFolder)
 $RepoPath=[System.IO.Path]::GetFullPath($RepoPath)

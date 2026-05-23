@@ -1,4 +1,4 @@
-﻿param(
+﻿﻿﻿param(
   [string]$RepoPath = (Resolve-Path ".").Path,
   [string]$DownloadsPath = "$env:USERPROFILE\Downloads",
   [int]$PollSeconds = 5,
@@ -159,6 +159,8 @@ while ($true) {
       & powershell @ArgsList
       if ($LASTEXITCODE -ne 0) {
         Write-Log "Deployment script exited with an error. This ZIP was not marked as deployed." "Red"
+        Write-Log "Waiting 30 seconds before retrying the same ZIP." "Yellow"
+        Start-Sleep -Seconds 30
       } else {
         Write-Log "Deployment completed: $($Zip.Name)" "Green"
         Mark-Deployed $FullZip $StateFile

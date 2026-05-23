@@ -1,7 +1,9 @@
-v50-ascii-safe-watcher-fix-2026-05-23
-base=trendflow_site_v49_clean_url_sync.zip
-watcher-encoding-fix=enabled
-powershell-ascii-safe=yes
+v52-deploy-cleanup-fix-2026-05-23
+base=trendflow_site_v51_seo_performance_sync.zip
+deploy-cleanup-fix=enabled
+stale-root-html-cleanup=enabled
+internal-folder-validation-skip=enabled
+ascii-safe-deploy=enabled
 tool-files=12
 total-raster-assets=8
 missing-img-refs=0

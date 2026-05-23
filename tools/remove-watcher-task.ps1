@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$TaskName = "TrendFlow Download Watcher"
 )
 

@@ -1,0 +1,12 @@
+{
+  "version": "v51-seo-performance-sync-2026-05-23",
+  "base": "trendflow_site_v50_ascii_safe_watcher_fix.zip",
+  "changes": [
+    "Added/updated meta description, canonical, OG, and Twitter card tags",
+    "Added width/height and decoding attributes to local images",
+    "Added sitemap.xml and robots.txt",
+    "Added small search help panel",
+    "Kept fixed V42-style UI structure"
+  ],
+  "url_count_in_sitemap": 55
+}

@@ -1,4 +1,4 @@
-param([string]$RepoPath = (Resolve-Path ".").Path)
+﻿param([string]$RepoPath = (Resolve-Path ".").Path)
 $ErrorActionPreference = "Stop"
 function Test-ImageReferences($Root){
   $missing=New-Object System.Collections.Generic.List[string]

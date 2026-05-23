@@ -1,5 +1,5 @@
 {
-  "version": "v50-ascii-safe-watcher-fix-2026-05-23",
+  "version": "v52-deploy-cleanup-fix-2026-05-23",
   "categories": [
     {
       "slug": "ai-productivity",
@@ -60,5 +60,7 @@
   "deploy_automation": "V47: deploy-latest, live version check, backup/gitignore hardening added",
   "download_watcher": "V48: Downloads 폴더 감시 자동 배포 기능 추가",
   "deployment_fix": "V49: clean URL 동기화. /categories/<slug>, /posts/<slug>, /search 경로에 index.html 복제.",
-  "watcher_fix": "V50: PowerShell watcher scripts rewritten as ASCII-safe Y/N logic to prevent Korean encoding parser errors."
+  "watcher_fix": "V50: PowerShell watcher scripts rewritten as ASCII-safe Y/N logic to prevent Korean encoding parser errors.",
+  "seo_performance_sync": "V51: meta description/canonical/OG tags, image dimensions, sitemap.xml, robots.txt, search help panel",
+  "deploy_cleanup_fix": "V52: deploy-update removes stale root html files and ignores internal .trendflow backup/log/state folders during validation."
 }

@@ -1,97 +1,280 @@
-param(
-  [Parameter(Mandatory=$true)][string]$ZipPath,
+﻿param(
+  [Parameter(Mandatory=$true)]
+  [string]$ZipPath,
+
   [string]$RepoPath = (Resolve-Path ".").Path,
+
   [string]$CommitMessage = "",
+
   [switch]$NoPush,
+
   [switch]$DryRun
 )
+
 $ErrorActionPreference = "Stop"
-function Write-Step($m){ Write-Host ""; Write-Host "==> $m" -ForegroundColor Cyan }
-function Fail($m){ Write-Host ""; Write-Host "ERROR: $m" -ForegroundColor Red; exit 1 }
-function Ensure-Command($c){ if(-not(Get-Command $c -ErrorAction SilentlyContinue)){ Fail "$c 명령을 찾을 수 없습니다." } }
-function Copy-DirectoryContents($Source,$Destination){ Get-ChildItem -LiteralPath $Source -Force | ForEach-Object { $target=Join-Path $Destination $_.Name; Copy-Item -LiteralPath $_.FullName -Destination $target -Recurse -Force } }
-function Test-ImageReferences($Root){
-  $missing=New-Object System.Collections.Generic.List[string]
-  $htmlFiles=Get-ChildItem -LiteralPath $Root -Recurse -Filter "*.html" -File
-  foreach($file in $htmlFiles){
-    $text=Get-Content -LiteralPath $file.FullName -Raw -Encoding UTF8
-    $matches=[regex]::Matches($text,'<img[^>]+src="([^"]+)"')
-    foreach($m in $matches){
-      $src=$m.Groups[1].Value
-      if($src.StartsWith('http') -or $src.Contains('${') -or $src.StartsWith('/')){ continue }
-      $full=[System.IO.Path]::GetFullPath((Join-Path $file.DirectoryName $src))
-      if(-not(Test-Path -LiteralPath $full)){
-        $rel=$file.FullName.Replace($Root,'').TrimStart('\','/')
-        $missing.Add("$rel -> $src")
+
+function Write-Step($Message) {
+  Write-Host ""
+  Write-Host "==> $Message" -ForegroundColor Cyan
+}
+
+function Fail($Message) {
+  Write-Host ""
+  Write-Host "ERROR: $Message" -ForegroundColor Red
+  exit 1
+}
+
+function Ensure-Command($Command) {
+  if (-not (Get-Command $Command -ErrorAction SilentlyContinue)) {
+    Fail "$Command command was not found."
+  }
+}
+
+function Should-SkipPath($Path) {
+  $p = $Path.ToString()
+  return (
+    $p -match "\\\.git(\\" + [char]92 + "|$)" -or
+    $p -match "\\\.trendflow-backups(\\" + [char]92 + "|$)" -or
+    $p -match "\\\.trendflow-state(\\" + [char]92 + "|$)" -or
+    $p -match "\\\.trendflow-logs(\\" + [char]92 + "|$)" -or
+    $p -match "\\node_modules(\\" + [char]92 + "|$)"
+  )
+}
+
+function Copy-DirectoryContents($Source, $Destination) {
+  Get-ChildItem -LiteralPath $Source -Force | ForEach-Object {
+    $Target = Join-Path $Destination $_.Name
+    if ($_.PSIsContainer) {
+      Copy-Item -LiteralPath $_.FullName -Destination $Target -Recurse -Force
+    } else {
+      Copy-Item -LiteralPath $_.FullName -Destination $Target -Force
+    }
+  }
+}
+
+function Test-ImageReferences($Root) {
+  $Missing = New-Object System.Collections.Generic.List[string]
+  $HtmlFiles = Get-ChildItem -LiteralPath $Root -Recurse -Filter "*.html" -File |
+    Where-Object { -not (Should-SkipPath $_.FullName) }
+
+  foreach ($File in $HtmlFiles) {
+    $Text = Get-Content -LiteralPath $File.FullName -Raw -Encoding UTF8
+    $Matches = [regex]::Matches($Text, '<img[^>]+src="([^"]+)"')
+
+    foreach ($m in $Matches) {
+      $Src = $m.Groups[1].Value
+      if ($Src.StartsWith("http") -or $Src.Contains('${')) { continue }
+
+      if ($Src.StartsWith("/")) {
+        $Candidate = Join-Path $Root $Src.TrimStart("/")
+      } else {
+        $Candidate = Join-Path $File.DirectoryName $Src
+      }
+
+      $Full = [System.IO.Path]::GetFullPath($Candidate)
+      if (-not (Test-Path -LiteralPath $Full)) {
+        $RelFile = $File.FullName.Replace($Root, "").TrimStart("\","/")
+        $Missing.Add("$RelFile -> $Src")
       }
     }
   }
-  return $missing
+  return $Missing
 }
-function Get-VersionFrom($Root){ $v=Join-Path $Root 'version.txt'; if(Test-Path -LiteralPath $v){ return (Get-Content -LiteralPath $v -Encoding UTF8 | Select-Object -First 1) }; return '' }
 
-Write-Step 'TrendFlow 자동 배포 시작'
-$ZipPath=[System.IO.Path]::GetFullPath($ZipPath)
-$RepoPath=[System.IO.Path]::GetFullPath($RepoPath)
-if(-not(Test-Path -LiteralPath $ZipPath)){ Fail "ZIP 파일을 찾을 수 없습니다: $ZipPath" }
-if(-not(Test-Path -LiteralPath $RepoPath)){ Fail "RepoPath를 찾을 수 없습니다: $RepoPath" }
-if(-not(Test-Path -LiteralPath (Join-Path $RepoPath '.git'))){ Fail 'RepoPath가 Git 저장소가 아닙니다. GitHub 저장소 루트 폴더에서 실행하거나 -RepoPath를 지정하세요.' }
-Ensure-Command 'git'
-$timestamp=Get-Date -Format 'yyyyMMdd-HHmmss'
-$temp=Join-Path $env:TEMP "trendflow-update-$timestamp"
-$backupRoot=Join-Path $RepoPath '.trendflow-backups'
-$backup=Join-Path $backupRoot $timestamp
-
-Write-Step 'ZIP 압축 해제'
-if(Test-Path -LiteralPath $temp){ Remove-Item -LiteralPath $temp -Recurse -Force }
-New-Item -ItemType Directory -Path $temp | Out-Null
-Expand-Archive -LiteralPath $ZipPath -DestinationPath $temp -Force
-$extractRoot=$temp
-if(-not(Test-Path -LiteralPath (Join-Path $extractRoot 'index.html'))){
-  foreach($d in Get-ChildItem -LiteralPath $temp -Directory){ if((Test-Path (Join-Path $d.FullName 'index.html')) -and (Test-Path (Join-Path $d.FullName 'styles.css'))){ $extractRoot=$d.FullName; break } }
+function Get-VersionFrom($Root) {
+  $VersionFile = Join-Path $Root "version.txt"
+  if (Test-Path -LiteralPath $VersionFile) {
+    return (Get-Content -LiteralPath $VersionFile -Encoding UTF8 | Select-Object -First 1)
+  }
+  return ""
 }
-if(-not(Test-Path -LiteralPath (Join-Path $extractRoot 'index.html'))){ Fail '업데이트 ZIP 안에서 index.html을 찾지 못했습니다.' }
-if(-not(Test-Path -LiteralPath (Join-Path $extractRoot 'styles.css'))){ Fail '업데이트 ZIP 안에서 styles.css를 찾지 못했습니다.' }
-if(-not(Test-Path -LiteralPath (Join-Path $extractRoot 'version.txt'))){ Fail '업데이트 ZIP 안에서 version.txt를 찾지 못했습니다.' }
-$newVersion=Get-VersionFrom $extractRoot
-Write-Host "업데이트 버전: $newVersion" -ForegroundColor Yellow
 
-Write-Step 'ZIP 내부 이미지 참조 검사'
-$missingBefore=Test-ImageReferences $extractRoot
-if($missingBefore.Count -gt 0){ $missingBefore | ForEach-Object { Write-Host " - $_" -ForegroundColor Red }; Fail 'ZIP 내부 이미지 참조 검사 실패' }
-Write-Host '이미지 참조 정상' -ForegroundColor Green
-if($DryRun){ Write-Step 'DryRun 완료: 실제 복사/커밋/푸시는 하지 않았습니다.'; Remove-Item -LiteralPath $temp -Recurse -Force; exit 0 }
-
-Write-Step '현재 사이트 백업'
-New-Item -ItemType Directory -Path $backup | Out-Null
-$targets=@('index.html','styles.css','search.html','editor.html','editor-guide.html','version.txt','categories','posts','assets','content')
-foreach($item in $targets){ $srcItem=Join-Path $RepoPath $item; if(Test-Path -LiteralPath $srcItem){ Copy-Item -LiteralPath $srcItem -Destination $backup -Recurse -Force } }
-Write-Host "백업 완료: $backup" -ForegroundColor Green
-
-Write-Step '기존 사이트 파일 정리'
-foreach($item in $targets){ $target=Join-Path $RepoPath $item; if(Test-Path -LiteralPath $target){ Remove-Item -LiteralPath $target -Recurse -Force } }
-
-Write-Step '새 버전 복사'
-Copy-DirectoryContents -Source $extractRoot -Destination $RepoPath
-
-Write-Step '복사 후 검증'
-$missingAfter=Test-ImageReferences $RepoPath
-if($missingAfter.Count -gt 0){ $missingAfter | ForEach-Object { Write-Host " - $_" -ForegroundColor Red }; Fail "복사 후 검증 실패. 백업: $backup" }
-Write-Host "로컬 반영 버전: $(Get-VersionFrom $RepoPath)" -ForegroundColor Yellow
-
-Write-Step 'Git add / commit / push'
-Push-Location $RepoPath
-try{
-  git add -A
-  $status=git status --porcelain
-  if([string]::IsNullOrWhiteSpace($status)){ Write-Host '커밋할 변경사항이 없습니다.' -ForegroundColor Yellow }
-  else{
-    if([string]::IsNullOrWhiteSpace($CommitMessage)){ $CommitMessage="Update TrendFlow $newVersion" }
-    git commit -m $CommitMessage
-    if($NoPush){ Write-Host 'NoPush 모드: push는 건너뜁니다.' -ForegroundColor Yellow } else { git push }
+function Remove-IfExists($Path) {
+  if (Test-Path -LiteralPath $Path) {
+    Remove-Item -LiteralPath $Path -Recurse -Force
   }
 }
-finally{ Pop-Location; if(Test-Path -LiteralPath $temp){ Remove-Item -LiteralPath $temp -Recurse -Force } }
-Write-Step '배포 자동화 완료'
-Write-Host '확인 URL: https://trend.it.kr/version.txt' -ForegroundColor Green
-Write-Host '브라우저에서 Ctrl+F5로 강력 새로고침하세요.' -ForegroundColor Green
+
+function Clear-SiteFiles($RepoPath) {
+  Write-Step "Cleaning old site files"
+
+  # Remove root HTML files first. This prevents stale pages such as minimal-space.html from breaking validation.
+  Get-ChildItem -LiteralPath $RepoPath -File -Filter "*.html" -Force |
+    Where-Object { $_.Name -notlike "README*" } |
+    ForEach-Object { Remove-Item -LiteralPath $_.FullName -Force }
+
+  # Remove common root site files that are fully regenerated by update ZIPs.
+  $RootFiles = @(
+    "styles.css", "version.txt", "sitemap.xml", "robots.txt",
+    "deploy-manifest.json", "download-watcher-manifest.json",
+    "v50-fix-manifest.json", "v51-seo-performance-manifest.json",
+    "CLEAN_URL_SYNC_V49.md", "WATCHER_ENCODING_FIX_V50.md",
+    "DOWNLOAD_WATCHER_README.md", "DEPLOY_AUTOMATION_README.md"
+  )
+
+  foreach ($Item in $RootFiles) {
+    Remove-IfExists (Join-Path $RepoPath $Item)
+  }
+
+  # Remove generated content directories.
+  $Dirs = @(
+    "categories", "posts", "assets", "content", "search"
+  )
+
+  foreach ($Dir in $Dirs) {
+    Remove-IfExists (Join-Path $RepoPath $Dir)
+  }
+
+  # Do NOT remove .git, .trendflow-backups, .trendflow-state, .trendflow-logs.
+  # Do NOT remove tools here while this script is running. The new tools are copied over existing tools.
+}
+
+Write-Step "TrendFlow deploy started"
+
+$ZipPath = [System.IO.Path]::GetFullPath($ZipPath)
+$RepoPath = [System.IO.Path]::GetFullPath($RepoPath)
+
+if (-not (Test-Path -LiteralPath $ZipPath)) {
+  Fail "ZIP file not found: $ZipPath"
+}
+
+if (-not (Test-Path -LiteralPath $RepoPath)) {
+  Fail "RepoPath not found: $RepoPath"
+}
+
+if (-not (Test-Path -LiteralPath (Join-Path $RepoPath ".git"))) {
+  Fail "RepoPath is not a Git repository. Run this from the repository root or pass -RepoPath."
+}
+
+Ensure-Command "git"
+
+$Timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+$Temp = Join-Path $env:TEMP "trendflow-update-$Timestamp"
+$BackupRoot = Join-Path $RepoPath ".trendflow-backups"
+$Backup = Join-Path $BackupRoot $Timestamp
+
+Write-Step "Extracting ZIP"
+if (Test-Path -LiteralPath $Temp) {
+  Remove-Item -LiteralPath $Temp -Recurse -Force
+}
+New-Item -ItemType Directory -Path $Temp | Out-Null
+Expand-Archive -LiteralPath $ZipPath -DestinationPath $Temp -Force
+
+$ExtractRoot = $Temp
+if (-not (Test-Path -LiteralPath (Join-Path $ExtractRoot "index.html"))) {
+  $Dirs = Get-ChildItem -LiteralPath $Temp -Directory
+  foreach ($d in $Dirs) {
+    $Candidate = $d.FullName
+    if ((Test-Path -LiteralPath (Join-Path $Candidate "index.html")) -and
+        (Test-Path -LiteralPath (Join-Path $Candidate "styles.css")) -and
+        (Test-Path -LiteralPath (Join-Path $Candidate "version.txt"))) {
+      $ExtractRoot = $Candidate
+      break
+    }
+  }
+}
+
+if (-not (Test-Path -LiteralPath (Join-Path $ExtractRoot "index.html"))) {
+  Fail "index.html was not found inside the update ZIP."
+}
+if (-not (Test-Path -LiteralPath (Join-Path $ExtractRoot "styles.css"))) {
+  Fail "styles.css was not found inside the update ZIP."
+}
+if (-not (Test-Path -LiteralPath (Join-Path $ExtractRoot "version.txt"))) {
+  Fail "version.txt was not found inside the update ZIP."
+}
+
+$NewVersion = Get-VersionFrom $ExtractRoot
+Write-Host "Update version: $NewVersion" -ForegroundColor Yellow
+
+Write-Step "Checking image references inside ZIP"
+$MissingBeforeCopy = Test-ImageReferences $ExtractRoot
+if ($MissingBeforeCopy.Count -gt 0) {
+  Write-Host "Missing image references inside ZIP:" -ForegroundColor Red
+  $MissingBeforeCopy | ForEach-Object { Write-Host " - $_" -ForegroundColor Red }
+  Fail "ZIP validation failed."
+}
+Write-Host "ZIP image references: OK" -ForegroundColor Green
+
+if ($DryRun) {
+  Write-Step "DryRun mode. No files were copied, committed, or pushed."
+  Remove-Item -LiteralPath $Temp -Recurse -Force
+  exit 0
+}
+
+Write-Step "Backing up current site files"
+New-Item -ItemType Directory -Path $Backup -Force | Out-Null
+
+$BackupTargets = @(
+  "index.html", "styles.css", "search.html", "editor.html", "editor-guide.html",
+  "version.txt", "sitemap.xml", "robots.txt", "categories", "posts", "assets", "content", "search"
+)
+
+foreach ($Item in $BackupTargets) {
+  $SrcItem = Join-Path $RepoPath $Item
+  if (Test-Path -LiteralPath $SrcItem) {
+    Copy-Item -LiteralPath $SrcItem -Destination $Backup -Recurse -Force
+  }
+}
+
+# Also back up stale root html files before removing them.
+Get-ChildItem -LiteralPath $RepoPath -File -Filter "*.html" -Force |
+  ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination $Backup -Force
+  }
+
+Write-Host "Backup completed: $Backup" -ForegroundColor Green
+
+Clear-SiteFiles $RepoPath
+
+Write-Step "Copying new version"
+Copy-DirectoryContents -Source $ExtractRoot -Destination $RepoPath
+
+Write-Step "Validating copied site"
+$MissingAfterCopy = Test-ImageReferences $RepoPath
+if ($MissingAfterCopy.Count -gt 0) {
+  Write-Host "Missing image references after copy:" -ForegroundColor Red
+  $MissingAfterCopy | ForEach-Object { Write-Host " - $_" -ForegroundColor Red }
+  Fail "Validation after copy failed. Backup folder: $Backup"
+}
+
+$LocalVersion = Get-VersionFrom $RepoPath
+Write-Host "Local version: $LocalVersion" -ForegroundColor Yellow
+
+Write-Step "Git status"
+Push-Location $RepoPath
+try {
+  git status --short
+
+  Write-Step "Git add"
+  git add -A
+
+  $Status = git status --porcelain
+  if ([string]::IsNullOrWhiteSpace($Status)) {
+    Write-Host "No changes to commit." -ForegroundColor Yellow
+  } else {
+    if ([string]::IsNullOrWhiteSpace($CommitMessage)) {
+      $CommitMessage = "Update TrendFlow $NewVersion"
+    }
+
+    Write-Step "Git commit"
+    git commit -m $CommitMessage
+
+    if ($NoPush) {
+      Write-Host "NoPush mode. git push was skipped." -ForegroundColor Yellow
+    } else {
+      Write-Step "Git push"
+      git push
+    }
+  }
+}
+finally {
+  Pop-Location
+  if (Test-Path -LiteralPath $Temp) {
+    Remove-Item -LiteralPath $Temp -Recurse -Force
+  }
+}
+
+Write-Step "Deploy completed"
+Write-Host "Check: https://trend.it.kr/version.txt" -ForegroundColor Green
+Write-Host "If the page looks old, press Ctrl+F5 or clear CDN cache." -ForegroundColor Green

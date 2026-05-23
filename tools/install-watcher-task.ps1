@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$RepoPath = (Resolve-Path ".").Path,
   [string]$TaskName = "TrendFlow Download Watcher",
   [switch]$AutoApprove,
