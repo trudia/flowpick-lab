@@ -3,7 +3,7 @@ title: "메모를 글감으로 바꾸는 AI 아이디어 정리 루틴"
 date: 2026-05-23
 category: ai-productivity
 summary: "흩어진 메모와 떠오른 생각을 AI로 정리하면 블로그 글감, 쇼츠 대본, 콘텐츠 아이디어로 빠르게 연결할 수 있습니다."
-image: ""
+image: "/assets/featured/ai-idea-capture-routine-v19.webp"
 tags: [AI, 아이디어정리, 생산성]
 ---
 

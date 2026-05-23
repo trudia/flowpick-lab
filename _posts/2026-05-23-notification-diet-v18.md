@@ -3,7 +3,7 @@ title: "스마트폰 알림 줄이기 설정 비교"
 date: 2026-05-23
 category: focus-wellbeing
 summary: "완전 차단, 시간대 제한, 앱별 알림 정리를 비교해 유지하기 쉬운 방법을 찾습니다."
-image: ""
+image: "/assets/featured/notification-diet-v18.webp"
 tags: [알림, 디지털웰빙, 집중]
 ---
 

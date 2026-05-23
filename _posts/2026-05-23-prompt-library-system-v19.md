@@ -3,7 +3,7 @@ title: "반복 작업을 줄이는 프롬프트 라이브러리 구축법"
 date: 2026-05-23
 category: ai-productivity
 summary: "자주 쓰는 요청을 프롬프트 라이브러리로 정리하면 AI 활용 속도와 결과물의 일관성을 함께 높일 수 있습니다."
-image: ""
+image: "/assets/featured/prompt-library-system-v19.webp"
 tags: [AI, 프롬프트, 생산성]
 ---
 

@@ -1,7 +1,6 @@
-v60-static-blog-stable-2026-05-23
+v61-post-images-added-2026-05-23
 site-mode=static-blog-stable
 jekyll-build=not-required
 nojekyll=enabled
-posts=11
-categories=4
-new-ai-posts=2
+feature=added-images-to-posts-without-photos
+updated-post-images=6
