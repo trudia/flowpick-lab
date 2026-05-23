@@ -1,5 +1,7 @@
-v41-category-images-ui-refresh-2026-05-23
-base=trendflow_site_v40_compact_ui_no_images.zip
+v43-v42-sync-stabilized-2026-05-23
+base=trendflow_site_v42_category_image_path_fix.zip
+v42-ui=synced
 category-images=4
-home-category-ui=visual-cards
-category-pages=visual-hero+clean-list
+post-images=not-yet
+missing-img-refs=0
+total-raster-assets=4
