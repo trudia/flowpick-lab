@@ -1,8 +1,7 @@
-v66-ai-writing-natural-editing-patch-2026-05-23
+v67-ai-time-saving-routine-patch-2026-05-23
 patch-only=true
-base=trendflow_site_v65_ai_answer_prompt_post.zip
-replaced-image=assets/featured/ai-answer-prompt-question-method.webp
-new-post=ai-writing-natural-editing
-new-image=assets/featured/ai-writing-natural-editing.webp
-posts=12
+base=trendflow_site_v65_ai_answer_prompt_post.zip + v66 patch
+new-post=ai-time-saving-routine
+new-image=assets/featured/ai-time-saving-routine.webp
+posts=13
 changed-files-only-package=true
