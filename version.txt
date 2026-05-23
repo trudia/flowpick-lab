@@ -1,4 +1,3 @@
-TrendFlow Static Blog V77 - Compact Series Thumbnails Redeploy
-Updated: 2026-05-24
-
-If this file is visible at /version.txt, V77 files are deployed.
+TrendFlow V78 - force compact recommendation series thumbnails - 2026-05-24
+styles.css?v=78
+theme.js?v=78
