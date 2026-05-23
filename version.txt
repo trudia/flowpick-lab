@@ -1,8 +1,5 @@
-v45-featured-replace-ui-refine-2026-05-23
-base=trendflow_site_v44_home_featured_images.zip
-ui=V42-fixed
-category-images=4
-featured-images=4
-category-image-fit=contain-no-crop
+v46-deploy-automation-ready-2026-05-23
+base=trendflow_site_v45_featured_replace_ui_refine.zip
+deploy-automation=enabled
+tools=6
 missing-img-refs=0
-total-raster-assets=8

@@ -1,5 +1,5 @@
 {
-  "version": "v45-featured-replace-ui-refine-2026-05-23",
+  "version": "v46-deploy-automation-ready-2026-05-23",
   "categories": [
     {
       "slug": "ai-productivity",
@@ -56,5 +56,6 @@
   ],
   "image_policy": "카테고리 대표 이미지는 assets/categories/*.webp 경로를 사용합니다. GitHub 업로드 시 assets/categories 폴더까지 함께 업로드해야 합니다.",
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
-  "ui_policy": "V45: V42 UI 고정, 홈 바로 읽기 좋은 글 이미지 4장 교체, 카테고리 이미지 잘림 방지, 문구/번호/카테고리 키워드 정리"
+  "ui_policy": "V45: V42 UI 고정, 홈 바로 읽기 좋은 글 이미지 4장 교체, 카테고리 이미지 잘림 방지, 문구/번호/카테고리 키워드 정리",
+  "deploy_automation": "tools/deploy-update.ps1, tools/deploy-update.bat, tools/verify-site.ps1, tools/restore-backup.ps1 포함"
 }
