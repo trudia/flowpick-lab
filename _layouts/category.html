@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="subpage-hero">
+  <div class="container narrow">
+    <div class="breadcrumb"><a href="/">홈</a> / 카테고리</div>
+    <span class="section-label">카테고리</span>
+    <h1>{{ page.category_label }}</h1>
+    <p class="page-desc">{{ page.description }}</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="blog-grid">
+      {% assign found = false %}
+      {% for post in site.posts %}
+        {% if post.category == page.category_slug %}
+          {% assign found = true %}
+          {% include post-card.html post=post %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% unless found %}
+    <div class="empty-box">아직 이 카테고리에 글이 없습니다.</div>
+    {% endunless %}
+  </div>
+</section>

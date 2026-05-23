@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post-layout">
+  <div class="container narrow">
+    <div class="breadcrumb">
+      <a href="/">홈</a>
+      {% assign current_category = site.data.categories | where: "slug", page.category | first %}
+      {% if current_category %}
+        / <a href="/categories/{{ current_category.slug }}/">{{ current_category.label }}</a>
+      {% endif %}
+    </div>
+    {% if current_category %}<span class="pill">{{ current_category.label }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+    <div class="blog-meta">
+      <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if page.tags %}<span>{{ page.tags | join: " · " }}</span>{% endif %}
+    </div>
+
+    {% if page.image and page.image != "" %}
+      <img class="post-hero-cover" src="{{ page.image }}" alt="{{ page.title }} 대표 이미지" loading="lazy" decoding="async">
+    {% else %}
+      <div class="post-hero-cover no-image"><span>{{ current_category.label | default: "TrendFlow" }}</span></div>
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <section class="related-box">
+      <h2>같이 보면 좋은 글</h2>
+      <ul>
+        {% assign related_count = 0 %}
+        {% for post in site.posts %}
+          {% if post.category == page.category and post.url != page.url and related_count < 3 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</article>

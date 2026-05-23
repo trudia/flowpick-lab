@@ -1,6 +1,7 @@
-v58-ai-productivity-post-update-2026-05-23
-site-mode=blog-reset
-markdown-posts=enabled
-posts=9
-categories=4
-new-post=ai-blog-draft-30min-routine
+v59-jekyll-markdown-blog-2026-05-23
+site-mode=jekyll-markdown-blog
+future-post-update=add-_posts-md-and-assets-only
+layouts=enabled
+includes=enabled
+categories-liquid=enabled
+search-liquid=enabled
