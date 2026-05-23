@@ -1,5 +1,5 @@
 {
-  "version": "v48-download-watcher-automation-2026-05-23",
+  "version": "v50-ascii-safe-watcher-fix-2026-05-23",
   "template": {
     "P_problem": "방문자가 겪는 불편함을 한 문장으로 씁니다.",
     "A_affinity": "그 문제가 의지 부족이 아니라 환경/구조 문제일 수 있다고 공감합니다.",
@@ -22,5 +22,7 @@
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
   "ui_policy": "V45: V42 UI 고정, 홈 바로 읽기 좋은 글 이미지 4장 교체, 카테고리 이미지 잘림 방지, 문구/번호/카테고리 키워드 정리",
   "deploy_automation": "V47: deploy-latest, live version check, backup/gitignore hardening added",
-  "download_watcher": "V48: Downloads 폴더 감시 자동 배포 기능 추가"
+  "download_watcher": "V48: Downloads 폴더 감시 자동 배포 기능 추가",
+  "deployment_fix": "V49: clean URL 동기화. /categories/<slug>, /posts/<slug>, /search 경로에 index.html 복제.",
+  "watcher_fix": "V50: PowerShell watcher scripts rewritten as ASCII-safe Y/N logic to prevent Korean encoding parser errors."
 }
