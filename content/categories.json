@@ -1,68 +1,22 @@
 {
-  "version": "v56-backup-validation-skip-fix-2026-05-23",
-  "categories": [
-    {
-      "slug": "ai-productivity",
-      "title": "AI 생산성",
-      "description": "AI를 많이 쓰는 것보다 반복 작업을 줄이는 구조를 먼저 만듭니다.",
-      "image": "assets/hero-ai-productivity-v19.webp",
-      "recommended_order": [
-        "AI 대본 루틴",
-        "후킹 문장 비교",
-        "프롬프트 라이브러리",
-        "블로그 초안",
-        "사이트 유입"
-      ]
-    },
-    {
-      "slug": "focus-wellbeing",
-      "title": "집중력 & 웰빙",
-      "description": "집중력은 의지보다 환경·알림·수면·대체 행동의 문제입니다.",
-      "image": "assets/hero-focus-wellbeing-v19.webp",
-      "recommended_order": [
-        "퇴근 후 집중",
-        "알림 줄이기",
-        "수면 루틴",
-        "타이머 집중",
-        "스마트폰 대체 행동"
-      ]
-    },
-    {
-      "slug": "minimal-space",
-      "title": "공간 & 미니멀",
-      "description": "작은 책상과 원룸은 물건을 더 사기보다 덜 보이게 만드는 것이 먼저입니다.",
-      "image": "assets/hero-minimal-space-v19.webp",
-      "recommended_order": [
-        "7일 정리",
-        "원룸 구역화",
-        "케이블 정리",
-        "모니터암/선반 비교",
-        "수납박스 배치"
-      ]
-    },
-    {
-      "slug": "trend-shopping",
-      "title": "트렌드 쇼핑",
-      "description": "인기 상품보다 문제 해결 우선순위가 먼저입니다.",
-      "image": "assets/hero-trend-shopping-v19.webp",
-      "recommended_order": [
-        "부업 장비",
-        "AI 영상 장비",
-        "자취방 개선",
-        "상품 조합 기준",
-        "촬영 소품"
-      ]
-    }
-  ],
-  "image_policy": "카테고리 대표 이미지는 assets/categories/*.webp 경로를 사용합니다. GitHub 업로드 시 assets/categories 폴더까지 함께 업로드해야 합니다.",
-  "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
-  "ui_policy": "V45: V42 UI 고정, 홈 바로 읽기 좋은 글 이미지 4장 교체, 카테고리 이미지 잘림 방지, 문구/번호/카테고리 키워드 정리",
-  "deploy_automation": "V47: deploy-latest, live version check, backup/gitignore hardening added",
-  "download_watcher": "V48: Downloads 폴더 감시 자동 배포 기능 추가",
-  "deployment_fix": "V49: clean URL 동기화. /categories/<slug>, /posts/<slug>, /search 경로에 index.html 복제.",
-  "watcher_fix": "V54: watch-downloads.ps1 no longer uses param() block; start-watcher.bat passes settings via environment variables.",
-  "seo_performance_sync": "V51: meta description/canonical/OG tags, image dimensions, sitemap.xml, robots.txt, search help panel",
-  "deploy_cleanup_fix": "V52: deploy-update removes stale root html files and ignores internal .trendflow backup/log/state folders during validation.",
-  "route_sync_stabilization": "V55: category pages regenerated, clean URLs synced, root stale category aliases redirect to canonical category routes.",
-  "deploy_validation_fix": "V56: robust skip logic for .trendflow-backups and other internal folders during image reference validation."
+  "ai-productivity": {
+    "label": "AI 생산성",
+    "description": "쇼츠 대본, 프롬프트, 블로그 초안처럼 반복 작업을 줄이는 글을 모읍니다.",
+    "image": "/assets/categories/ai-productivity.webp"
+  },
+  "focus-wellbeing": {
+    "label": "집중력 & 웰빙",
+    "description": "퇴근 후 집중, 알림 줄이기, 수면 루틴처럼 에너지를 지키는 글을 모읍니다.",
+    "image": "/assets/categories/focus-wellbeing.webp"
+  },
+  "minimal-space": {
+    "label": "공간 & 미니멀",
+    "description": "책상 정리, 원룸 구역화, 케이블 정리처럼 공간의 자극을 줄이는 글을 모읍니다.",
+    "image": "/assets/categories/minimal-space.webp"
+  },
+  "trend-shopping": {
+    "label": "트렌드 쇼핑",
+    "description": "부업 장비, 생활 개선 아이템, 구매 기준처럼 사기 전 비교할 글을 모읍니다.",
+    "image": "/assets/categories/trend-shopping.webp"
+  }
 }

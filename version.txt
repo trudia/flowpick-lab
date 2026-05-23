@@ -1,7 +1,5 @@
-v56-backup-validation-skip-fix-2026-05-23
-base=trendflow_site_v55_route_sync_stabilized.zip
-backup-validation-skip=enabled
-internal-folder-validation-skip=robust
-tool-files=12
-total-raster-assets=8
-missing-img-refs=0
+v57-blog-reset-2026-05-23
+site-mode=blog-reset
+markdown-posts=enabled
+posts=8
+categories=4
