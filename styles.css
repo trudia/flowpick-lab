@@ -977,3 +977,21 @@ html[data-theme='dark'] .simple-category-card,html[data-theme='dark'] .blog-card
 html[data-theme='dark'] img{color-scheme:dark;}
 @media(max-width:980px){.feature-article-shell{grid-template-columns:1fr}.feature-sidebar{position:static}.feature-hero-img{aspect-ratio:16/9}.feature-post-section{grid-template-columns:1fr 160px}.feature-series-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:680px){.feature-article-page{padding-top:22px}.feature-post-section{grid-template-columns:1fr}.feature-section-thumb{order:-1}.feature-section-thumb img{aspect-ratio:16/9}.feature-series-grid{grid-template-columns:1fr 1fr}.feature-post-nav{flex-direction:column}.feature-post-nav a{max-width:100%}.feature-article-main h1{font-size:34px}.feature-article-meta{gap:9px}.feature-meta-item,.feature-meta-pill{font-size:13px}.feature-side-card{padding:18px}}
+
+
+/* V84: article body cleanup - keep only top hero image, remove per-section thumbnails */
+.feature-article-main .feature-post-section{
+  display:block !important;
+  grid-template-columns:1fr !important;
+  padding:28px 0 !important;
+}
+.feature-article-main .feature-section-text{
+  width:100% !important;
+  max-width:100% !important;
+}
+.feature-article-main .feature-section-thumb{
+  display:none !important;
+}
+.feature-article-main .feature-post-section h2{
+  margin-top:0;
+}
