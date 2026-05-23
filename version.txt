@@ -1,10 +1,9 @@
-v70-home-series-category-featured-2026-05-24
+v71-focus-wellbeing-smartphone-time-2026-05-24
 release-type=full-stable
-base=v69-full-stable-no-editor
+base=v70-home-series-category-featured
 editor-removed=true
-home-ai-series=true
+home-focus-series=true
 category-featured-posts=true
-readability-polish=true
-search-tag-shortcuts=true
-posts=13
+new-post=smartphone-time-disappears-focus-wellbeing
+posts=14
 categories=4
