@@ -961,3 +961,6 @@ html[data-theme="dark"] .home-series-section.category-series-home .series-visual
   .latest-title-list li{grid-template-columns:42px minmax(0,1fr) !important;padding:0 16px !important;min-height:58px !important;gap:10px !important;}
   .latest-title-num{width:30px !important;height:30px !important;font-size:11px !important;}
 }
+
+
+/* v80: UI lock - V79 layout is intentionally preserved; this release adds content only. */

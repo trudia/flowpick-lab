@@ -1,2 +1,2 @@
-TrendFlow V79 - recent posts title-only list + larger pamphlet recommendation series
+TrendFlow V80 - add AI overload brain fatigue article while preserving V79 UI
 Generated: 2026-05-24
