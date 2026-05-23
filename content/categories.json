@@ -1,5 +1,5 @@
 {
-  "version": "v42-category-image-path-fix-2026-05-23",
+  "version": "v43-v42-sync-stabilized-2026-05-23",
   "categories": [
     {
       "slug": "ai-productivity",
@@ -56,5 +56,5 @@
   ],
   "image_policy": "카테고리 대표 이미지는 assets/categories/*.webp 경로를 사용합니다. GitHub 업로드 시 assets/categories 폴더까지 함께 업로드해야 합니다.",
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
-  "ui_policy": "V41: 홈/카테고리 대표 이미지 4장 반영, 홈 카테고리 시각 카드화, 카테고리 페이지 비주얼 히어로화, 글 목록 카드 구조 정리"
+  "ui_policy": "V43: V42 UI를 기준으로 전체 페이지 동기화, 홈/카테고리 대표 이미지 경로 고정, placeholder 문구 제거, 검색 카드 간격 정리"
 }
