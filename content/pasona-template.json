@@ -1,5 +1,5 @@
 {
-  "version": "v44-home-featured-images-2026-05-23",
+  "version": "v45-featured-replace-ui-refine-2026-05-23",
   "template": {
     "P_problem": "방문자가 겪는 불편함을 한 문장으로 씁니다.",
     "A_affinity": "그 문제가 의지 부족이 아니라 환경/구조 문제일 수 있다고 공감합니다.",
@@ -20,5 +20,5 @@
   "public_rule": "이 구조는 내부 글쓰기 기준입니다. 공개 페이지에는 공식 이름이나 P/A/S/O/N/A 용어를 직접 노출하지 마세요.",
   "image_policy": "카테고리 대표 이미지는 assets/categories/*.webp 경로를 사용합니다. GitHub 업로드 시 assets/categories 폴더까지 함께 업로드해야 합니다.",
   "visual_recovery_note": "홈 히어로 배경 이미지를 제거하고, 카테고리/포스트 이미지 중심으로 안정화했습니다.",
-  "ui_policy": "V44: V42/V43 기본 UI 유지, 메인 홈페이지 바로 읽기 좋은 글 4개 이미지 반영, 카드 레이아웃 보정"
+  "ui_policy": "V45: V42 UI 고정, 홈 바로 읽기 좋은 글 이미지 4장 교체, 카테고리 이미지 잘림 방지, 문구/번호/카테고리 키워드 정리"
 }
