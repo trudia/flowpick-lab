@@ -1,7 +1,7 @@
-v48-download-watcher-automation-2026-05-23
-base=trendflow_site_v47_automation_hardened.zip
-download-folder-watcher=enabled
-scheduled-task-installer=enabled
+v50-ascii-safe-watcher-fix-2026-05-23
+base=trendflow_site_v49_clean_url_sync.zip
+watcher-encoding-fix=enabled
+powershell-ascii-safe=yes
 tool-files=12
 total-raster-assets=8
 missing-img-refs=0

@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$RepoPath = (Resolve-Path ".").Path,
   [string]$DownloadsPath = "$env:USERPROFILE\Downloads",
   [switch]$NoPush,
@@ -7,50 +7,56 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-function Fail($msg) {
+function Fail($Message) {
   Write-Host ""
-  Write-Host "ERROR: $msg" -ForegroundColor Red
+  Write-Host "ERROR: $Message" -ForegroundColor Red
   exit 1
+}
+
+function Test-AnswerYes($Answer) {
+  if ([string]::IsNullOrWhiteSpace($Answer)) { return $false }
+  $Normalized = $Answer.Trim().ToUpperInvariant()
+  return ($Normalized -eq "Y" -or $Normalized -eq "YES")
 }
 
 $RepoPath = [System.IO.Path]::GetFullPath($RepoPath)
 
 if (-not (Test-Path -LiteralPath $DownloadsPath)) {
-  Fail "다운로드 폴더를 찾지 못했습니다: $DownloadsPath"
+  Fail "Downloads folder not found: $DownloadsPath"
 }
 
-$zips = Get-ChildItem -LiteralPath $DownloadsPath -File -Filter "trendflow_site_v*.zip" |
+$Zips = Get-ChildItem -LiteralPath $DownloadsPath -File -Filter "trendflow_site_v*.zip" |
   Sort-Object LastWriteTime -Descending
 
-if ($zips.Count -eq 0) {
-  Fail "다운로드 폴더에서 trendflow_site_v*.zip 파일을 찾지 못했습니다."
+if ($Zips.Count -eq 0) {
+  Fail "No trendflow_site_v*.zip file found in Downloads."
 }
 
-$latest = $zips[0]
+$Latest = $Zips[0]
 Write-Host ""
-Write-Host "가장 최근 업데이트 ZIP:" -ForegroundColor Cyan
-Write-Host $latest.FullName -ForegroundColor Yellow
+Write-Host "Latest update ZIP:" -ForegroundColor Cyan
+Write-Host $Latest.FullName -ForegroundColor Yellow
 Write-Host ""
 
-$answer = Read-Host "이 파일로 배포할까요? (Y/N)"
-if ($answer -notin @("Y","y","YES","yes","예","ㅇ")) {
-  Write-Host "취소했습니다." -ForegroundColor Yellow
+$Answer = Read-Host "Deploy this file? Type Y or N"
+if (-not (Test-AnswerYes $Answer)) {
+  Write-Host "Canceled." -ForegroundColor Yellow
   exit 0
 }
 
-$script = Join-Path $PSScriptRoot "deploy-update.ps1"
-if (-not (Test-Path -LiteralPath $script)) {
-  Fail "deploy-update.ps1을 찾지 못했습니다: $script"
+$Script = Join-Path $PSScriptRoot "deploy-update.ps1"
+if (-not (Test-Path -LiteralPath $Script)) {
+  Fail "deploy-update.ps1 not found: $Script"
 }
 
-$argsList = @(
+$ArgsList = @(
   "-ExecutionPolicy", "Bypass",
-  "-File", $script,
-  "-ZipPath", $latest.FullName,
+  "-File", $Script,
+  "-ZipPath", $Latest.FullName,
   "-RepoPath", $RepoPath
 )
 
-if ($NoPush) { $argsList += "-NoPush" }
-if ($DryRun) { $argsList += "-DryRun" }
+if ($NoPush) { $ArgsList += "-NoPush" }
+if ($DryRun) { $ArgsList += "-DryRun" }
 
-& powershell @argsList
+& powershell @ArgsList

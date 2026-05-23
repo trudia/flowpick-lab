@@ -1,0 +1,15 @@
+{
+  "version": "v50-ascii-safe-watcher-fix-2026-05-23",
+  "base": "trendflow_site_v49_clean_url_sync.zip",
+  "fix": "ASCII-safe PowerShell watcher and deploy-latest scripts",
+  "changed_files": [
+    "tools/watch-downloads.ps1",
+    "tools/deploy-latest.ps1",
+    "tools/start-watcher.bat",
+    "tools/start-watcher-nopush.bat",
+    "tools/deploy-latest.bat",
+    "start-watcher.bat",
+    "deploy-latest.bat",
+    "WATCHER_ENCODING_FIX_V50.md"
+  ]
+}
