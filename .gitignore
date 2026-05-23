@@ -1,0 +1,6 @@
+.trendflow-backups/
+*.tmp
+.DS_Store
+Thumbs.db
+.trendflow-state/
+.trendflow-logs/
