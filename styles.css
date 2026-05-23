@@ -69,3 +69,14 @@
 .article-main .related-card-section{box-shadow:none}
 @media(max-width:1060px){.article-shell{grid-template-columns:1fr}.article-sidebar{position:static;display:grid;grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.article-main{padding:20px;border-radius:22px}.article-sidebar{grid-template-columns:1fr}.latest-mini{grid-template-columns:86px 1fr}.latest-thumb{width:86px;height:62px}.blog-pro-header .nav nav{display:none}}
+
+
+/* v65 AI question method post + polish */
+.blog-hero p{max-width:760px}
+.article-main .example-box{background:#f0f7ff;border-color:#bfdbfe}
+.article-main .example-box strong{color:#1d4ed8}
+.article-main .post-content h2{scroll-margin-top:96px}
+.article-main .post-content p{word-break:keep-all}
+.sidebar-card{transition:transform .18s ease, box-shadow .18s ease}
+.sidebar-card:hover{transform:translateY(-1px)}
+.blog-card h3 a:hover,.related-card strong:hover{color:#2563eb}

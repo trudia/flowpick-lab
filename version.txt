@@ -1,11 +1,10 @@
-v64-blog-article-sidebar-layout-2026-05-23
+v65-ai-answer-prompt-post-2026-05-23
 site-mode=static-blog-stable
+base=trendflow_site_v64_blog_article_sidebar_layout.zip
+new-post=ai-answer-prompt-question-method
+new-image=assets/featured/ai-answer-prompt-question-method.webp
 article-layout=two-column
 article-sidebar=enabled
-sidebar-takeaways=enabled
-sidebar-categories=enabled
-sidebar-latest-posts=enabled
-sidebar-tags=enabled
-mobile-sidebar=below-content
-posts=10
+posts=11
 categories=4
+missing-img-refs=0

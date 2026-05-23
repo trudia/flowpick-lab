@@ -1,5 +1,18 @@
 [
   {
+    "slug": "ai-answer-prompt-question-method",
+    "title": "AI 답변이 평범한 이유와 질문을 바꾸는 방법",
+    "category": "ai-productivity",
+    "summary": "같은 질문을 해도 결과가 달라지는 이유와, 더 구체적이고 실용적인 답변을 얻는 질문 구조를 정리합니다.",
+    "image": "/assets/featured/ai-answer-prompt-question-method.webp",
+    "tags": [
+      "AI",
+      "프롬프트",
+      "질문법"
+    ],
+    "date": "2026-05-23"
+  },
+  {
     "slug": "prompt-library-system-v19",
     "title": "반복 작업을 줄이는 프롬프트 라이브러리 구축법",
     "category": "ai-productivity",
