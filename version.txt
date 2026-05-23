@@ -1,7 +1,6 @@
-v43-v42-sync-stabilized-2026-05-23
-base=trendflow_site_v42_category_image_path_fix.zip
-v42-ui=synced
+v44-home-featured-images-2026-05-23
+base=trendflow_site_v43_v42_sync_stabilized.zip
 category-images=4
-post-images=not-yet
+home-featured-images=4
 missing-img-refs=0
-total-raster-assets=4
+total-raster-assets=8
