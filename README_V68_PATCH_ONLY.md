@@ -8,5 +8,5 @@
 - 홈 최신 글 문구를 새 글마다 바꾸지 않아도 되는 범용 문구로 변경
 - Archive 페이지에 JS 없이도 보이는 기본 글 카드 9개를 HTML로 선반영
 - 글 상세 사이드바의 최신 글에서 현재 보고 있는 글 제외
-- AI 생산성 글 하단에 `AI 생산성 입문 시리즈` 박스 추가
+- AI 생산성 글 하단에 `AI 입문` 박스 추가
 - sitemap.xml, search, archive, category, index, content/posts.json 갱신

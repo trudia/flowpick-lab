@@ -6,7 +6,7 @@
 - 새 글 경로: `/posts/smartphone-time-disappears-focus-wellbeing`
 - 카테고리 반영: `/categories/focus-wellbeing`
 - 홈 최신 글 1번 카드 반영
-- 홈 추천 시리즈를 `집중력 회복 시리즈`로 반영
+- 홈 추천 시리즈를 `집중 회복`로 반영
 - 검색/아카이브/사이트맵/posts.json 업데이트
 - 대표 이미지 로컬 WebP 추가: `/assets/featured/smartphone-time-disappears-focus-wellbeing.webp`
 
