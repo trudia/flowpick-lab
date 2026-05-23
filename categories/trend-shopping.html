@@ -10,7 +10,109 @@
 <meta content="트렌드 쇼핑 | 트렌드플로우" property="og:title"/><meta content="부업 장비, 생활 개선 아이템, 구매 기준처럼 사기 전 비교할 글을 모읍니다." property="og:description"/>
 <meta content="website" property="og:type"/><meta content="https://trend.it.kr/categories/trend-shopping" property="og:url"/>
 <meta content="https://trend.it.kr/assets/categories/trend-shopping.webp" property="og:image"/><meta content="summary_large_image" name="twitter:card"/>
-<link href="/styles.css?v=72" rel="stylesheet"/>
+<link href="/styles.css?v=78" rel="stylesheet"/>
+<style id="tf-v78-force-compact-series">
+
+/* v78 FORCE compact series thumbnails: recommendation-series images must stay small */
+:root{--tf-v78-series-thumb-h:38px;--tf-v78-series-gap:6px;}
+.category-series-home .section-head{margin-bottom:16px!important;}
+.category-series-home .category-series-grid{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:14px!important;
+  align-items:stretch!important;
+}
+.category-series-home .category-series-card,
+.category-series-home .visual-series-card{
+  min-height:176px!important;
+  padding:18px!important;
+  border-radius:24px!important;
+  gap:8px!important;
+  overflow:hidden!important;
+}
+.category-series-home .category-series-card h3,
+.category-series-home .visual-series-card h3{
+  font-size:19px!important;
+  line-height:1.24!important;
+  margin:0!important;
+}
+.category-series-home .series-category-pill{font-size:11px!important;padding:5px 8px!important;}
+.category-series-home .series-desc{display:none!important;}
+.category-series-home .series-category-link{display:none!important;}
+.category-series-home .series-visual-list{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:var(--tf-v78-series-gap)!important;
+  margin-top:auto!important;
+}
+.category-series-home .visual-series-card .series-visual-item,
+.category-series-home .series-visual-item{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:5px!important;
+  min-width:0!important;
+  min-height:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+.category-series-home .visual-series-card .series-visual-item:hover,
+.category-series-home .series-visual-item:hover{box-shadow:none!important;background:transparent!important;transform:translateY(-1px)!important;}
+.category-series-home .series-visual-thumb{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  height:var(--tf-v78-series-thumb-h)!important;
+  max-height:var(--tf-v78-series-thumb-h)!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  border-radius:10px!important;
+  overflow:hidden!important;
+  border:1px solid var(--tf-border)!important;
+  background:var(--tf-surface-2)!important;
+}
+.category-series-home .series-visual-thumb img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-height:var(--tf-v78-series-thumb-h)!important;
+  object-fit:cover!important;
+}
+.category-series-home .series-visual-thumb .series-step{
+  position:absolute!important;left:3px!important;top:3px!important;
+  padding:1px 4px!important;font-size:9px!important;line-height:1.2!important;border-radius:999px!important;
+}
+.category-series-home .series-visual-item strong{
+  display:-webkit-box!important;
+  -webkit-line-clamp:2!important;
+  -webkit-box-orient:vertical!important;
+  overflow:hidden!important;
+  min-height:2.4em!important;
+  font-size:10.8px!important;
+  line-height:1.2!important;
+  letter-spacing:-.035em!important;
+  word-break:keep-all!important;
+}
+/* if an old deployment still has large visual cards, shrink every image under the recommendation section */
+.home-series-section img,
+.category-series-home img{
+  max-height:46px!important;
+  object-fit:cover!important;
+}
+.home-series-section .series-visual-thumb,
+.category-series-home .series-visual-thumb{height:38px!important;}
+/* category pages: keep reading order compact but slightly larger than home */
+.visual-category-series-box .category-series-visual-list{grid-template-columns:repeat(auto-fit,minmax(142px,1fr))!important;gap:10px!important;}
+.visual-category-series-box .category-series-visual-card{display:grid!important;grid-template-columns:54px minmax(0,1fr)!important;gap:9px!important;min-height:70px!important;padding:9px!important;border-radius:17px!important;}
+.visual-category-series-box .category-series-visual-thumb{width:54px!important;height:44px!important;aspect-ratio:auto!important;border-radius:11px!important;}
+.visual-category-series-box .category-series-visual-thumb img{width:100%!important;height:100%!important;object-fit:cover!important;}
+.visual-category-series-box .category-series-visual-card strong{font-size:13px!important;line-height:1.28!important;}
+@media(max-width:1080px){.category-series-home .category-series-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.category-series-home .series-visual-thumb{height:40px!important}.home-series-section img,.category-series-home img{max-height:48px!important}}
+@media(max-width:640px){.category-series-home .category-series-grid{grid-template-columns:1fr!important}.category-series-home .category-series-card{min-height:0!important}.category-series-home .series-visual-list{grid-template-columns:repeat(4,minmax(0,1fr))!important}.category-series-home .series-visual-thumb{height:42px!important}.home-series-section img,.category-series-home img{max-height:50px!important}.visual-category-series-box .category-series-visual-list{grid-template-columns:1fr!important}}
+</style>
 </head><body><header class="site-header blog-pro-header"><div class="container nav">
 <a class="logo blog-logo" href="/"><span>T</span><div><strong>TrendFlow Blog</strong><small>생활 트렌드 기록</small></div></a>
 <nav>
@@ -22,4 +124,4 @@
 <a href="/archive.html">전체 글 보기</a>
 </nav>
 <div class="nav-actions"><a class="nav-cta search-cta" href="/search">검색</a><button aria-label="다크 모드로 전환" class="theme-toggle" data-theme-toggle="" title="다크 모드로 전환" type="button"><span class="theme-toggle-icon" data-theme-icon="">🌙</span><span class="theme-toggle-label" data-theme-label="">다크</span></button></div>
-</div></header><main><section class="subpage-hero"><div class="container narrow"><div class="breadcrumb"><a href="/">홈</a> / 카테고리</div><span class="section-label">카테고리</span><h1>트렌드 쇼핑</h1><p class="page-desc">부업 장비, 생활 개선 아이템, 구매 기준처럼 사기 전 비교할 글을 모읍니다.</p></div></section><section class="section category-page-section" style="padding-top:0"><div class="container"><section class="featured-post-band"><div class="featured-copy"><span class="section-label">대표 추천 글</span><h2><a href="/posts/sidehustle-gear-priority-v18">퇴근 후 부업 장비 우선순위 비교</a></h2><p>노트북, 마이크, 조명 중 무엇부터 준비할지 효과와 가격 부담으로 비교합니다.</p><a class="archive-cta" href="/posts/sidehustle-gear-priority-v18">대표 글 읽기 →</a></div><a class="featured-cover" href="/posts/sidehustle-gear-priority-v18"><img alt="퇴근 후 부업 장비 우선순위 비교 대표 이미지" class="featured-cover-img" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/></a></section><section class="category-series-box visual-category-series-box"><div class="category-series-box-head"><span class="section-label">읽는 순서</span><h2>구매 기준</h2><p>장비를 사기 전 우선순위부터 정리해보세요.</p></div><div class="category-series-visual-list"><a class="category-series-visual-card" href="/posts/sidehustle-gear-priority-v18"><span class="category-series-visual-thumb"><img alt="부업 장비 우선순위 대표 이미지" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/><span class="series-step">01</span></span><strong>부업 장비 우선순위</strong></a><a class="category-series-visual-card" href="/posts/ai-video-starter-check-v18"><span class="category-series-visual-thumb"><img alt="AI 영상 입문 장비 대표 이미지" decoding="async" loading="lazy" src="/assets/featured/ai-video-starter-check-v18.webp"/><span class="series-step">02</span></span><strong>AI 영상 입문 장비</strong></a></div></section><div class="category-list-head"><span class="section-label">전체 글</span><h2>트렌드 쇼핑 글 목록</h2></div><div class="blog-grid"><article class="blog-card"><a class="blog-card-image" href="/posts/sidehustle-gear-priority-v18"><img alt="퇴근 후 부업 장비 우선순위 비교 대표 이미지" class="post-card-cover" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/></a><div class="blog-card-body"><span class="pill">트렌드 쇼핑</span><h3><a href="/posts/sidehustle-gear-priority-v18">퇴근 후 부업 장비 우선순위 비교</a></h3><p>노트북, 마이크, 조명 중 무엇부터 준비할지 효과와 가격 부담으로 비교합니다.</p><div class="blog-meta"><time>2026-05-23</time><span>부업 · 장비</span></div></div></article><article class="blog-card"><a class="blog-card-image" href="/posts/ai-video-starter-check-v18"><img alt="AI 영상 제작 입문 장비 실사용 체크 대표 이미지" class="post-card-cover" decoding="async" loading="lazy" src="/assets/featured/ai-video-starter-check-v18.webp"/></a><div class="blog-card-body"><span class="pill">트렌드 쇼핑</span><h3><a href="/posts/ai-video-starter-check-v18">AI 영상 제작 입문 장비 실사용 체크</a></h3><p>AI 영상과 쇼츠 제작 입문자가 마이크, 조명, 저장장치를 어떤 순서로 볼지 정리합니다.</p><div class="blog-meta"><time>2026-05-23</time><span>AI영상 · 장비</span></div></div></article></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><p>© 2026 TrendFlow Blog. 생활을 가볍게 만드는 기록형 블로그.</p><div><a href="/archive.html">전체 글</a><a href="/search">검색</a><a href="/privacy.html">개인정보처리방침</a></div></div></footer><script defer="" src="/assets/theme.js?v=77"></script></body></html>
+</div></header><main><section class="subpage-hero"><div class="container narrow"><div class="breadcrumb"><a href="/">홈</a> / 카테고리</div><span class="section-label">카테고리</span><h1>트렌드 쇼핑</h1><p class="page-desc">부업 장비, 생활 개선 아이템, 구매 기준처럼 사기 전 비교할 글을 모읍니다.</p></div></section><section class="section category-page-section" style="padding-top:0"><div class="container"><section class="featured-post-band"><div class="featured-copy"><span class="section-label">대표 추천 글</span><h2><a href="/posts/sidehustle-gear-priority-v18">퇴근 후 부업 장비 우선순위 비교</a></h2><p>노트북, 마이크, 조명 중 무엇부터 준비할지 효과와 가격 부담으로 비교합니다.</p><a class="archive-cta" href="/posts/sidehustle-gear-priority-v18">대표 글 읽기 →</a></div><a class="featured-cover" href="/posts/sidehustle-gear-priority-v18"><img alt="퇴근 후 부업 장비 우선순위 비교 대표 이미지" class="featured-cover-img" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/></a></section><section class="category-series-box visual-category-series-box"><div class="category-series-box-head"><span class="section-label">읽는 순서</span><h2>구매 기준</h2><p>장비를 사기 전 우선순위부터 정리해보세요.</p></div><div class="category-series-visual-list"><a class="category-series-visual-card" href="/posts/sidehustle-gear-priority-v18"><span class="category-series-visual-thumb"><img alt="부업 장비 우선순위 대표 이미지" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/><span class="series-step">01</span></span><strong>부업 장비 우선순위</strong></a><a class="category-series-visual-card" href="/posts/ai-video-starter-check-v18"><span class="category-series-visual-thumb"><img alt="AI 영상 입문 장비 대표 이미지" decoding="async" loading="lazy" src="/assets/featured/ai-video-starter-check-v18.webp"/><span class="series-step">02</span></span><strong>AI 영상 입문 장비</strong></a></div></section><div class="category-list-head"><span class="section-label">전체 글</span><h2>트렌드 쇼핑 글 목록</h2></div><div class="blog-grid"><article class="blog-card"><a class="blog-card-image" href="/posts/sidehustle-gear-priority-v18"><img alt="퇴근 후 부업 장비 우선순위 비교 대표 이미지" class="post-card-cover" decoding="async" loading="lazy" src="/assets/featured/sidehustle-gear-priority-v18.webp"/></a><div class="blog-card-body"><span class="pill">트렌드 쇼핑</span><h3><a href="/posts/sidehustle-gear-priority-v18">퇴근 후 부업 장비 우선순위 비교</a></h3><p>노트북, 마이크, 조명 중 무엇부터 준비할지 효과와 가격 부담으로 비교합니다.</p><div class="blog-meta"><time>2026-05-23</time><span>부업 · 장비</span></div></div></article><article class="blog-card"><a class="blog-card-image" href="/posts/ai-video-starter-check-v18"><img alt="AI 영상 제작 입문 장비 실사용 체크 대표 이미지" class="post-card-cover" decoding="async" loading="lazy" src="/assets/featured/ai-video-starter-check-v18.webp"/></a><div class="blog-card-body"><span class="pill">트렌드 쇼핑</span><h3><a href="/posts/ai-video-starter-check-v18">AI 영상 제작 입문 장비 실사용 체크</a></h3><p>AI 영상과 쇼츠 제작 입문자가 마이크, 조명, 저장장치를 어떤 순서로 볼지 정리합니다.</p><div class="blog-meta"><time>2026-05-23</time><span>AI영상 · 장비</span></div></div></article></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><p>© 2026 TrendFlow Blog. 생활을 가볍게 만드는 기록형 블로그.</p><div><a href="/archive.html">전체 글</a><a href="/search">검색</a><a href="/privacy.html">개인정보처리방침</a></div></div></footer><script defer="" src="/assets/theme.js?v=78"></script></body></html>
