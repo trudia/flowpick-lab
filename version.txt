@@ -1,7 +1,7 @@
-v59-jekyll-markdown-blog-2026-05-23
-site-mode=jekyll-markdown-blog
-future-post-update=add-_posts-md-and-assets-only
-layouts=enabled
-includes=enabled
-categories-liquid=enabled
-search-liquid=enabled
+v60-static-blog-stable-2026-05-23
+site-mode=static-blog-stable
+jekyll-build=not-required
+nojekyll=enabled
+posts=11
+categories=4
+new-ai-posts=2
