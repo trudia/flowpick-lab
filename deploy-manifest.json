@@ -1,0 +1,17 @@
+{
+  "version": "v47-automation-hardened-2026-05-23",
+  "base": "trendflow_site_v46_deploy_automation_ready.zip",
+  "created_at": "2026-05-23T04:26:22",
+  "added_tools": [
+    "tools/deploy-latest.ps1",
+    "tools/deploy-latest.bat",
+    "tools/check-live-version.ps1",
+    "deploy-latest.bat"
+  ],
+  "kept_tools": [
+    "tools/deploy-update.ps1",
+    "tools/deploy-update.bat",
+    "tools/verify-site.ps1",
+    "tools/restore-backup.ps1"
+  ]
+}

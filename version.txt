@@ -1,5 +1,7 @@
-v46-deploy-automation-ready-2026-05-23
-base=trendflow_site_v45_featured_replace_ui_refine.zip
-deploy-automation=enabled
-tools=6
+v48-download-watcher-automation-2026-05-23
+base=trendflow_site_v47_automation_hardened.zip
+download-folder-watcher=enabled
+scheduled-task-installer=enabled
+tool-files=12
+total-raster-assets=8
 missing-img-refs=0
