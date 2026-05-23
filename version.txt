@@ -1,6 +1,7 @@
-v61-post-images-added-2026-05-23
+v62-expanded-article-content-2026-05-23
 site-mode=static-blog-stable
 jekyll-build=not-required
 nojekyll=enabled
-feature=added-images-to-posts-without-photos
-updated-post-images=6
+expanded-posts=11
+categories=4
+content-update=expanded-article-body
