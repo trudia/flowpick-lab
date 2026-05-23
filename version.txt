@@ -1,2 +1,1 @@
-TrendFlow V80 - add AI overload brain fatigue article while preserving V79 UI
-Generated: 2026-05-24
+v82-ai-overload-article-feature-layout-2026-05-24
