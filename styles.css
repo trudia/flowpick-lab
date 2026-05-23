@@ -735,3 +735,10 @@
 .search-help-box strong{display:block;margin-bottom:8px;font-size:16px}
 .search-help-box p{margin:0;color:#475569;line-height:1.7}
 img{max-width:100%}
+
+
+/* v55 route sync stabilization */
+.clean-list-card .list-body h3::before{content:none!important}
+.category-hero-card{isolation:isolate}
+.category-hero-image.no-crop{object-fit:contain;background:#f8fafc}
+.route-sync-note{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;color:#475569}

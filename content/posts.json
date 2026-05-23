@@ -1,5 +1,5 @@
 {
-  "version": "v54-no-param-watcher-fix-2026-05-23",
+  "version": "v56-backup-validation-skip-fix-2026-05-23",
   "posts": [
     {
       "slug": "affiliate-product-bundle-v18.html",
@@ -1823,5 +1823,7 @@
   "deployment_fix": "V49: clean URL 동기화. /categories/<slug>, /posts/<slug>, /search 경로에 index.html 복제.",
   "watcher_fix": "V54: watch-downloads.ps1 no longer uses param() block; start-watcher.bat passes settings via environment variables.",
   "seo_performance_sync": "V51: meta description/canonical/OG tags, image dimensions, sitemap.xml, robots.txt, search help panel",
-  "deploy_cleanup_fix": "V52: deploy-update removes stale root html files and ignores internal .trendflow backup/log/state folders during validation."
+  "deploy_cleanup_fix": "V52: deploy-update removes stale root html files and ignores internal .trendflow backup/log/state folders during validation.",
+  "route_sync_stabilization": "V55: category pages regenerated, clean URLs synced, root stale category aliases redirect to canonical category routes.",
+  "deploy_validation_fix": "V56: robust skip logic for .trendflow-backups and other internal folders during image reference validation."
 }
