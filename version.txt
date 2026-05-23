@@ -1,3 +1,2 @@
-TrendFlow V78 - force compact recommendation series thumbnails - 2026-05-24
-styles.css?v=78
-theme.js?v=78
+TrendFlow V79 - recent posts title-only list + larger pamphlet recommendation series
+Generated: 2026-05-24
