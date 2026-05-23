@@ -80,3 +80,18 @@
 .sidebar-card{transition:transform .18s ease, box-shadow .18s ease}
 .sidebar-card:hover{transform:translateY(-1px)}
 .blog-card h3 a:hover,.related-card strong:hover{color:#2563eb}
+
+
+/* v68 stability, series, archive fallback */
+.series-box{margin:42px 0 0;padding:26px;border:1px solid #dbe3ef;border-radius:28px;background:linear-gradient(180deg,#ffffff,#f8fbff);box-shadow:0 12px 30px rgba(15,23,42,.05)}
+.series-head h2{margin:6px 0 8px;font-size:26px;letter-spacing:-.04em}
+.series-head p{margin:0 0 18px;color:#64748b;line-height:1.65}
+.series-list{display:grid;gap:10px}
+.series-item{display:grid;grid-template-columns:88px minmax(0,1fr);align-items:center;gap:12px;padding:14px 16px;border:1px solid #e2e8f0;border-radius:18px;background:#fff;color:#0f172a}
+.series-item:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(15,23,42,.08)}
+.series-item span{font-size:12px;font-weight:900;color:#2563eb;background:#eff6ff;border-radius:999px;padding:7px 10px;text-align:center}
+.series-item strong{font-size:16px;line-height:1.4}
+.series-item.active{border-color:#2563eb;background:#eff6ff}
+.series-item.active span{background:#2563eb;color:#fff}
+.archive-controls + .blog-grid:empty::before{content:'글 목록을 불러오는 중입니다.';display:block;color:#64748b}
+@media(max-width:760px){.series-item{grid-template-columns:1fr}.series-item span{width:max-content}.series-box{padding:20px}}

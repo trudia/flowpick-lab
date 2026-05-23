@@ -1,7 +1,11 @@
-v67-ai-time-saving-routine-patch-2026-05-23
+v68-stability-series-archive-patch-2026-05-23
 patch-only=true
 base=trendflow_site_v65_ai_answer_prompt_post.zip + v66 patch
+includes-v67-post=true
 new-post=ai-time-saving-routine
-new-image=assets/featured/ai-time-saving-routine.webp
+archive-static-fallback=true
+sidebar-latest-excludes-current=true
+ai-series-box=true
+home-copy=stable-generic
 posts=13
 changed-files-only-package=true
