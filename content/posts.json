@@ -104,19 +104,6 @@
     "date": "2026-05-23"
   },
   {
-    "slug": "prompt-library-system-v18",
-    "title": "반복 작업을 줄이는 프롬프트 라이브러리 구축법",
-    "category": "ai-productivity",
-    "summary": "자주 쓰는 요청을 프롬프트 라이브러리로 정리해 초안 작성 시간을 줄이는 방법입니다.",
-    "image": "/assets/featured/prompt-library-system-v18.webp",
-    "tags": [
-      "프롬프트",
-      "AI",
-      "자동화"
-    ],
-    "date": "2026-05-23"
-  },
-  {
     "slug": "cable-management-review-v18",
     "title": "케이블 정리 전후 체감 차이 리뷰",
     "category": "minimal-space",

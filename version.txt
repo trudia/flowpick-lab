@@ -1,7 +1,12 @@
-v62-expanded-article-content-2026-05-23
+v63-related-archive-friendly-update-2026-05-23
 site-mode=static-blog-stable
 jekyll-build=not-required
 nojekyll=enabled
-expanded-posts=11
+home-latest-limit=6
+archive-page=enabled
+archive-filter=enabled
+related-card-ui=enabled
+duplicate-prompt-post=redirected
+friendly-writing=core-ai-posts
+posts=10
 categories=4
-content-update=expanded-article-body
