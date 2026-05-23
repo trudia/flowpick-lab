@@ -1,9 +1,7 @@
-v52-deploy-cleanup-fix-2026-05-23
-base=trendflow_site_v51_seo_performance_sync.zip
-deploy-cleanup-fix=enabled
-stale-root-html-cleanup=enabled
-internal-folder-validation-skip=enabled
-ascii-safe-deploy=enabled
+v54-no-param-watcher-fix-2026-05-23
+base=trendflow_site_v52_deploy_cleanup_fix.zip
+watcher-param-block=removed
+env-var-watcher=enabled
 tool-files=12
 total-raster-assets=8
 missing-img-refs=0

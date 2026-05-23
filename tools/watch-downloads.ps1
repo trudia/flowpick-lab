@@ -1,12 +1,27 @@
-﻿﻿﻿param(
-  [string]$RepoPath = (Resolve-Path ".").Path,
-  [string]$DownloadsPath = "$env:USERPROFILE\Downloads",
-  [int]$PollSeconds = 5,
-  [switch]$AutoApprove,
-  [switch]$NoPush
-)
-
 $ErrorActionPreference = "Stop"
+
+# No param() block in this file.
+# Values are read from environment variables set by start-watcher.bat.
+if ([string]::IsNullOrWhiteSpace($env:TRENDFLOW_REPOPATH)) {
+  $RepoPath = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+} else {
+  $RepoPath = $env:TRENDFLOW_REPOPATH
+}
+
+if ([string]::IsNullOrWhiteSpace($env:TRENDFLOW_DOWNLOADS)) {
+  $DownloadsPath = Join-Path $env:USERPROFILE "Downloads"
+} else {
+  $DownloadsPath = $env:TRENDFLOW_DOWNLOADS
+}
+
+if ([string]::IsNullOrWhiteSpace($env:TRENDFLOW_POLL_SECONDS)) {
+  $PollSeconds = 5
+} else {
+  $PollSeconds = [int]$env:TRENDFLOW_POLL_SECONDS
+}
+
+$AutoApprove = ($env:TRENDFLOW_AUTOAPPROVE -eq "1")
+$NoPush = ($env:TRENDFLOW_NOPUSH -eq "1")
 
 function Write-Log($Message, $Color = "Gray") {
   $Line = "[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $Message

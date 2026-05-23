@@ -1,31 +1,18 @@
-﻿param(
-  [string]$RepoPath = (Resolve-Path ".").Path,
-  [string]$TaskName = "TrendFlow Download Watcher",
-  [switch]$AutoApprove,
-  [switch]$NoPush
-)
-
 $ErrorActionPreference = "Stop"
 
-$RepoPath = [System.IO.Path]::GetFullPath($RepoPath)
-$watchScript = Join-Path $RepoPath "tools\watch-downloads.ps1"
+$RepoPath = (Resolve-Path ".").Path
+$TaskName = "TrendFlow Download Watcher"
+$BatPath = Join-Path $RepoPath "tools\start-watcher.bat"
 
-if (-not (Test-Path -LiteralPath $watchScript)) {
-  Write-Host "watch-downloads.ps1을 찾지 못했습니다: $watchScript" -ForegroundColor Red
+if (-not (Test-Path -LiteralPath $BatPath)) {
+  Write-Host "start-watcher.bat was not found: $BatPath" -ForegroundColor Red
   exit 1
 }
 
-$args = "-NoProfile -ExecutionPolicy Bypass -File `"$watchScript`" -RepoPath `"$RepoPath`""
-if ($AutoApprove) { $args += " -AutoApprove" }
-if ($NoPush) { $args += " -NoPush" }
+$Action = New-ScheduledTaskAction -Execute $BatPath
+$Trigger = New-ScheduledTaskTrigger -AtLogOn
+$Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -MultipleInstances IgnoreNew
 
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $args
-$trigger = New-ScheduledTaskTrigger -AtLogOn
-$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -MultipleInstances IgnoreNew -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)
+Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Settings $Settings -Description "TrendFlow update ZIP download watcher" -Force | Out-Null
 
-Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings -Description "TrendFlow 업데이트 ZIP 자동 감시 배포" -Force | Out-Null
-
-Write-Host "작업 스케줄러 등록 완료: $TaskName" -ForegroundColor Green
-Write-Host "다음 로그인부터 자동 실행됩니다." -ForegroundColor Yellow
-Write-Host "지금 바로 시작하려면:" -ForegroundColor Cyan
-Write-Host "Start-ScheduledTask -TaskName `"$TaskName`"" -ForegroundColor Cyan
+Write-Host "Scheduled task installed: $TaskName" -ForegroundColor Green
