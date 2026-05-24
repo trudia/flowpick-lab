@@ -1,1 +1,1 @@
-v105-google-form-subscribe-link-patch-2026-05-24
+v106-short-subscribe-box-patch-2026-05-24
