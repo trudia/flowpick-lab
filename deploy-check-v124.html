@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>deploy check v124</title>
+  <!-- Google tag (gtag.js) - TrendFlow GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-276JPHFL6T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-276JPHFL6T');
+</script>
+</head>
+<body style="font-family:sans-serif;padding:40px" data-version="v124-ga4-tracking-patch-2026-05-24">
+  <h1>TrendFlow deploy check v124</h1>
+  <p>v124-ga4-tracking-patch-2026-05-24</p>
+  <p>GA4 측정 ID: <strong>G-276JPHFL6T</strong></p>
+  <p><a href="https://forms.gle/DodznDpQriQkS18w7" data-track="subscribe_form_click" target="_blank" rel="noopener">체크리스트 테스트 클릭</a></p>
+  <!-- TrendFlow click tracking -->
+<script id="trendflow-ga4-click-tracking">
+(function () {
+  function sendTrendFlowEvent(target) {
+    var eventName = target.getAttribute('data-track');
+    if (!eventName) return;
+
+    var payload = {
+      link_url: target.href || '',
+      link_text: (target.innerText || target.getAttribute('aria-label') || '').trim(),
+      page_path: window.location.pathname,
+      target_slug: target.getAttribute('data-target') || '',
+      card_label: target.getAttribute('data-card') || '',
+      outbound: !!(target.hostname && target.hostname !== window.location.hostname)
+    };
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, payload);
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: eventName,
+      trendflow: payload
+    });
+  }
+
+  document.addEventListener('click', function (event) {
+    var target = event.target.closest('[data-track]');
+    if (!target) return;
+    sendTrendFlowEvent(target);
+  });
+})();
+</script>
+</body>
+</html>
