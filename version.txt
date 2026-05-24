@@ -1,1 +1,1 @@
-v124-ga4-tracking-patch-2026-05-24
+v125-minimal-space-ga4-patch-2026-05-24
