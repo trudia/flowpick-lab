@@ -1,1 +1,1 @@
-v104-subscribe-privacy-basic-patch-2026-05-24
+v105-google-form-subscribe-link-patch-2026-05-24
