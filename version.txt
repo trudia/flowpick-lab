@@ -1,1 +1,1 @@
-v107-cordless-vacuum-conversion-ui-patch-2026-05-24
+v108-cordless-vacuum-link-alignment-patch-2026-05-24
