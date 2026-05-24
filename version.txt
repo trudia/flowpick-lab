@@ -1,1 +1,1 @@
-v106-short-subscribe-box-patch-2026-05-24
+v107-cordless-vacuum-conversion-ui-patch-2026-05-24
