@@ -1,0 +1,108 @@
+{
+  "version": 131,
+  "date": "2026-05-26",
+  "slug": "example-trend-shopping-guide",
+  "category": "trend-shopping",
+  "title": "Example shopping guide title",
+  "seoTitle": "Example shopping guide title | TrendFlow",
+  "description": "Write a 120-character search and social description here.",
+  "featuredImage": "/assets/featured/example-trend-shopping-guide.webp",
+  "mainKeyword": "main keyword",
+  "subKeywords": [
+    "supporting keyword 1",
+    "supporting keyword 2",
+    "supporting keyword 3"
+  ],
+  "searchIntent": "Readers comparing purchase criteria before buying",
+  "postType": "problem-solving",
+  "productGroup": "example_product_group",
+  "affiliateNotice": "Use the standard Coupang Partners disclosure in the published post.",
+  "links": [
+    {
+      "position": "product_link_1",
+      "label": "Situation-based link label",
+      "type": "Product type",
+      "url": "COUPANG_LINK_FROM_USER",
+      "recommendedFor": "Reader situation for this link",
+      "criteria": [
+        "check criterion 1",
+        "check criterion 2",
+        "check criterion 3"
+      ],
+      "beforeBuy": "Final thing to check before buying"
+    },
+    {
+      "position": "product_link_2",
+      "label": "Situation-based link label",
+      "type": "Product type",
+      "url": "COUPANG_LINK_FROM_USER",
+      "recommendedFor": "Reader situation for this link",
+      "criteria": [
+        "check criterion 1",
+        "check criterion 2",
+        "check criterion 3"
+      ],
+      "beforeBuy": "Final thing to check before buying"
+    },
+    {
+      "position": "product_link_3",
+      "label": "Situation-based link label",
+      "type": "Product type",
+      "url": "COUPANG_LINK_FROM_USER",
+      "recommendedFor": "Reader situation for this link",
+      "criteria": [
+        "check criterion 1",
+        "check criterion 2",
+        "check criterion 3"
+      ],
+      "beforeBuy": "Final thing to check before buying"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Body section 1",
+      "points": [
+        "key explanation 1",
+        "key explanation 2"
+      ]
+    },
+    {
+      "heading": "Body section 2",
+      "points": [
+        "key explanation 1",
+        "key explanation 2"
+      ]
+    },
+    {
+      "heading": "Body section 3",
+      "points": [
+        "key explanation 1",
+        "key explanation 2"
+      ]
+    },
+    {
+      "heading": "Body section 4",
+      "points": [
+        "key explanation 1",
+        "key explanation 2"
+      ]
+    },
+    {
+      "heading": "Body section 5",
+      "points": [
+        "key explanation 1",
+        "key explanation 2"
+      ]
+    }
+  ],
+  "checklist": [
+    "buying check 1",
+    "buying check 2",
+    "buying check 3",
+    "buying check 4"
+  ],
+  "onePick": {
+    "summary": "Explain the safest default choice for most readers.",
+    "primaryPosition": "product_link_1"
+  }
+}
