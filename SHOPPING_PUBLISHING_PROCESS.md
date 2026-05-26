@@ -2,6 +2,8 @@
 
 This is the operating playbook for publishing TrendFlow shopping guide posts to the production site.
 
+For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OPERATION_AUTOMATION_PROCESS.md`.
+
 ## Production Targets
 
 - Site: https://trend.it.kr/
