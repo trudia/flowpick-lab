@@ -3,7 +3,7 @@ title: "AI 입문자는 무엇부터 물어봐야 할까?"
 date: 2026-05-26
 category: ai-productivity
 summary: "AI를 처음 쓸 때는 도구보다 질문 순서가 중요합니다. 목적, 상황, 결과물 형태를 정하고 작은 요청부터 시작하는 입문 루틴을 정리합니다."
-image: "/assets/featured/ai-answer-prompt-question-method.webp"
+image: "/assets/featured/ai-first-prompt-routine.jpg"
 tags: [AI, AI입문, 프롬프트, 질문법, 생산성]
 ---
 

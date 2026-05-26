@@ -3,7 +3,7 @@ title: "공간 정리는 어디서부터 시작해야 할까?"
 date: 2026-05-26
 category: minimal-space
 summary: "공간 정리는 물건을 전부 버리는 일이 아니라 자주 쓰는 자리와 시야 자극을 줄이는 일입니다. 작은 방에서도 바로 시작할 수 있는 순서를 정리합니다."
-image: "/assets/featured/home-does-not-feel-restful-after-work.webp"
+image: "/assets/featured/space-reset-small-room-routine.jpg"
 tags: [공간정리, 미니멀, 원룸, 정리루틴, 생활습관]
 ---
 

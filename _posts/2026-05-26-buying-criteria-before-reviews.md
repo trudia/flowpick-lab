@@ -3,7 +3,7 @@ title: "구매 전에는 무엇부터 비교해야 할까?"
 date: 2026-05-26
 category: trend-shopping
 summary: "좋은 제품을 고르려면 후기보다 내 사용 상황, 불편 비용, 유지 비용을 먼저 봐야 합니다. 충동구매를 줄이는 구매 기준 루틴을 정리합니다."
-image: "/assets/featured/review-fatigue-cannot-decide.webp"
+image: "/assets/featured/buying-criteria-before-reviews.jpg"
 tags: [구매기준, 소비습관, 리뷰피로, 비교루틴, 쇼핑팁]
 ---
 
