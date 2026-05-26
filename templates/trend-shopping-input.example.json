@@ -15,6 +15,14 @@
   ],
   "searchIntent": "Readers comparing purchase criteria before buying",
   "postType": "problem-solving",
+  "editorialStyle": {
+    "platformFeel": "Friendly information curation platform",
+    "targetLengthKoreanChars": "2500-3500",
+    "structure": "soft PASONA",
+    "paragraphRule": "short mobile-friendly paragraphs",
+    "featuredImageRule": "topic-matched image, not copied from product pages",
+    "shortFormAngle": "One hook and three beats for Shorts/Reels reuse"
+  },
   "productGroup": "example_product_group",
   "affiliateNotice": "Use the standard Coupang Partners disclosure in the published post.",
   "links": [
@@ -24,6 +32,9 @@
       "type": "Product type",
       "url": "COUPANG_LINK_FROM_USER",
       "recommendedFor": "Reader situation for this link",
+      "valueForMoney": "Why this type is worth considering for the price range",
+      "tradeoffs": "What the reader should accept or double-check",
+      "skipIf": "Reader situation where this product type is not a good fit",
       "criteria": [
         "check criterion 1",
         "check criterion 2",
@@ -37,6 +48,9 @@
       "type": "Product type",
       "url": "COUPANG_LINK_FROM_USER",
       "recommendedFor": "Reader situation for this link",
+      "valueForMoney": "Why this type is worth considering for the price range",
+      "tradeoffs": "What the reader should accept or double-check",
+      "skipIf": "Reader situation where this product type is not a good fit",
       "criteria": [
         "check criterion 1",
         "check criterion 2",
@@ -50,6 +64,9 @@
       "type": "Product type",
       "url": "COUPANG_LINK_FROM_USER",
       "recommendedFor": "Reader situation for this link",
+      "valueForMoney": "Why this type is worth considering for the price range",
+      "tradeoffs": "What the reader should accept or double-check",
+      "skipIf": "Reader situation where this product type is not a good fit",
       "criteria": [
         "check criterion 1",
         "check criterion 2",

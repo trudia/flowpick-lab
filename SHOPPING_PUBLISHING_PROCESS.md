@@ -23,6 +23,8 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Post type: problem-solving, comparison, mistake-prevention, seasonal, or set-based
    - Required Coupang Partners links, usually 3 to 5
    - Expected CTA structure
+   - Expected reader benefit and one practical takeaway
+   - Short-form video angle, if the topic can become Shorts/Reels content
 
 2. Ask the user for Coupang Partners links.
    - Only use links the user provides.
@@ -39,6 +41,8 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - "딱 하나만 고른다면" CTA
    - Previous/next article links
    - Recent posts and recommended series sidebar
+   - Topic-matched featured image
+   - Reader-friendly body length, usually 2,500 to 3,500 Korean characters
 
 4. Sync every public surface.
    - `_posts/YYYY-MM-DD-slug.md`
@@ -99,7 +103,13 @@ data-position="product_link_1"
 
 ## Writing Rules
 
+- Keep the tone close to an information curation platform: useful, warm, practical, and not too stiff.
+- Use a soft PASONA flow: problem, empathy, practical solution, selection 기준, narrowed recommendation, and small next action.
+- Keep paragraphs short enough to read comfortably on mobile.
 - Prefer purchase criteria, failure prevention, and situation-based comparison.
+- For every linked product, explain the practical fit: who it helps, what problem it solves, value-for-money, likely tradeoffs, and who should skip it.
+- Do not connect a product only because it can be monetized. If the product does not clearly help the reader, leave it out.
+- Consider future Shorts/Reels reuse. A good shopping guide should contain at least one simple video-friendly angle such as "3 checks before buying", "common mistake", or "which one fits your room".
 - Avoid overclaims such as "무조건 추천", "최저가 보장", "효과 보장", "1위 확정", and "이거 사면 실패 없음".
 - Do not copy product detail page images, reviews, or sales copy.
 - Do not store Coupang account credentials, passwords, access tokens, or private login information in the repo.

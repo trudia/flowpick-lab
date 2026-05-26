@@ -14,6 +14,37 @@ TrendFlow is operated as a staged content system, not as a simple daily posting 
   - 공간 정리 / 공간 & 미니멀
   - 구매 기준 / 트렌드 쇼핑
 
+## Editorial Identity
+
+TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
+
+Default writing standard:
+- Write around 2,500 to 3,500 Korean characters for normal articles.
+- Keep paragraphs short, usually 2 to 4 sentences.
+- Use clear subheadings, checklists, comparison blocks, and "what to do next" guidance.
+- Prefer practical examples, everyday situations, and reader-friendly explanations.
+- When referencing other sites or current materials, use them only for research. Do not copy sentences, article structure, reviews, images, product detail text, or sales claims.
+- Every post should have one concrete takeaway the reader can use immediately.
+
+Default article structure follows a soft PASONA flow:
+- Problem: name the reader's actual situation or friction.
+- Affinity / Agitation: show why the problem matters without exaggerating fear.
+- Solution: explain the practical method, 기준, 루틴, or checklist.
+- Offer: suggest the most useful next step, article, checklist, or product-selection 기준.
+- Narrowing: help the reader choose by situation, budget, space, skill level, or urgency.
+- Action: end with a small action, not a pushy command.
+
+Image standard:
+- Use a featured image that matches the exact article topic.
+- Avoid reusing the same image across unrelated posts.
+- Avoid copied product-page images, review images, and irrelevant stock-like images.
+- If a generated image is used, make it support the topic clearly and keep it believable.
+
+Short-form reuse:
+- For each new article, keep one Shorts/Reels angle in mind: hook, 3 short beats, and a simple ending.
+- Prefer article sections that can become a 20 to 40 second video: mistake list, checklist, before/after routine, or "one thing to check before buying."
+- Shopping articles should naturally support a later short-form script, but the article must remain useful even without a video.
+
 ## Stage 1. Foundation Build
 
 Recommended period: month 0 to month 3.
@@ -75,6 +106,8 @@ Automation focus:
 - Connect buying-criteria posts to shopping guides.
 - Keep shopping posts focused on situation-based product choice, not aggressive recommendation.
 - Review product cards for correct affiliate attributes.
+- Evaluate whether linked products are actually helpful for the reader's situation, value for money, expected use case, maintenance burden, size, noise, durability, and replacement cycle.
+- Do not recommend a product group just because an affiliate link is available.
 
 ## Stage 4. Long-Term Media Operation
 
@@ -107,6 +140,8 @@ Allowed:
 - Use only links provided by the user.
 - Validate every provided affiliate link for required attributes.
 - Insert affiliate disclosure and GA4 tracking attributes.
+- Explain why each product type is useful, who it fits, and who should skip it.
+- Keep value-for-money and practical fit more important than high-price positioning.
 
 Not allowed unless the user later provides an official, approved API workflow:
 - Logging into Coupang Partners automatically.
@@ -158,6 +193,10 @@ Before pushing:
 - Sitemap is updated when a URL is new.
 - `version.txt` is updated.
 - `deploy-check-v###.html` is added.
+- Article body follows the 2,500 to 3,500 Korean character target unless the topic clearly needs a shorter update or longer guide.
+- Paragraphs are easy to scan on mobile.
+- Featured image matches the article topic and is not duplicated from a mismatched article.
+- A short-form reuse angle is recorded when useful.
 - Affiliate posts contain disclosure and link attributes.
 - No private credentials are committed.
 
@@ -168,4 +207,3 @@ After pushing:
 - Category page opens.
 - Sitemap opens.
 - Search engine submission is done when a new URL is published.
-
