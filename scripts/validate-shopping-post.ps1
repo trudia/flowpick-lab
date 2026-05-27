@@ -115,16 +115,34 @@ if (Test-Path -LiteralPath $postHtmlPath) {
   }
 
   $requiredUiMarkers = @(
+    "container feature-article-shell",
+    "feature-breadcrumb",
+    "feature-hero-img",
+    "feature-insight-box affiliate-notice-box",
     "quick-reco-v107",
     "tf-checklist-v116",
     "product-link-guide-v102",
     "product-link-card-v102",
-    "one-pick-v107"
+    "one-pick-v107",
+    "feature-side-card feature-subscribe-card enhanced-subscribe-v104"
   )
 
   foreach ($marker in $requiredUiMarkers) {
     if ($html -notlike "*$marker*") {
       Add-Failure "post html is missing UI marker '$marker'"
+    }
+  }
+
+  $forbiddenUiMarkers = @(
+    "container feature-article-layout",
+    "feature-article-kicker",
+    "feature-hero-figure",
+    "feature-affiliate-notice"
+  )
+
+  foreach ($marker in $forbiddenUiMarkers) {
+    if ($html -like "*$marker*") {
+      Add-Failure "post html uses non-standard shopping UI marker '$marker'"
     }
   }
 

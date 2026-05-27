@@ -20,6 +20,15 @@ API product data helps shortlist candidates, but final shopping content must sti
 - Avoid copied product-page text, reviews, images, and exaggerated claims.
 - Keep every affiliate link disclosure, `sponsored` relation, and GA4 tracking attribute.
 
+## Publishing UI Guard
+
+Shopping posts must reuse the existing TrendFlow shopping article shell. Do not introduce a new article wrapper just because a new API workflow is used.
+
+- Use `container feature-article-shell`, `feature-breadcrumb`, and `feature-hero-img`.
+- Use the existing affiliate notice block: `feature-insight-box affiliate-notice-box`.
+- Keep the existing shopping modules: `quick-reco-v107`, `tf-checklist-v116`, `product-link-guide-v102`, `product-link-card-v102`, and `one-pick-v107`.
+- Run `scripts/validate-shopping-post.ps1` before committing. The validator now fails when a shopping post uses non-standard markers such as `feature-article-layout`, `feature-article-kicker`, `feature-hero-figure`, or `feature-affiliate-notice`.
+
 ## API Notes
 
 - Product search can return `link.coupang.com` partner URLs that can be used directly after editorial review.

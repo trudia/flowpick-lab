@@ -2,6 +2,19 @@
   "topic": "shopping guide topic",
   "keyword": "product search keyword",
   "apiMode": "Coupang Partners API",
+  "uiTemplate": {
+    "articleShell": "container feature-article-shell",
+    "breadcrumb": "feature-breadcrumb",
+    "heroImage": "feature-hero-img",
+    "affiliateNotice": "feature-insight-box affiliate-notice-box",
+    "requiredModules": [
+      "quick-reco-v107",
+      "tf-checklist-v116",
+      "product-link-guide-v102",
+      "product-link-card-v102",
+      "one-pick-v107"
+    ]
+  },
   "candidateReviewRules": [
     "Use API data as research input, not final article copy.",
     "Select products by reader fit, value-for-money, tradeoffs, and skip-if criteria.",
