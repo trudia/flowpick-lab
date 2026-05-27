@@ -26,10 +26,14 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Expected reader benefit and one practical takeaway
    - Short-form video angle, if the topic can become Shorts/Reels content
 
-2. Ask the user for Coupang Partners links.
-   - Only use links the user provides.
-   - Do not generate, guess, or scrape affiliate links.
+2. Prepare Coupang Partners links.
+   - If the official API credentials are available, search candidate products with `scripts/coupang-partners-api.ps1`.
+   - The product search API can return `link.coupang.com` partner URLs that may be used directly after editorial review.
+   - Convert normal `www.coupang.com` product URLs with the official deep link API when needed.
+   - If API credentials are unavailable or the API call fails, ask the user for 3 to 5 Coupang Partners links.
+   - Never generate, guess, scrape, or fabricate affiliate links.
    - Keep product choices type-based rather than brand-locked when possible.
+   - Do not copy product detail page images, reviews, or sales copy.
 
 3. Create the article using the existing `trend-shopping` UI.
    - Affiliate notice near the top
@@ -79,6 +83,31 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Submit the new URL and sitemap in Google Search Console, Naver Search Advisor, and Bing Webmaster Tools.
 
 ## Required Affiliate Rules
+
+## Coupang Partners API Helper
+
+Use the local helper only with environment variables. Never put access keys, secret keys, or generated private working files in the repository.
+
+Required variables:
+
+```text
+COUPANG_PARTNERS_ACCESS_KEY
+COUPANG_PARTNERS_SECRET_KEY
+COUPANG_PARTNERS_SUB_ID   optional
+```
+
+The helper also reads a local `.env` file in the TrendFlow workspace. `.env` is ignored by git and must never be committed.
+
+Commands:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Test
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Search -Keyword "desk lamp" -Limit 5 -OutputPath ".trendflow-coupang\desk-lamp.json"
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Deeplink -Url "https://www.coupang.com/..." -OutputPath ".trendflow-coupang\deeplink.json"
+```
+
+API product data is research input, not final copy. Product names, prices, and availability can change, so the article should use careful wording and focus on selection criteria.
+If the search API returns a `link.coupang.com` product URL, do not send that URL back through the deep link API. Use it as the affiliate URL after checking reader fit. Use deep link conversion for normal Coupang product URLs.
 
 - Required notice:
 

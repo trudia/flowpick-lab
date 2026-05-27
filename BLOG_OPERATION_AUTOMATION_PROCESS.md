@@ -132,24 +132,43 @@ Automation focus:
 
 ## Coupang Link Automation Policy
 
-Codex must not create, guess, scrape, or fabricate Coupang Partners links.
+Codex must not guess, scrape, or fabricate Coupang Partners links. When the user has enabled the official Coupang Partners API and local environment variables are available, Codex may use the approved API workflow below.
 
 Allowed:
 - Analyze the topic and identify product groups.
-- Prepare a clear request for 3 to 5 Coupang Partners links.
-- Use only links provided by the user.
+- Search candidate products through the official Coupang Partners API.
+- Use product search API partner URLs directly when they are already `link.coupang.com`.
+- Convert normal `www.coupang.com` product URLs through the official deep link API when needed.
+- Use API-generated Coupang Partners links or links provided by the user.
 - Validate every provided affiliate link for required attributes.
 - Insert affiliate disclosure and GA4 tracking attributes.
 - Explain why each product type is useful, who it fits, and who should skip it.
 - Keep value-for-money and practical fit more important than high-price positioning.
 
-Not allowed unless the user later provides an official, approved API workflow:
+API environment variables:
+
+```text
+COUPANG_PARTNERS_ACCESS_KEY
+COUPANG_PARTNERS_SECRET_KEY
+COUPANG_PARTNERS_SUB_ID   optional
+```
+
+If the Codex app cannot see newly created environment variables yet, use a local `.env` file in the TrendFlow workspace with the same names. `.env` is ignored by git.
+
+Local API helper:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Test
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Search -Keyword "desk lamp" -Limit 5 -OutputPath ".trendflow-coupang\desk-lamp.json"
+powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Deeplink -Url "https://www.coupang.com/..." -OutputPath ".trendflow-coupang\deeplink.json"
+```
+
+Not allowed:
 - Logging into Coupang Partners automatically.
-- Creating affiliate links from normal Coupang product URLs.
 - Scraping product pages, reviews, images, or sales copy.
 - Storing Coupang account credentials or private tokens in the repository.
 
-If a shopping guide needs links, Codex should stop after preparing the article plan and ask the user for links in this format:
+If API credentials are not available or the API call fails, Codex should stop after preparing the article plan and ask the user for links in this format:
 
 ```text
 주제:

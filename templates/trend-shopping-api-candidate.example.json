@@ -1,0 +1,38 @@
+{
+  "topic": "shopping guide topic",
+  "keyword": "product search keyword",
+  "apiMode": "Coupang Partners API",
+  "candidateReviewRules": [
+    "Use API data as research input, not final article copy.",
+    "Select products by reader fit, value-for-money, tradeoffs, and skip-if criteria.",
+    "Do not copy product detail page text, reviews, or product-page images.",
+    "Mention price or delivery details only when checked near publishing time and with non-permanent wording."
+  ],
+  "selectedProducts": [
+    {
+      "position": "product_link_1",
+      "productGroup": "example_product_group",
+      "sourceProductUrl": "https://www.coupang.com/...",
+      "partnersUrl": "https://link.coupang.com/...",
+      "label": "Situation-based CTA label",
+      "recommendedFor": "Reader situation where this product is useful",
+      "valueForMoney": "Why this is reasonable for the likely price range",
+      "tradeoffs": "What to double-check before buying",
+      "skipIf": "Reader situation where this is not a good fit",
+      "criteria": [
+        "check criterion 1",
+        "check criterion 2",
+        "check criterion 3"
+      ]
+    }
+  ],
+  "shortFormAngle": {
+    "hook": "One short hook for Shorts/Reels",
+    "beats": [
+      "Scene 1",
+      "Scene 2",
+      "Scene 3"
+    ],
+    "cta": "Small ending action"
+  }
+}
