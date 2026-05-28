@@ -21,9 +21,11 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Search intent
    - Recommended category: `trend-shopping`
    - Post type: problem-solving, comparison, mistake-prevention, seasonal, or set-based
+   - Trend value: current trigger, evergreen value, and whether the topic will still help readers later
    - Required Coupang Partners links, usually 3 to 5
    - Expected CTA structure
    - Expected reader benefit and one practical takeaway
+   - Who the product helps, who should skip it, and what future-use value it has
    - Short-form video angle, if the topic can become Shorts/Reels content
 
 2. Prepare Coupang Partners links.
@@ -34,6 +36,7 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Never generate, guess, scrape, or fabricate affiliate links.
    - Keep product choices type-based rather than brand-locked when possible.
    - Do not copy product detail page images, reviews, or sales copy.
+   - Prefer products that solve repeated real problems, not one-time curiosity or short-lived novelty.
 
 3. Create the article using the existing `trend-shopping` UI.
    - Affiliate notice near the top
@@ -137,6 +140,7 @@ data-position="product_link_1"
 - Keep paragraphs short enough to read comfortably on mobile.
 - Prefer purchase criteria, failure prevention, and situation-based comparison.
 - For every linked product, explain the practical fit: who it helps, what problem it solves, value-for-money, likely tradeoffs, and who should skip it.
+- Add a future-value filter: whether the product category will remain useful, whether it supports a recurring habit, and whether the selection criteria can help the reader with later purchases.
 - Do not connect a product only because it can be monetized. If the product does not clearly help the reader, leave it out.
 - Consider future Shorts/Reels reuse. A good shopping guide should contain at least one simple video-friendly angle such as "3 checks before buying", "common mistake", or "which one fits your room".
 - Avoid overclaims such as "무조건 추천", "최저가 보장", "효과 보장", "1위 확정", and "이거 사면 실패 없음".

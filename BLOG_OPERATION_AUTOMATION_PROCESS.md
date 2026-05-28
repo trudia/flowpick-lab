@@ -18,11 +18,15 @@ TrendFlow is operated as a staged content system, not as a simple daily posting 
 
 TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
 
+TrendFlow is also the content foundation for the future Lucy project. That means posts should not chase disposable traffic only. They should build reusable judgment around trends, AI use, digital ethics, attention, space, and buying decisions.
+
 Default writing standard:
 - Write around 2,500 to 3,500 Korean characters for normal articles.
 - Keep paragraphs short, usually 2 to 4 sentences.
 - Use clear subheadings, checklists, comparison blocks, and "what to do next" guidance.
 - Prefer practical examples, everyday situations, and reader-friendly explanations.
+- Treat trend updates as a filter, not a headline chase: explain what changed, who it affects, what to ignore, and what to do next.
+- For AI articles, include responsible-use judgment where relevant: privacy, bias, hallucination risk, source checking, copyright, overreliance, and human decision boundaries.
 - When referencing other sites or current materials, use them only for research. Do not copy sentences, article structure, reviews, images, product detail text, or sales claims.
 - Every post should have one concrete takeaway the reader can use immediately.
 
@@ -63,9 +67,10 @@ Weekly rhythm:
 Daily automation:
 1. Check the current category balance.
 2. Select one topic from the four main areas.
-3. Decide the post type: informational, buying criteria, shopping guide, or update.
-4. If the post needs Coupang links, prepare a link request instead of writing fake links.
-5. If the post does not need links, draft and publish directly after validation.
+3. Check whether there is a meaningful trend update worth explaining.
+4. Decide the post type: trend update, AI ethics/use guide, informational, buying criteria, shopping guide, or update.
+5. If the post needs Coupang links, prepare a link request instead of writing fake links.
+6. If the post does not need links, draft and publish directly after validation.
 
 ## Stage 2. Optimization
 
@@ -108,6 +113,7 @@ Automation focus:
 - Review product cards for correct affiliate attributes.
 - Evaluate whether linked products are actually helpful for the reader's situation, value for money, expected use case, maintenance burden, size, noise, durability, and replacement cycle.
 - Do not recommend a product group just because an affiliate link is available.
+- Prefer evergreen commerce angles: products that solve repeated problems, teach durable selection criteria, or will remain useful beyond a short trend cycle.
 
 ## Stage 4. Long-Term Media Operation
 
@@ -129,6 +135,7 @@ Automation focus:
 - Retire or merge overlapping posts.
 - Expand reusable assets such as checklists, templates, and comparison tables.
 - Review monetization paths monthly.
+- Build Lucy-ready assets: AI use principles, ethical decision checklists, product-fit frameworks, and trend interpretation templates that can later become a product or assistant experience.
 
 ## Coupang Link Automation Policy
 
