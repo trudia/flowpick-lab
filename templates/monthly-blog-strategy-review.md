@@ -1,5 +1,11 @@
 # TrendFlow Monthly Blog Strategy Review
 
+## Trend Interpretation Strategy
+
+- Are trends being accumulated as durable interpretation assets, not just current buzz or product picks?
+- Do monthly topic clusters connect past change, current environment, and future reader value?
+- Are product articles framed by situation and fit boundaries instead of broad "must-buy now" claims?
+
 ## 매월 확인할 것
 
 - 글 수보다 강한 카테고리 클러스터가 만들어지고 있는가?

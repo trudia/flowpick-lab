@@ -26,6 +26,18 @@ Before publishing or refreshing a page:
 - If one side of the project is mid-update, pause the next dependent step until that update is validated.
 - Prefer the route that gives the visitor the most useful next decision, even when it produces fewer immediate affiliate clicks.
 
+## Trend Interpretation Rule
+
+TrendFlow should treat a trend as a time-based pattern, not a simple "this product is needed now" claim. Before writing a trend update or shopping article, analyze what changed in the past, what environmental factors make it relevant now, and whether the need is likely to continue.
+
+Trend and product judgment should consider:
+- Past signals: recurring discomfort, old buying mistakes, seasonal repetition, review fatigue, or earlier technology limits.
+- Current context: weather, housing type, work style, AI/platform shifts, price pressure, social attention, and reader situation.
+- Future value: whether the product group or decision frame will still help later, not only during a short hype cycle.
+- Fit boundaries: who benefits, who can skip it, and what conditions must be true before the product is worth considering.
+
+Do not state that a product is "the necessary product right now" unless the evidence is narrow and specific. Prefer situation-based wording: "this can help when..." and "you may not need it if...".
+
 ## Editorial Identity
 
 TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.

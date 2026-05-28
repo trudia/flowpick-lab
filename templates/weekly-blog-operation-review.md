@@ -1,5 +1,11 @@
 # TrendFlow Weekly Blog Operation Review
 
+## Trend Interpretation Review
+
+- Did this week treat trends as past-to-future patterns rather than one-off current product recommendations?
+- Did trend and shopping candidates explain past signals, current environmental factors, and future usefulness?
+- Did shopping content avoid saying a product is necessary for everyone, and instead define who benefits and who can skip it?
+
 ## 매주 확인할 것
 
 - 이번 주 신규 글 수

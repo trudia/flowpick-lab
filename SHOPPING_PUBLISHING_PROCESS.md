@@ -29,6 +29,8 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Recommended category: `trend-shopping`
    - Post type: problem-solving, comparison, mistake-prevention, seasonal, or set-based
    - Trend value: current trigger, evergreen value, and whether the topic will still help readers later
+   - Past-to-future trend path: what changed before, what environmental factors matter now, and whether the need will continue
+   - Situation boundaries: avoid saying a product is required for everyone; define who benefits, who can skip it, and under what conditions it is worth buying
    - Required Coupang Partners links, usually 3 to 5
    - Expected CTA structure
    - Expected reader benefit and one practical takeaway

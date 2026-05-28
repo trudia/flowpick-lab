@@ -1,5 +1,15 @@
 # TrendFlow Daily Blog Operation Brief
 
+## Trend Interpretation Check
+
+Before proposing a trend update or shopping/review topic, do not treat "trend" as a simple current product recommendation. Check the past-to-future path first:
+
+1. What changed before this topic became relevant?
+2. Which current environmental factors matter: season, weather, housing, work style, AI/platform change, price pressure, or reader situation?
+3. Will this topic or product group still help after the current buzz fades?
+4. Who benefits, who can skip it, and what conditions make the product worth considering?
+5. Is the wording situation-based rather than a broad claim that everyone needs the product now?
+
 ## 오늘 판단할 것
 
 1. 오늘은 신규 글, 기존 글 보강, 쇼핑 글, 내부 링크 개선 중 무엇이 가장 효과적인가?
