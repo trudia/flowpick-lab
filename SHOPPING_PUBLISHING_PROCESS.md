@@ -43,6 +43,7 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Quick recommendation summary
    - Five body sections
    - Buying checklist
+   - Product-fit block: who it helps, who should skip it, long-term value, and AI/review checks
    - Product comparison table
    - Product cards
    - "딱 하나만 고른다면" CTA

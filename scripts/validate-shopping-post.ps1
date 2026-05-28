@@ -123,6 +123,7 @@ if (Test-Path -LiteralPath $postHtmlPath) {
     "feature-insight-box affiliate-notice-box",
     "quick-reco-v107",
     "tf-checklist-v116",
+    "topclass-product-fit-v139",
     "product-link-guide-v102",
     "product-link-card-v102",
     "one-pick-v107",
