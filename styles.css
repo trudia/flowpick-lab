@@ -1184,3 +1184,66 @@ html[data-theme='dark'] .topclass-product-fit-grid-v139 div{
 }
 @media(max-width:980px){.feature-side-series-grid{grid-template-columns:repeat(4,1fr)!important;}}
 @media(max-width:680px){.feature-side-series-grid{grid-template-columns:1fr 1fr!important;}}
+
+/* v140 unified TrendFlow + TopClass Coupang project sync */
+.topclass-project-sync-v140{
+  padding-top:30px;
+  padding-bottom:30px;
+  background:linear-gradient(180deg,var(--tf-bg),var(--tf-bg-soft));
+}
+.topclass-project-sync-v140 .section-head{
+  align-items:flex-end;
+}
+.topclass-sync-grid-v140{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.topclass-sync-grid-v140 article{
+  min-height:150px;
+  padding:18px;
+  border:1px solid var(--tf-border);
+  border-radius:20px;
+  background:var(--tf-surface);
+  box-shadow:var(--tf-card-shadow);
+}
+.topclass-sync-grid-v140 strong{
+  display:block;
+  margin-bottom:8px;
+  color:var(--tf-text-strong);
+  font-size:1rem;
+}
+.topclass-sync-grid-v140 p{
+  margin:0;
+  color:var(--tf-muted);
+  line-height:1.62;
+  font-size:.94rem;
+}
+.topclass-unified-fit-v140{
+  scroll-margin-top:96px;
+}
+.topclass-unified-fit-v140 .section-label::after{
+  content:"";
+  display:inline-block;
+  width:7px;
+  height:7px;
+  margin-left:8px;
+  border-radius:999px;
+  background:#14b8a6;
+  vertical-align:middle;
+}
+.unified-subscribe-v140{
+  border-color:rgba(37,99,235,.22)!important;
+}
+html[data-theme='dark'] .topclass-sync-grid-v140 article{
+  background:var(--tf-surface);
+  border-color:var(--tf-border);
+}
+@media(max-width:860px){
+  .topclass-sync-grid-v140{
+    grid-template-columns:1fr;
+  }
+  .topclass-sync-grid-v140 article{
+    min-height:0;
+  }
+}

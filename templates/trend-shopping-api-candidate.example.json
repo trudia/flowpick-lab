@@ -2,6 +2,11 @@
   "topic": "shopping guide topic",
   "keyword": "product search keyword",
   "apiMode": "Coupang Partners API",
+  "projectSync": {
+    "trendFlow": "reader-first information curation",
+    "topClassCoupang": "product-fit and monetization judgment",
+    "required": "Check both sides before writing so the post does not duplicate completed work or create an information imbalance."
+  },
   "affiliateTracking": {
     "expectedLptag": "AF3446366",
     "required": true

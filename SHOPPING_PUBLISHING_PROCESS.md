@@ -15,6 +15,13 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
 
 ## Standard Flow
 
+0. Check the unified project state first.
+   - Treat TrendFlow and TopClass Coupang as one project.
+   - Confirm the topic does not duplicate an already completed post, CTA, image fix, or UI module.
+   - Confirm the article supports the broader TrendFlow information curation direction, not only affiliate conversion.
+   - If another related update is in progress, finish and validate that update before starting the next dependent change.
+   - Keep AI ethics/use guidance, buying criteria, product-fit judgment, and Lucy-ready reusable assets in balance.
+
 1. Analyze the topic before writing.
    - Main keyword
    - Supporting keywords

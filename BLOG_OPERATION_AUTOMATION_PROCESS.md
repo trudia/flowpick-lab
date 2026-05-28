@@ -14,6 +14,18 @@ TrendFlow is operated as a staged content system, not as a simple daily posting 
   - 공간 정리 / 공간 & 미니멀
   - 구매 기준 / 트렌드 쇼핑
 
+## Unified Project Rule
+
+TrendFlow and TopClass Coupang are operated as one project, not as two separate information tracks. TrendFlow provides the reader-first information curation, while TopClass Coupang provides the product-fit and monetization judgment. Every update should check both sides before changing the site.
+
+Before publishing or refreshing a page:
+- Check whether the same work was already completed in another file, page, category, or automation instruction.
+- Keep informational content, AI ethics/use guidance, buying criteria, and affiliate paths aligned.
+- Do not change a shopping page in a way that conflicts with the broader TrendFlow editorial direction.
+- Do not change an informational page in a way that ignores the future buying-criteria or Lucy asset path.
+- If one side of the project is mid-update, pause the next dependent step until that update is validated.
+- Prefer the route that gives the visitor the most useful next decision, even when it produces fewer immediate affiliate clicks.
+
 ## Editorial Identity
 
 TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
