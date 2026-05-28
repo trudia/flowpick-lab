@@ -7,7 +7,9 @@ param(
 
   [string]$Root = "",
 
-  [switch]$AllowMissingAffiliateLinks
+  [switch]$AllowMissingAffiliateLinks,
+
+  [string]$ExpectedTrackingTag = "AF3446366"
 )
 
 $ErrorActionPreference = "Stop"
@@ -153,6 +155,11 @@ if (Test-Path -LiteralPath $postHtmlPath) {
 
   foreach ($match in $affiliateLinks) {
     $tag = $match.Value
+    $href = ""
+    if ($tag -match 'href="([^"]+)"') {
+      $href = [System.Net.WebUtility]::HtmlDecode($Matches[1])
+    }
+
     if ($tag -notmatch 'target="_blank"') {
       Add-Failure "affiliate link is missing target _blank: $tag"
     }
@@ -170,6 +177,13 @@ if (Test-Path -LiteralPath $postHtmlPath) {
     }
     if ($tag -notmatch 'data-position="[^"]+"') {
       Add-Failure "affiliate link is missing data-position: $tag"
+    }
+    if (-not [string]::IsNullOrWhiteSpace($ExpectedTrackingTag)) {
+      if ($href -notmatch '(?:\?|&)lptag=([^&]+)') {
+        Add-Failure "affiliate link is missing Coupang lptag tracking parameter: $tag"
+      } elseif ($Matches[1] -ne $ExpectedTrackingTag) {
+        Add-Failure "affiliate link lptag '$($Matches[1])' does not match expected '$ExpectedTrackingTag': $tag"
+      }
     }
   }
 

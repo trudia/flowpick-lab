@@ -2,6 +2,10 @@
   "topic": "shopping guide topic",
   "keyword": "product search keyword",
   "apiMode": "Coupang Partners API",
+  "affiliateTracking": {
+    "expectedLptag": "AF3446366",
+    "required": true
+  },
   "uiTemplate": {
     "articleShell": "container feature-article-shell",
     "breadcrumb": "feature-breadcrumb",

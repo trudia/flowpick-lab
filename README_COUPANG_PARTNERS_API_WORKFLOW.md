@@ -19,6 +19,7 @@ API product data helps shortlist candidates, but final shopping content must sti
 - Compare practical tradeoffs and value-for-money.
 - Avoid copied product-page text, reviews, images, and exaggerated claims.
 - Keep every affiliate link disclosure, `sponsored` relation, and GA4 tracking attribute.
+- Keep every Coupang Partners link on the verified TrendFlow tracking tag: `AF3446366`.
 
 ## Publishing UI Guard
 
@@ -28,6 +29,7 @@ Shopping posts must reuse the existing TrendFlow shopping article shell. Do not 
 - Use the existing affiliate notice block: `feature-insight-box affiliate-notice-box`.
 - Keep the existing shopping modules: `quick-reco-v107`, `tf-checklist-v116`, `product-link-guide-v102`, `product-link-card-v102`, and `one-pick-v107`.
 - Run `scripts/validate-shopping-post.ps1` before committing. The validator now fails when a shopping post uses non-standard markers such as `feature-article-layout`, `feature-article-kicker`, `feature-hero-figure`, or `feature-affiliate-notice`.
+- The validator also fails when a Coupang affiliate URL is missing `lptag=AF3446366` or uses another tracking tag.
 
 ## API Notes
 
