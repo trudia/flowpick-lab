@@ -160,3 +160,9 @@ data-position="product_link_1"
 ## Reusable Input Template
 
 Use `templates/trend-shopping-input.example.json` as the shape for the next post request. Replace placeholders only after the user provides real topic details and Coupang Partners links.
+
+
+## 실패 원인 점검 규칙
+- 구매 글은 "이 제품이 잘 맞는 이유"와 함께 "왜 이전 선택이 안 맞았는지"를 확인한다.
+- 새 제품을 추천하기 전 환경, 마찰, 유지 비용, 기대 불일치 중 어디가 원인인지 먼저 설명한다.
+- 같은 원인이 반복될 수 있으면 더 비싼 제품이나 새 제품보다 배치, 사용 습관, 관리 루틴을 먼저 제안한다.

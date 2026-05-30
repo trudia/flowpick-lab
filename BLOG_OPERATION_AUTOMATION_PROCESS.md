@@ -257,3 +257,10 @@ After pushing:
 - Category page opens.
 - Sitemap opens.
 - Search engine submission is done when a new URL is published.
+
+
+## 실패 원인 점검 규칙
+- TrendFlow 글은 될 이유만 모으지 않고 왜 안 됐는지, 왜 안 될 수 있는지를 함께 본다.
+- 계획, 실행, 제품 구매가 기대와 달랐을 때 바로 새 방법이나 새 제품을 찾기보다 환경, 마찰, 유지 비용, 기대 불일치를 먼저 나눈다.
+- 쇼핑/리뷰 글은 제품 장점뿐 아니라 사용자가 안 쓰게 되는 조건, 관리 부담, 보관 문제, 반복 실패 원인을 함께 정리한다.
+- AI 활용 글과 루틴 글도 새 도구 소개보다 멈춘 지점과 수정 가능한 조건을 먼저 확인한다.
