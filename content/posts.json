@@ -1,5 +1,35 @@
 [
   {
+    "slug": "ai-era-career-skills-map",
+    "title": "AI 시대 커리어 전환은 어떤 기술부터 봐야 할까?",
+    "category": "career-education",
+    "summary": "AI 도구 이름보다 업무 흐름, 데이터 이해, 문제 정의, 협업 기록처럼 오래 남는 기술을 먼저 보는 커리어 학습 기준을 정리합니다.",
+    "image": "/assets/featured/ai-era-career-skills-map.png",
+    "tags": [
+      "AI커리어",
+      "직무전환",
+      "업스킬링",
+      "커리어전략",
+      "학습루틴"
+    ],
+    "date": "2026-06-01"
+  },
+  {
+    "slug": "why-online-courses-do-not-become-skills",
+    "title": "강의를 들어도 실력이 남지 않는 이유",
+    "category": "career-education",
+    "summary": "강의 완강보다 업무에 적용한 작은 산출물과 복습 기록이 남는 학습 루틴을 만드는 방법을 정리합니다.",
+    "image": "/assets/featured/adult-learning-routine-skills.png",
+    "tags": [
+      "성인학습",
+      "온라인강의",
+      "스킬업",
+      "학습루틴",
+      "커리어교육"
+    ],
+    "date": "2026-06-01"
+  },
+  {
     "slug": "why-check-failure-cause-before-new-choice",
     "title": "새로운 것을 찾기 전에 왜 안 됐는지 먼저 봐야 하는 이유",
     "category": "trend-shopping",
