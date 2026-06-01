@@ -258,6 +258,42 @@ After pushing:
 - Sitemap opens.
 - Search engine submission is done when a new URL is published.
 
+## Search Engine Submission Automation
+
+After a successful deploy, use the combined search submission helper whenever new public URLs are published:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/submit-search-engines.ps1 -Urls "https://trend.it.kr/posts/example-post/","https://trend.it.kr/categories/example-category/","https://trend.it.kr/sitemap.xml" -InspectGoogle
+```
+
+This helper performs:
+- Naver and Bing IndexNow submission through `scripts/submit-indexnow.ps1`.
+- Google Search Console sitemap submission through `scripts/google-search-console.ps1`.
+- Optional Google URL Inspection API checks for the submitted post/category URLs.
+
+Google setup is optional but recommended. If Google credentials are not configured, the helper reports `needs_setup` for Google and still keeps the IndexNow path usable.
+
+Google Search Console environment variables:
+
+```text
+GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN
+```
+
+or:
+
+```text
+GOOGLE_SEARCH_CONSOLE_CLIENT_ID
+GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET
+GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN
+```
+
+Do not commit Google client secrets, refresh tokens, access tokens, or inspection reports. Local Google inspection reports should be written under `.trendflow-google/`, which is ignored by git.
+
+Important boundary:
+- Google sitemap submission and URL inspection can be automated.
+- The Search Console "Request indexing" button for normal blog posts cannot be replaced by a general public API.
+- Do not use Google's Indexing API for ordinary TrendFlow articles because it is limited to job posting and livestreaming video pages.
+
 
 ## 실패 원인 점검 규칙
 - TrendFlow 글은 될 이유만 모으지 않고 왜 안 됐는지, 왜 안 될 수 있는지를 함께 본다.

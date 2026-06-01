@@ -93,7 +93,10 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Check `https://trend.it.kr/categories/trend-shopping`.
    - Check `https://trend.it.kr/sitemap.xml`.
    - Confirm the new post appears on the home latest area.
-   - Submit the new URL and sitemap in Google Search Console, Naver Search Advisor, and Bing Webmaster Tools.
+   - Run search submission after deploy:
+     `powershell -ExecutionPolicy Bypass -File scripts/submit-search-engines.ps1 -Urls "https://trend.it.kr/posts/[slug]/","https://trend.it.kr/categories/trend-shopping/","https://trend.it.kr/sitemap.xml" -InspectGoogle`
+   - Google sitemap submission and URL inspection can be automated when Google Search Console OAuth values are configured.
+   - Google's manual "Request indexing" button is not replaced by a general API for normal blog posts.
 
 ## Required Affiliate Rules
 

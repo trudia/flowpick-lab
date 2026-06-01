@@ -5,5 +5,6 @@ Thumbs.db
 .trendflow-state/
 .trendflow-logs/
 .trendflow-coupang/
+.trendflow-google/
 .env
 .env.*
