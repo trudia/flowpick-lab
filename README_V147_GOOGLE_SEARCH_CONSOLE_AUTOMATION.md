@@ -82,10 +82,16 @@ Submit the sitemap to Google:
 powershell -ExecutionPolicy Bypass -File scripts/google-search-console.ps1 -Mode SubmitSitemap
 ```
 
-If the Search Console property is a domain property instead of a URL-prefix property, pass it explicitly:
+TrendFlow uses the Search Console domain property by default:
+
+```text
+sc-domain:trend.it.kr
+```
+
+If you need to use a URL-prefix property instead, pass it explicitly:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/google-search-console.ps1 -Mode SubmitSitemap -SiteUrl "sc-domain:trend.it.kr"
+powershell -ExecutionPolicy Bypass -File scripts/google-search-console.ps1 -Mode SubmitSitemap -SiteUrl "https://trend.it.kr/"
 ```
 
 Inspect specific URLs:

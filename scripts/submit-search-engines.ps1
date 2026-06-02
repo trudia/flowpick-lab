@@ -10,12 +10,35 @@ param(
 
   [switch]$InspectGoogle,
 
+  [string]$GoogleSiteUrl = "sc-domain:trend.it.kr",
+
   [string]$GoogleReportPath = ".trendflow-google\latest-url-inspection.json"
 )
 
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+function Normalize-UrlList {
+  param([string[]]$Values)
+
+  $normalized = New-Object System.Collections.Generic.List[string]
+  foreach ($value in $Values) {
+    if ([string]::IsNullOrWhiteSpace($value)) {
+      continue
+    }
+
+    foreach ($part in ($value -split ",")) {
+      $trimmed = $part.Trim()
+      if (-not [string]::IsNullOrWhiteSpace($trimmed)) {
+        $normalized.Add($trimmed)
+      }
+    }
+  }
+
+  return @($normalized | Select-Object -Unique)
+}
+
+$Urls = Normalize-UrlList -Values $Urls
 $summary = New-Object System.Collections.Generic.List[object]
 
 if (-not $SkipIndexNow) {
@@ -37,7 +60,7 @@ if (-not $SkipIndexNow) {
 
 if (-not $SkipGoogle) {
   try {
-    & (Join-Path $PSScriptRoot "google-search-console.ps1") -Mode SubmitSitemap
+    & (Join-Path $PSScriptRoot "google-search-console.ps1") -Mode SubmitSitemap -SiteUrl $GoogleSiteUrl
     $summary.Add([PSCustomObject]@{
       target = "google_sitemap"
       status = "ok"
@@ -57,6 +80,7 @@ if (-not $SkipGoogle) {
       try {
         & (Join-Path $PSScriptRoot "google-search-console.ps1") `
           -Mode InspectUrl `
+          -SiteUrl $GoogleSiteUrl `
           -Urls $inspectUrls `
           -OutputPath $GoogleReportPath
 

@@ -273,6 +273,12 @@ This helper performs:
 
 Google setup is optional but recommended. If Google credentials are not configured, the helper reports `needs_setup` for Google and still keeps the IndexNow path usable.
 
+TrendFlow uses the Search Console domain property by default:
+
+```text
+sc-domain:trend.it.kr
+```
+
 Google Search Console environment variables:
 
 ```text

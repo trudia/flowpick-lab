@@ -127,7 +127,12 @@ Then put these values in local .env or environment variables:
 
 $redirectUri = "http://127.0.0.1:$Port/"
 $stateBytes = New-Object byte[] 18
-[System.Security.Cryptography.RandomNumberGenerator]::Fill($stateBytes)
+$rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+try {
+  $rng.GetBytes($stateBytes)
+} finally {
+  $rng.Dispose()
+}
 $state = [Convert]::ToBase64String($stateBytes).Replace("+", "-").Replace("/", "_").TrimEnd("=")
 
 $query = @{
@@ -167,11 +172,11 @@ try {
 
   $code = $request.QueryString["code"]
   $returnedState = $request.QueryString["state"]
-  $error = $request.QueryString["error"]
+  $authError = $request.QueryString["error"]
 
   $html = "<!doctype html><meta charset='utf-8'><title>TrendFlow Google OAuth</title><body style='font-family:sans-serif;padding:32px'><h1>TrendFlow Google OAuth</h1><p>인증이 완료되었습니다. 이 창은 닫아도 됩니다.</p></body>"
-  if (-not [string]::IsNullOrWhiteSpace($error)) {
-    $html = "<!doctype html><meta charset='utf-8'><title>TrendFlow Google OAuth</title><body style='font-family:sans-serif;padding:32px'><h1>인증 실패</h1><p>$error</p></body>"
+  if (-not [string]::IsNullOrWhiteSpace($authError)) {
+    $html = "<!doctype html><meta charset='utf-8'><title>TrendFlow Google OAuth</title><body style='font-family:sans-serif;padding:32px'><h1>인증 실패</h1><p>$authError</p></body>"
   }
 
   $buffer = [System.Text.Encoding]::UTF8.GetBytes($html)
@@ -180,8 +185,8 @@ try {
   $response.OutputStream.Write($buffer, 0, $buffer.Length)
   $response.OutputStream.Close()
 
-  if (-not [string]::IsNullOrWhiteSpace($error)) {
-    throw "Google authorization failed: $error"
+  if (-not [string]::IsNullOrWhiteSpace($authError)) {
+    throw "Google authorization failed: $authError"
   }
 
   if ([string]::IsNullOrWhiteSpace($code)) {
@@ -200,12 +205,30 @@ try {
     grant_type = "authorization_code"
   }
 
-  $tokenResponse = Invoke-RestMethod `
-    -Method Post `
-    -Uri "https://oauth2.googleapis.com/token" `
-    -ContentType "application/x-www-form-urlencoded" `
-    -Body $tokenBody `
-    -TimeoutSec 30
+  try {
+    $tokenResponse = Invoke-RestMethod `
+      -Method Post `
+      -Uri "https://oauth2.googleapis.com/token" `
+      -ContentType "application/x-www-form-urlencoded" `
+      -Body $tokenBody `
+      -TimeoutSec 30
+  } catch {
+    $details = $_.Exception.Message
+    if ($_.Exception.Response) {
+      try {
+        $stream = $_.Exception.Response.GetResponseStream()
+        $reader = [System.IO.StreamReader]::new($stream)
+        $responseBody = $reader.ReadToEnd()
+        if (-not [string]::IsNullOrWhiteSpace($responseBody)) {
+          $details = "$details $responseBody"
+        }
+      } catch {
+        $details = $_.Exception.Message
+      }
+    }
+
+    throw "Google token exchange failed. Check that CLIENT_ID and CLIENT_SECRET are from the same Desktop app OAuth client. Details: $details"
+  }
 
   if ([string]::IsNullOrWhiteSpace($tokenResponse.refresh_token)) {
     throw "Google did not return a refresh token. Re-run with consent prompt, or remove the app's prior access from your Google account and retry."

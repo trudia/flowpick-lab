@@ -3,7 +3,7 @@ param(
   [ValidateSet("SubmitSitemap", "InspectUrl", "InspectRecent", "TestConfig")]
   [string]$Mode = "SubmitSitemap",
 
-  [string]$SiteUrl = "https://trend.it.kr/",
+  [string]$SiteUrl = "sc-domain:trend.it.kr",
 
   [string]$SitemapUrl = "https://trend.it.kr/sitemap.xml",
 
@@ -246,6 +246,26 @@ function Get-RecentPostUrls {
   return @($posts | Select-Object -First $RecentCount | ForEach-Object { "https://trend.it.kr/posts/$($_.slug)" })
 }
 
+function Normalize-UrlList {
+  param([string[]]$Values)
+
+  $normalized = New-Object System.Collections.Generic.List[string]
+  foreach ($value in $Values) {
+    if ([string]::IsNullOrWhiteSpace($value)) {
+      continue
+    }
+
+    foreach ($part in ($value -split ",")) {
+      $trimmed = $part.Trim()
+      if (-not [string]::IsNullOrWhiteSpace($trimmed)) {
+        $normalized.Add($trimmed)
+      }
+    }
+  }
+
+  return @($normalized | Select-Object -Unique)
+}
+
 function Write-StructuredOutput {
   param([object[]]$Results)
 
@@ -277,6 +297,7 @@ switch ($Mode) {
     $results.Add((Submit-GoogleSitemap))
   }
   "InspectUrl" {
+    $Urls = Normalize-UrlList -Values $Urls
     if (-not $Urls -or $Urls.Count -eq 0) {
       throw "InspectUrl mode requires at least one -Urls value."
     }
