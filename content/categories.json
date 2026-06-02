@@ -1,7 +1,7 @@
 {
   "ai-productivity": {
     "label": "AI 생산성",
-    "desc": "쇼츠 대본, 프롬프트, 블로그 초안처럼 반복 작업을 줄이는 글을 모읍니다.",
+    "desc": "AI를 처음 쓰는 사람도 질문법, 글쓰기, 반복 작업 줄이기를 차근차근 익힐 수 있게 정리합니다.",
     "image": "/assets/categories/ai-productivity.webp"
   },
   "focus-wellbeing": {
@@ -13,6 +13,11 @@
     "label": "공간 & 미니멀",
     "desc": "책상 정리, 원룸 구역화, 케이블 정리처럼 공간의 자극을 줄이는 글을 모읍니다.",
     "image": "/assets/categories/minimal-space.webp"
+  },
+  "career-education": {
+    "label": "커리어 & 교육",
+    "desc": "AI 시대의 직무 전환, 성인 학습, 포트폴리오 기록을 실제 업무와 연결해 정리합니다.",
+    "image": "/assets/featured/ai-portfolio-before-results.png"
   },
   "trend-shopping": {
     "label": "트렌드 쇼핑",

@@ -12,6 +12,7 @@ TrendFlow is operated as a staged content system, not as a simple daily posting 
   - AI 입문 / AI 생산성
   - 집중 회복 / 집중력 & 웰빙
   - 공간 정리 / 공간 & 미니멀
+  - 커리어 & 교육 / 커리어 & 교육 트렌드
   - 구매 기준 / 트렌드 쇼핑
 
 ## Unified Project Rule
@@ -161,6 +162,19 @@ Automation focus:
 - Review monetization paths monthly.
 - Build Lucy-ready assets: AI use principles, ethical decision checklists, product-fit frameworks, and trend interpretation templates that can later become a product or assistant experience.
 
+## Portfolio Evidence Rule
+
+Career and education posts should not stop at recommending more tools, lectures, or certificates. When a post discusses learning, AI work, or career transition, it should help the reader turn activity into evidence.
+
+Before publishing a career or AI-learning post, check:
+- What problem the reader is trying to solve.
+- What role the reader played, especially when AI generated drafts or structure.
+- What failed first and what condition was changed.
+- What output, template, checklist, or before/after evidence remains.
+- Whether AI use is described responsibly without exposing private information, copying copyrighted materials, or overstating the result.
+
+Good career content should help the visitor decide what to record next, not simply what to learn next.
+
 ## Coupang Link Automation Policy
 
 Codex must not guess, scrape, or fabricate Coupang Partners links. When the user has enabled the official Coupang Partners API and local environment variables are available, Codex may use the approved API workflow below.
@@ -302,6 +316,7 @@ powershell -ExecutionPolicy Bypass -File scripts/get-google-search-console-refre
 ```
 
 Important boundary:
+- If the daily manual indexing quota is exceeded, skip manual indexing requests, keep the published URL in the sitemap, and revisit manual submission later.
 - Google sitemap submission and URL inspection can be automated.
 - The Search Console "Request indexing" button for normal blog posts cannot be replaced by a general public API.
 - Do not use Google's Indexing API for ordinary TrendFlow articles because it is limited to job posting and livestreaming video pages.
