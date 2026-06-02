@@ -51,6 +51,23 @@ https://www.googleapis.com/auth/webmasters.readonly
 
 Store these values in local environment variables or in `.env`. Do not commit Google client secrets or refresh tokens.
 
+## Easier Refresh Token Setup
+
+After creating a Google OAuth Client ID with application type `Desktop app`, put only the client ID and client secret in `.env`:
+
+```text
+GOOGLE_SEARCH_CONSOLE_CLIENT_ID="..."
+GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET="..."
+```
+
+Then run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/get-google-search-console-refresh-token.ps1 -SaveToEnv
+```
+
+The helper opens the Google consent page, receives the local redirect on `http://127.0.0.1:53682/`, and saves `GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN` to `.env`.
+
 ## Usage
 
 Test local credentials:

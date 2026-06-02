@@ -289,6 +289,12 @@ GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN
 
 Do not commit Google client secrets, refresh tokens, access tokens, or inspection reports. Local Google inspection reports should be written under `.trendflow-google/`, which is ignored by git.
 
+For refresh-token setup, create a Google OAuth Client ID with application type `Desktop app`, store `GOOGLE_SEARCH_CONSOLE_CLIENT_ID` and `GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET` in local `.env`, then run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/get-google-search-console-refresh-token.ps1 -SaveToEnv
+```
+
 Important boundary:
 - Google sitemap submission and URL inspection can be automated.
 - The Search Console "Request indexing" button for normal blog posts cannot be replaced by a general public API.
