@@ -1976,3 +1976,73 @@ html[data-theme='dark'] .home-mainstage-v159 .home-hero-panel-v155{
     padding:16px;
   }
 }
+
+/* v160 soft title highlight + article-first lead path */
+:root{
+  --tf-title-highlight:rgba(20,184,166,.16);
+  --tf-title-highlight-2:rgba(250,204,21,.18);
+  --tf-title-mark:#0f766e;
+}
+html[data-theme='dark']{
+  --tf-title-highlight:rgba(94,234,212,.15);
+  --tf-title-highlight-2:rgba(250,204,21,.12);
+  --tf-title-mark:#5eead4;
+}
+.section-head h2,
+.blog-card h3,
+.category-series-card h3,
+.home-diagnosis-card-v153 strong,
+.topclass-decision-card-v139 strong,
+.simple-category-card strong,
+.latest-title-list a,
+.feature-article-main h1,
+.feature-section-text h2,
+.feature-side-card h3,
+.feature-check-list h3{
+  background-image:linear-gradient(90deg,var(--tf-title-highlight),var(--tf-title-highlight-2));
+  background-repeat:no-repeat;
+  background-size:100% .42em;
+  background-position:0 88%;
+  border-radius:6px;
+}
+.section-head h2,
+.category-series-card h3,
+.feature-side-card h3,
+.feature-check-list h3{
+  width:fit-content;
+  max-width:100%;
+}
+.feature-article-main h1{
+  background-size:100% .34em;
+  background-position:0 92%;
+  padding-bottom:.04em;
+}
+.feature-section-text h2{
+  color:var(--tf-text-strong)!important;
+  background-size:100% .36em;
+}
+.home-diagnosis-card-v153 strong,
+.topclass-decision-card-v139 strong,
+.simple-category-card strong,
+.latest-title-list a{
+  background-size:100% .5em;
+}
+.home-diagnosis-card-v153:first-child{
+  border-color:color-mix(in srgb,var(--tf-title-mark) 28%,var(--tf-border));
+}
+.home-diagnosis-card-v153:first-child em{
+  color:var(--tf-title-mark);
+}
+html[data-theme='dark'] .section-head h2,
+html[data-theme='dark'] .blog-card h3,
+html[data-theme='dark'] .category-series-card h3,
+html[data-theme='dark'] .home-diagnosis-card-v153 strong,
+html[data-theme='dark'] .topclass-decision-card-v139 strong,
+html[data-theme='dark'] .simple-category-card strong,
+html[data-theme='dark'] .latest-title-list a,
+html[data-theme='dark'] .feature-article-main h1,
+html[data-theme='dark'] .feature-section-text h2,
+html[data-theme='dark'] .feature-side-card h3,
+html[data-theme='dark'] .feature-check-list h3{
+  color:var(--tf-text-strong,var(--tf-text))!important;
+}
