@@ -1623,3 +1623,244 @@ html[data-theme='dark'] .home-promise-v155{
     justify-content:flex-start;
   }
 }
+
+/* v158 homepage theme contrast + rotating banner copy */
+:root{
+  --tf-home-accent:#0f766e;
+  --tf-home-accent-2:#f97316;
+  --tf-home-accent-3:#4f46e5;
+  --tf-home-soft:#ecfdf5;
+  --tf-home-warm:#fff7ed;
+  --tf-home-ink:#10221f;
+  --tf-home-highlight:#f59e0b;
+}
+html[data-theme='dark']{
+  --tf-home-accent:#5eead4;
+  --tf-home-accent-2:#fdba74;
+  --tf-home-accent-3:#c4b5fd;
+  --tf-home-soft:rgba(20,184,166,.14);
+  --tf-home-warm:rgba(251,146,60,.14);
+  --tf-home-ink:#f8fafc;
+  --tf-home-highlight:#facc15;
+}
+.home-slider-hero-v158{
+  background:
+    radial-gradient(circle at 80% 16%,rgba(15,118,110,.14),transparent 28%),
+    radial-gradient(circle at 70% 82%,rgba(249,115,22,.12),transparent 30%),
+    linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(247,252,249,.96) 46%,rgba(255,247,237,.7) 100%),
+    url('/assets/featured/buying-criteria-before-reviews.jpg') center right/cover no-repeat;
+}
+.home-slider-hero-v158 h1{
+  letter-spacing:0;
+  color:var(--tf-home-ink);
+}
+.home-hero-slider-v158{
+  position:relative;
+  width:min(100%,680px);
+  min-height:178px;
+  margin:22px 0 0;
+  padding:18px 18px 42px;
+  border:1px solid rgba(15,118,110,.18);
+  border-radius:8px;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 18px 44px rgba(15,23,42,.08);
+  backdrop-filter:blur(16px);
+}
+.home-hero-slide-v158{
+  display:none;
+}
+.home-hero-slide-v158.is-active{
+  display:block;
+  animation:homeHeroSlideIn .34s ease both;
+}
+.home-hero-slide-v158 span{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:5px 9px;
+  border-radius:8px;
+  background:var(--tf-home-soft);
+  color:var(--tf-home-accent);
+  font-size:.82rem;
+  font-weight:950;
+}
+.home-hero-slide-v158 strong{
+  display:block;
+  margin-top:10px;
+  color:var(--tf-home-ink);
+  font-size:clamp(1.32rem,2.4vw,1.74rem);
+  line-height:1.28;
+  letter-spacing:0;
+}
+.home-hero-slide-v158 p{
+  max-width:600px;
+  margin:10px 0 0;
+  color:#334155;
+  font-size:1rem;
+  line-height:1.7;
+}
+.home-hero-dots-v158{
+  position:absolute;
+  left:18px;
+  bottom:15px;
+  display:flex;
+  gap:7px;
+}
+.home-hero-dots-v158 button{
+  width:28px;
+  height:8px;
+  padding:0;
+  border:0;
+  border-radius:999px;
+  background:rgba(15,23,42,.18);
+  cursor:pointer;
+}
+.home-hero-dots-v158 button[aria-current='true']{
+  width:42px;
+  background:linear-gradient(90deg,var(--tf-home-accent),var(--tf-home-accent-2));
+}
+.home-slider-hero-v158 .hero-actions a{
+  border-color:rgba(15,118,110,.16);
+}
+.home-slider-hero-v158 .hero-actions .primary{
+  background:linear-gradient(135deg,#0f766e,#0f172a);
+  color:#fff;
+}
+.home-slider-hero-v158 .hero-actions a:not(.primary):hover,
+.home-hero-panel-v155 a:hover,
+.home-diagnosis-card-v153:hover,
+.simple-category-card:hover{
+  border-color:color-mix(in srgb,var(--tf-home-accent) 42%,var(--tf-border));
+}
+.home-slider-hero-v158 .section-label{
+  color:var(--tf-home-accent);
+}
+.home-slider-hero-v158 .home-hero-chips-v155 span{
+  border-color:rgba(15,118,110,.18);
+  background:rgba(255,255,255,.82);
+  color:#1f2937;
+}
+.home-hero-panel-v155{
+  border-color:rgba(15,118,110,.18);
+}
+.home-hero-panel-v155 a:nth-of-type(1) span{
+  background:var(--tf-home-soft);
+  color:var(--tf-home-accent);
+}
+.home-hero-panel-v155 a:nth-of-type(2) span{
+  background:var(--tf-home-warm);
+  color:#c2410c;
+}
+.home-hero-panel-v155 a:nth-of-type(3) span{
+  background:#eef2ff;
+  color:var(--tf-home-accent-3);
+}
+.home-trust-strip-v158{
+  padding:14px 0;
+  background:linear-gradient(90deg,var(--tf-surface),var(--tf-surface-2));
+}
+.home-trust-strip-v158 .container{
+  align-items:center;
+}
+.home-trust-strip-v158 strong{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:7px 11px;
+  border-radius:8px;
+  background:var(--tf-home-ink);
+  color:var(--tf-brand-text);
+  font-size:.88rem;
+  font-weight:950;
+}
+.home-trust-strip-v158 span{
+  border-color:rgba(15,118,110,.16);
+  background:var(--tf-surface);
+}
+html[data-theme='dark'] .home-slider-hero-v158{
+  background:
+    radial-gradient(circle at 80% 14%,rgba(45,212,191,.2),transparent 29%),
+    radial-gradient(circle at 68% 82%,rgba(251,191,36,.13),transparent 30%),
+    linear-gradient(90deg,rgba(17,24,22,.98) 0%,rgba(24,24,27,.94) 54%,rgba(39,32,24,.8) 100%),
+    url('/assets/featured/buying-criteria-before-reviews.jpg') center right/cover no-repeat;
+}
+html[data-theme='dark'] .home-hero-slider-v158{
+  background:rgba(17,24,22,.82);
+  border-color:rgba(94,234,212,.22);
+  box-shadow:0 22px 52px rgba(0,0,0,.34);
+}
+html[data-theme='dark'] .home-hero-slide-v158 p{
+  color:#d1d5db;
+}
+html[data-theme='dark'] .home-hero-dots-v158 button{
+  background:rgba(226,232,240,.22);
+}
+html[data-theme='dark'] .home-slider-hero-v158 .hero-actions .primary{
+  background:linear-gradient(135deg,#5eead4,#facc15);
+  color:#101815;
+}
+html[data-theme='dark'] .home-slider-hero-v158 .home-hero-chips-v155 span,
+html[data-theme='dark'] .home-trust-strip-v158 span,
+html[data-theme='dark'] .home-hero-panel-v155{
+  background:rgba(17,24,22,.84);
+  border-color:rgba(148,163,184,.24);
+}
+html[data-theme='dark'] .home-hero-panel-v155 a{
+  background:rgba(24,24,27,.88);
+}
+html[data-theme='dark'] .home-hero-panel-v155 a:nth-of-type(1) span,
+html[data-theme='dark'] .home-hero-panel-v155 a:nth-of-type(2) span,
+html[data-theme='dark'] .home-hero-panel-v155 a:nth-of-type(3) span{
+  background:rgba(255,255,255,.08);
+}
+html[data-theme='dark'] .home-trust-strip-v158{
+  background:linear-gradient(90deg,#101815,#18181b);
+}
+html[data-theme='dark'] .home-trust-strip-v158 strong{
+  background:#f8fafc;
+  color:#101815;
+}
+@keyframes homeHeroSlideIn{
+  from{opacity:0;transform:translateY(8px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-hero-slide-v158.is-active{
+    animation:none;
+  }
+}
+@media(max-width:980px){
+  .home-hero-slider-v158{
+    min-height:166px;
+  }
+}
+@media(max-width:640px){
+  .home-slider-hero-v158{
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.99),rgba(247,252,249,.95)),
+      url('/assets/featured/buying-criteria-before-reviews.jpg') center/cover no-repeat;
+  }
+  .home-hero-slider-v158{
+    min-height:224px;
+    padding:16px 15px 42px;
+  }
+  .home-hero-slide-v158 strong{
+    font-size:1.28rem;
+  }
+  .home-hero-slide-v158 p{
+    font-size:.96rem;
+  }
+  html[data-theme='dark'] .home-slider-hero-v158{
+    background:
+      linear-gradient(180deg,rgba(17,24,22,.98),rgba(24,24,27,.94)),
+      url('/assets/featured/buying-criteria-before-reviews.jpg') center/cover no-repeat;
+  }
+  .home-trust-strip-v158 .container{
+    gap:7px;
+  }
+  .home-trust-strip-v158 strong,
+  .home-trust-strip-v158 span{
+    width:100%;
+    justify-content:flex-start;
+  }
+}
