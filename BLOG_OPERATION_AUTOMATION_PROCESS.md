@@ -39,6 +39,28 @@ Trend and product judgment should consider:
 
 Do not state that a product is "the necessary product right now" unless the evidence is narrow and specific. Prefer situation-based wording: "this can help when..." and "you may not need it if...".
 
+## Benchmarking Rule
+
+TrendFlow should learn from successful sites slowly and deliberately. Do not copy their layout, wording, ranking, images, or article structure. Instead, identify the underlying pattern that makes the site useful and translate it into TrendFlow's reader-first style.
+
+Benchmark patterns to watch:
+- Decision-first entry: successful guide sites reduce uncertainty before showing a long list of content.
+- Methodology visibility: strong sites explain how they choose, test, compare, or update recommendations.
+- Editorial trust: affiliate or monetization paths must not appear to drive the recommendation itself.
+- Situation-based navigation: readers should be able to enter by problem, budget, use case, skill level, or urgency.
+- Clear skip conditions: good recommendation content explains who does not need the product or method.
+- Freshness and maintenance: important guides need visible refresh logic, not only new posts.
+- Practical next step: a page should end with one action, comparison, checklist, or linked next article.
+
+Benchmark rollout rule:
+1. Pick one pattern from a trusted reference site.
+2. Write the hypothesis: why this pattern helps visitors and how it could support monetization without hurting trust.
+3. Apply it to one homepage section, category hub, article template, or CTA.
+4. Validate links, mobile readability, tone, and whether the change feels visitor-friendly.
+5. Record the result in a README or audit note before expanding it to other pages.
+
+Do not import a pattern just because a famous site uses it. Use it only if it makes TrendFlow easier to understand, more trustworthy, or more useful for the visitor's next decision.
+
 ## Editorial Identity
 
 TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
