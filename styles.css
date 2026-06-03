@@ -1421,3 +1421,205 @@ html[data-theme='dark'] .home-diagnosis-card-v153 span{
     min-height:0;
   }
 }
+
+/* v155 friendly homepage optimization */
+.home-friendly-hero-v155{
+  min-height:560px;
+  padding:76px 0 66px;
+  background:
+    linear-gradient(90deg,rgba(248,250,252,.99) 0%,rgba(248,250,252,.94) 45%,rgba(248,250,252,.58) 72%,rgba(248,250,252,.38) 100%),
+    url('/assets/featured/buying-criteria-before-reviews.jpg') center right/cover no-repeat;
+}
+.home-hero-grid-v155{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(320px,.55fr);
+  gap:32px;
+  align-items:center;
+}
+.home-hero-copy-v155{
+  max-width:760px;
+}
+.home-friendly-hero-v155 h1{
+  max-width:780px;
+  margin-top:14px;
+  line-height:1.04;
+}
+.home-friendly-hero-v155 p{
+  max-width:620px;
+  margin-top:20px;
+  font-size:1.12rem;
+  line-height:1.72;
+}
+.home-hero-chips-v155{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+.home-hero-chips-v155 span,
+.home-trust-strip-v155 span{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:7px 11px;
+  border:1px solid rgba(15,23,42,.1);
+  border-radius:8px;
+  background:rgba(255,255,255,.78);
+  color:#334155;
+  font-weight:850;
+  font-size:.9rem;
+  backdrop-filter:blur(10px);
+}
+.home-hero-panel-v155{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:18px;
+  border:1px solid rgba(15,23,42,.12);
+  border-radius:8px;
+  background:rgba(255,255,255,.88);
+  box-shadow:0 18px 44px rgba(15,23,42,.13);
+  backdrop-filter:blur(14px);
+}
+.home-hero-panel-v155 > strong{
+  display:block;
+  margin-bottom:4px;
+  color:#0f172a;
+  font-size:1.05rem;
+  letter-spacing:-.025em;
+}
+.home-hero-panel-v155 a{
+  display:grid;
+  grid-template-columns:48px minmax(0,1fr);
+  gap:10px;
+  align-items:center;
+  min-height:58px;
+  padding:10px;
+  border:1px solid rgba(15,23,42,.1);
+  border-radius:8px;
+  background:#fff;
+  color:#0f172a;
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+.home-hero-panel-v155 a:hover{
+  transform:translateY(-1px);
+  border-color:rgba(37,99,235,.28);
+  box-shadow:0 12px 24px rgba(15,23,42,.08);
+}
+.home-hero-panel-v155 a span{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:36px;
+  border-radius:8px;
+  background:#ecfeff;
+  color:#0f766e;
+  font-weight:950;
+  font-size:.86rem;
+}
+.home-hero-panel-v155 a:nth-of-type(2) span{background:#fff7ed;color:#c2410c;}
+.home-hero-panel-v155 a:nth-of-type(3) span{background:#eef2ff;color:#4338ca;}
+.home-hero-panel-v155 em{
+  color:#334155;
+  font-style:normal;
+  font-weight:900;
+  line-height:1.35;
+}
+.home-trust-strip-v155{
+  padding:12px 0;
+  border-top:1px solid var(--tf-border);
+  border-bottom:1px solid var(--tf-border);
+  background:var(--tf-surface);
+}
+.home-trust-strip-v155 .container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:center;
+}
+.home-question-entry-v155{
+  padding-top:42px;
+}
+.home-question-entry-v155 .section-head,
+.home-route-board-v155 .section-head,
+.home-promise-v155 .section-head{
+  align-items:flex-start;
+}
+.home-question-entry-v155 .section-head p,
+.home-route-board-v155 .section-head p,
+.home-promise-v155 .section-head p{
+  max-width:620px;
+}
+.home-question-entry-v155 .home-diagnosis-card-v153{
+  border-radius:8px;
+  background:linear-gradient(180deg,#fff,var(--tf-surface));
+}
+.home-question-entry-v155 .home-diagnosis-card-v153 strong{
+  font-size:1.05rem;
+}
+.home-route-board-v155{
+  background:linear-gradient(180deg,var(--tf-bg),#f8fafc);
+}
+.home-route-board-v155 .topclass-decision-card-v139{
+  min-height:174px;
+  border-radius:8px;
+}
+.home-promise-v155{
+  background:#f8fafc;
+}
+.home-promise-v155 .topclass-sync-grid-v140 article{
+  min-height:136px;
+  border-radius:8px;
+}
+html[data-theme='dark'] .home-friendly-hero-v155{
+  background:
+    linear-gradient(90deg,rgba(11,17,32,.98) 0%,rgba(11,17,32,.93) 50%,rgba(11,17,32,.68) 100%),
+    url('/assets/featured/buying-criteria-before-reviews.jpg') center right/cover no-repeat;
+}
+html[data-theme='dark'] .home-hero-panel-v155,
+html[data-theme='dark'] .home-hero-panel-v155 a,
+html[data-theme='dark'] .home-hero-chips-v155 span,
+html[data-theme='dark'] .home-trust-strip-v155 span{
+  background:rgba(15,23,42,.86);
+  border-color:rgba(148,163,184,.22);
+  color:#e2e8f0;
+}
+html[data-theme='dark'] .home-hero-panel-v155 > strong,
+html[data-theme='dark'] .home-hero-panel-v155 em{
+  color:#f8fafc;
+}
+html[data-theme='dark'] .home-route-board-v155,
+html[data-theme='dark'] .home-promise-v155{
+  background:var(--tf-bg);
+}
+@media(max-width:980px){
+  .home-hero-grid-v155{
+    grid-template-columns:1fr;
+  }
+  .home-hero-panel-v155{
+    max-width:560px;
+  }
+}
+@media(max-width:640px){
+  .home-friendly-hero-v155{
+    padding:48px 0 34px;
+    min-height:0;
+    background:
+      linear-gradient(180deg,rgba(248,250,252,.98),rgba(248,250,252,.94)),
+      url('/assets/featured/buying-criteria-before-reviews.jpg') center/cover no-repeat;
+  }
+  .home-friendly-hero-v155 h1{
+    font-size:2.35rem;
+    line-height:1.08;
+  }
+  .home-hero-panel-v155{
+    padding:14px;
+  }
+  .home-hero-panel-v155 a{
+    grid-template-columns:44px minmax(0,1fr);
+    min-height:54px;
+  }
+  .home-trust-strip-v155 .container{
+    justify-content:flex-start;
+  }
+}
