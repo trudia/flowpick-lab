@@ -162,6 +162,16 @@ Automation focus:
 - Review monetization paths monthly.
 - Build Lucy-ready assets: AI use principles, ethical decision checklists, product-fit frameworks, and trend interpretation templates that can later become a product or assistant experience.
 
+## AI Answer Verification Rule
+
+AI use articles should teach readers how to verify an answer before using it, not simply how to get more output. For AI answers, check scope, fact/opinion/guess separation, date-sensitive information, fit with the reader's situation, and human responsibility boundaries.
+
+Before publishing an AI use article, check:
+- Whether the answer may be outdated, especially for prices, laws, policies, platform rules, and APIs.
+- Whether the article separates facts, opinions, assumptions, and suggested actions.
+- Whether private information, copyrighted material, and sensitive decisions are handled cautiously.
+- Whether the reader gets a small verification routine they can repeat later.
+
 ## Portfolio Evidence Rule
 
 Career and education posts should not stop at recommending more tools, lectures, or certificates. When a post discusses learning, AI work, or career transition, it should help the reader turn activity into evidence.
