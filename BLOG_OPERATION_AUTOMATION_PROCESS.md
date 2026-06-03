@@ -27,6 +27,22 @@ Before publishing or refreshing a page:
 - If one side of the project is mid-update, pause the next dependent step until that update is validated.
 - Prefer the route that gives the visitor the most useful next decision, even when it produces fewer immediate affiliate clicks.
 
+## Accelerated Blog Time Rule
+
+TrendFlow uses an accelerated blog-time model. One real-world day equals four TrendFlow blog-days. In practice, one real six-hour block should be treated as one internal blog-day for planning, review, and iteration.
+
+Use this rule to speed up judgment, not to lower quality:
+- Do not simply publish four times more low-quality posts.
+- Compress the operating cycle: topic selection, publishing, internal-link review, search submission, UI check, and monetization judgment should move faster.
+- A post that is 24 real hours old should be treated as four blog-days old for internal review, but SEO, indexing, crawling, and visitor behavior still follow real-world time.
+- If workload grows beyond the quality threshold, reduce publishing volume first and keep the review/improvement loop alive.
+- Each real day should ideally produce four small decisions: one content decision, one UX/navigation decision, one search/distribution decision, and one monetization/product-fit decision.
+
+Automation interpretation:
+- Morning checks should treat the next 12 real hours as two blog-days of execution runway.
+- Evening checks should close the previous two blog-days, identify what did not work, and prepare the next two blog-days.
+- If a six-hour or four-times-a-day automation is added later, each run should behave like a lightweight blog-day checkpoint rather than a full manual audit.
+
 ## Trend Interpretation Rule
 
 TrendFlow should treat a trend as a time-based pattern, not a simple "this product is needed now" claim. Before writing a trend update or shopping article, analyze what changed in the past, what environmental factors make it relevant now, and whether the need is likely to continue.
@@ -129,6 +145,7 @@ Weekly rhythm:
 - 1 improvement session for internal links, category pages, search, archive, and sitemap.
 
 Daily automation:
+0. Apply the accelerated blog-time model: one real day equals four internal blog-days, so each check should move at least one small decision forward.
 1. Check the current category balance.
 2. Select one topic from the four main areas.
 3. Check whether there is a meaningful trend update worth explaining.
