@@ -61,6 +61,17 @@ Benchmark rollout rule:
 
 Do not import a pattern just because a famous site uses it. Use it only if it makes TrendFlow easier to understand, more trustworthy, or more useful for the visitor's next decision.
 
+## Editorial Judgment Rule
+
+Follow the user's direction, but do not treat every instruction as automatically optimal. If a request is ambiguous, visually risky, too sales-driven, too AI-like, or likely to weaken visitor trust, state that clearly and propose a better route before implementing.
+
+When giving judgment:
+- Be direct and practical, not vague.
+- Explain why the proposed route helps the visitor or the business goal.
+- If the user's idea is good but needs adjustment, keep the useful intent and revise the execution.
+- If a UI or copy idea feels noisy, overly decorative, or unnecessary, say so and suggest a simpler version.
+- Prefer "This direction looks better because..." or "I would not recommend that as-is; this version is safer..." over silent compliance.
+
 ## Editorial Identity
 
 TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
