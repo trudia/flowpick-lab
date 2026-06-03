@@ -59,6 +59,9 @@ For the staged daily, weekly, and monthly blog operation flow, also use `BLOG_OP
    - Previous/next article links
    - Recent posts and recommended series sidebar
    - Topic-matched featured image
+   - Featured image may be AI-generated, self-made, or a licensed stock image that permits site publication and editing
+   - Record external stock image source, license basis, download date, and edits in the related README or internal audit note
+   - Do not use product detail page images, review images, unlicensed search-result images, or screenshots from other publishers
    - Reader-friendly body length, usually 2,500 to 3,500 Korean characters
 
 4. Sync every public surface.

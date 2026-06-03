@@ -66,8 +66,12 @@ Default article structure follows a soft PASONA flow:
 Image standard:
 - Use a featured image that matches the exact article topic.
 - Avoid reusing the same image across unrelated posts.
-- Avoid copied product-page images, review images, and irrelevant stock-like images.
-- If a generated image is used, make it support the topic clearly and keep it believable.
+- Licensed stock images may be used when they fit the TrendFlow tone and article context.
+- Stock sources such as Getty Images Bank or similar services are acceptable only when the license permits TrendFlow site use, editing, and publication.
+- When using a stock image, keep an internal record of the source, license basis, download date, and any edits made.
+- Editing a licensed stock image is allowed when it improves fit with the article, such as crop, color, compression, or light text-free composition cleanup.
+- Avoid copied product-page images, review images, search-result thumbnails, screenshots from other articles, and irrelevant stock-like images.
+- If a generated image is better for the topic, create a new believable image instead of forcing a mismatched stock image.
 
 Short-form reuse:
 - Keep Shorts/Reels ideas as an internal editorial note only.
