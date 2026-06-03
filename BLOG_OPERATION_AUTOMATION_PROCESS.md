@@ -70,9 +70,11 @@ Image standard:
 - If a generated image is used, make it support the topic clearly and keep it believable.
 
 Short-form reuse:
-- For each new article, keep one Shorts/Reels angle in mind: hook, 3 short beats, and a simple ending.
-- Prefer article sections that can become a 20 to 40 second video: mistake list, checklist, before/after routine, or "one thing to check before buying."
-- Shopping articles should naturally support a later short-form script, but the article must remain useful even without a video.
+- Keep Shorts/Reels ideas as an internal editorial note only.
+- Do not publish a "short-form conversion point", hook list, scene list, or video-script memo inside the public article body.
+- If a post can become a short-form asset later, record that idea in a README, content audit, or internal planning note instead of the article.
+- Public articles should read like complete visitor-facing guidance, not like an internal production memo.
+- Shopping articles may still support later short-form scripts, but the article must remain useful and natural even when no video is produced.
 
 ## Stage 1. Foundation Build
 
