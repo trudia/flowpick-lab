@@ -19,6 +19,11 @@
     "desc": "AI 시대의 직무 전환, 성인 학습, 포트폴리오 기록을 실제 업무와 연결해 정리합니다.",
     "image": "/assets/featured/ai-portfolio-before-results.png"
   },
+  "creator-side-hustle": {
+    "label": "콘텐츠 부업",
+    "desc": "쇼츠, 릴스, 유튜브 부업을 시작할 때 장비보다 먼저 주제, 촬영 루틴, 예산 기준을 정리합니다.",
+    "image": "/assets/categories/creator-side-hustle.png"
+  },
   "trend-shopping": {
     "label": "트렌드 쇼핑",
     "desc": "부업 장비, 생활 개선 아이템, 구매 기준처럼 사기 전 비교할 글을 모읍니다.",

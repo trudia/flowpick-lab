@@ -343,3 +343,10 @@ Important boundary:
 - AI 시대의 직무 전환, 성인 학습, 스킬업, 포트폴리오 기록을 다룬다.
 - 강의나 자격증을 많이 소개하기보다 실제 업무 문제, 산출물, 실패 원인, 다음 행동을 중심으로 정리한다.
 - 쇼핑/리뷰 글과 연결할 때는 장비보다 학습 목적과 사용 환경을 먼저 본다.
+
+
+## V152 Content Side Hustle Category
+
+- Add 콘텐츠 부업 as a content cluster for shorts, reels, YouTube side hustle, creator routines, equipment criteria, and form-based setup diagnosis.
+- Treat creator equipment posts as information-first unless there is clear shopping intent. Before recommending products, check topic, filming frequency, editing routine, budget, and repeated failure causes.
+- Use lead-form CTAs when the reader needs a personalized setup diagnosis instead of immediate product links.
