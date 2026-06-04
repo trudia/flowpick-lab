@@ -1,429 +1,295 @@
 # TrendFlow Blog Operation Automation Process
 
-TrendFlow is operated as a staged content system, not as a simple daily posting queue. The goal is to build helpful informational content first, then connect the right posts to buying criteria and shopping guides without forcing affiliate links into every article.
+TrendFlow는 단순한 일일 발행 블로그가 아니라, 방문자가 `지금 무엇을 할지 / 하지 않아도 될지` 판단할 수 있게 돕는 기준 큐레이션 미디어다. 정보성 글을 먼저 쌓고, 구매 의도가 분명할 때만 구매 기준과 쇼핑 글로 자연스럽게 이어간다.
 
-## Operating Targets
+## 운영 대상
 
 - Site: https://trend.it.kr/
 - Repository: https://github.com/trudia/flowpick-lab
 - Workspace: `C:\Users\편돌이\Documents\TrendFlow`
 - Default branch: `main`
-- Main categories:
-  - AI 입문 / AI 생산성
+- 핵심 카테고리:
+  - AI 입문 / AI 활용 윤리
   - 집중 회복 / 집중력 & 웰빙
   - 공간 정리 / 공간 & 미니멀
-  - 커리어 & 교육 / 커리어 & 교육 트렌드
+  - 커리어 & 교육 트렌드
+  - 콘텐츠 부업
   - 구매 기준 / 트렌드 쇼핑
 
-## Unified Project Rule
+## 통합 운영 원칙
 
-TrendFlow and TopClass Coupang are operated as one project, not as two separate information tracks. TrendFlow provides the reader-first information curation, while TopClass Coupang provides the product-fit and monetization judgment. Every update should check both sides before changing the site.
+TrendFlow와 TopClass Coupang은 서로 다른 두 프로젝트가 아니라 하나의 운영 흐름으로 본다.
 
-Before publishing or refreshing a page:
-- Check whether the same work was already completed in another file, page, category, or automation instruction.
-- Keep informational content, AI ethics/use guidance, buying criteria, and affiliate paths aligned.
-- Do not change a shopping page in a way that conflicts with the broader TrendFlow editorial direction.
-- Do not change an informational page in a way that ignores the future buying-criteria or Lucy asset path.
-- If one side of the project is mid-update, pause the next dependent step until that update is validated.
-- Prefer the route that gives the visitor the most useful next decision, even when it produces fewer immediate affiliate clicks.
-
-## Accelerated Blog Time Rule
-
-TrendFlow uses an accelerated blog-time model. One real-world day equals four TrendFlow blog-days. In practice, one real six-hour block should be treated as one internal blog-day for planning, review, and iteration.
-
-Use this rule to speed up judgment, not to lower quality:
-- Do not simply publish four times more low-quality posts.
-- Compress the operating cycle: topic selection, publishing, internal-link review, search submission, UI check, and monetization judgment should move faster.
-- A post that is 24 real hours old should be treated as four blog-days old for internal review, but SEO, indexing, crawling, and visitor behavior still follow real-world time.
-- If workload grows beyond the quality threshold, reduce publishing volume first and keep the review/improvement loop alive.
-- Each real day should ideally produce four small decisions: one content decision, one UX/navigation decision, one search/distribution decision, and one monetization/product-fit decision.
-
-Automation interpretation:
-- Run an operating checkpoint every six real hours: 03:00, 09:00, 15:00, and 21:00 KST.
-- 09:00 and 21:00 are deep checkpoints. They should include priorities, completed work, blockers, next actions, and user-input needs.
-- 03:00 and 15:00 are lightweight checkpoints. They should confirm whether anything changed, whether the current plan is still valid, and whether a small correction is needed.
-- Do not notify the user at every checkpoint if there is no meaningful decision or action. Quiet checks are acceptable.
-- Each six-hour checkpoint should move at least one small decision forward: content, UX/navigation, search/distribution, or monetization/product-fit.
-- Treat 24 real hours as four internal review cycles, but do not confuse this with real SEO speed. Indexing, crawling, and visitor behavior still need real elapsed time.
-
-## Trend Interpretation Rule
-
-TrendFlow should treat a trend as a time-based pattern, not a simple "this product is needed now" claim. Before writing a trend update or shopping article, analyze what changed in the past, what environmental factors make it relevant now, and whether the need is likely to continue.
-
-Trend and product judgment should consider:
-- Past signals: recurring discomfort, old buying mistakes, seasonal repetition, review fatigue, or earlier technology limits.
-- Current context: weather, housing type, work style, AI/platform shifts, price pressure, social attention, and reader situation.
-- Future value: whether the product group or decision frame will still help later, not only during a short hype cycle.
-- Fit boundaries: who benefits, who can skip it, and what conditions must be true before the product is worth considering.
-
-Do not state that a product is "the necessary product right now" unless the evidence is narrow and specific. Prefer situation-based wording: "this can help when..." and "you may not need it if...".
-
-## Benchmarking Rule
-
-TrendFlow should learn from successful sites slowly and deliberately. Do not copy their layout, wording, ranking, images, or article structure. Instead, identify the underlying pattern that makes the site useful and translate it into TrendFlow's reader-first style.
-
-Benchmark patterns to watch:
-- Decision-first entry: successful guide sites reduce uncertainty before showing a long list of content.
-- Methodology visibility: strong sites explain how they choose, test, compare, or update recommendations.
-- Editorial trust: affiliate or monetization paths must not appear to drive the recommendation itself.
-- Situation-based navigation: readers should be able to enter by problem, budget, use case, skill level, or urgency.
-- Clear skip conditions: good recommendation content explains who does not need the product or method.
-- Freshness and maintenance: important guides need visible refresh logic, not only new posts.
-- Practical next step: a page should end with one action, comparison, checklist, or linked next article.
-
-Benchmark rollout rule:
-1. Pick one pattern from a trusted reference site.
-2. Write the hypothesis: why this pattern helps visitors and how it could support monetization without hurting trust.
-3. Apply it to one homepage section, category hub, article template, or CTA.
-4. Validate links, mobile readability, tone, and whether the change feels visitor-friendly.
-5. Record the result in a README or audit note before expanding it to other pages.
-
-Do not import a pattern just because a famous site uses it. Use it only if it makes TrendFlow easier to understand, more trustworthy, or more useful for the visitor's next decision.
-
-## Demand-Responsive Brand Rule
-
-TrendFlow should feel like a branded editorial curation platform, not a simple chronological blog. The homepage may change its highlighted routes, hero copy, category emphasis, and CTA order based on demand signals, but the core concept must stay consistent: help visitors interpret trends through their own criteria before acting.
-
-Demand signals can include:
-- Search Console impressions, queries, and pages with rising visibility.
-- Internal content clusters that are growing fast, such as AI verification, creator side hustle, rainy-season space care, career learning, or buying criteria.
-- Seasonal and environmental timing, such as weather, school/work cycles, platform changes, and repeated lifestyle problems.
-- User requests, form responses, recurring questions, or posts that naturally lead to follow-up decisions.
-- Shopping or product-fit opportunities only when they solve a repeated reader problem.
-
-Demand-responsive editing rules:
-- Do not rewrite the site every time a topic is popular. Change one homepage slot, category route, CTA, or internal link first.
-- Do not fake popularity metrics. If exact data is unavailable, use cautious wording such as "currently watched route" or "editorial focus".
-- Keep public UI language visitor-friendly. Do not expose internal project terms such as TopClass Coupang sync, automation flow, or accelerated blog-time.
-- Treat demand as a signal, not an order. If a high-demand topic is shallow, misleading, too sales-driven, or not aligned with TrendFlow's trust, explain why and choose a better angle.
-- Preserve the brand pattern: problem first, context second, criteria third, next action last.
-
-## Editorial Judgment Rule
-
-Follow the user's direction, but do not treat every instruction as automatically optimal. If a request is ambiguous, visually risky, too sales-driven, too AI-like, or likely to weaken visitor trust, state that clearly and propose a better route before implementing.
-
-When giving judgment:
-- Be direct and practical, not vague.
-- Explain why the proposed route helps the visitor or the business goal.
-- If the user's idea is good but needs adjustment, keep the useful intent and revise the execution.
-- If a UI or copy idea feels noisy, overly decorative, or unnecessary, say so and suggest a simpler version.
-- Prefer "This direction looks better because..." or "I would not recommend that as-is; this version is safer..." over silent compliance.
-
-## Editorial Identity
-
-TrendFlow should read like a friendly information curation platform. Each post should help the reader make a small but useful decision, not feel like a stiff encyclopedia entry or a forced sales page.
-
-TrendFlow is also the content foundation for the future Lucy project. That means posts should not chase disposable traffic only. They should build reusable judgment around trends, AI use, digital ethics, attention, space, and buying decisions.
-
-Default writing standard:
-- Write around 2,500 to 3,500 Korean characters for normal articles.
-- Keep paragraphs short, usually 2 to 4 sentences.
-- Use clear subheadings, checklists, comparison blocks, and "what to do next" guidance.
-- Prefer practical examples, everyday situations, and reader-friendly explanations.
-- Treat trend updates as a filter, not a headline chase: explain what changed, who it affects, what to ignore, and what to do next.
-- For AI articles, include responsible-use judgment where relevant: privacy, bias, hallucination risk, source checking, copyright, overreliance, and human decision boundaries.
-- When referencing other sites or current materials, use them only for research. Do not copy sentences, article structure, reviews, images, product detail text, or sales claims.
-- Every post should have one concrete takeaway the reader can use immediately.
-
-Default article structure follows a soft PASONA flow:
-- Problem: name the reader's actual situation or friction.
-- Affinity / Agitation: show why the problem matters without exaggerating fear.
-- Solution: explain the practical method, 기준, 루틴, or checklist.
-- Offer: suggest the most useful next step, article, checklist, or product-selection 기준.
-- Narrowing: help the reader choose by situation, budget, space, skill level, or urgency.
-- Action: end with a small action, not a pushy command.
-
-Image standard:
-- Use a featured image that matches the exact article topic.
-- Avoid reusing the same image across unrelated posts.
-- Licensed stock images may be used when they fit the TrendFlow tone and article context.
-- Stock sources such as Getty Images Bank or similar services are acceptable only when the license permits TrendFlow site use, editing, and publication.
-- When using a stock image, keep an internal record of the source, license basis, download date, and any edits made.
-- Editing a licensed stock image is allowed when it improves fit with the article, such as crop, color, compression, or light text-free composition cleanup.
-- Avoid copied product-page images, review images, search-result thumbnails, screenshots from other articles, and irrelevant stock-like images.
-- If a generated image is better for the topic, create a new believable image instead of forcing a mismatched stock image.
-
-Short-form reuse:
-- Keep Shorts/Reels ideas as an internal editorial note only.
-- Do not publish a "short-form conversion point", hook list, scene list, or video-script memo inside the public article body.
-- If a post can become a short-form asset later, record that idea in a README, content audit, or internal planning note instead of the article.
-- Public articles should read like complete visitor-facing guidance, not like an internal production memo.
-- Shopping articles may still support later short-form scripts, but the article must remain useful and natural even when no video is produced.
-
-## Stage 1. Foundation Build
-
-Recommended period: month 0 to month 3.
-
-Goal:
-- Build category depth.
-- Publish enough helpful posts for visitors to understand the site.
-- Keep monetization light and natural.
-
-Weekly rhythm:
-- 3 informational posts.
-- 1 buying-criteria post.
-- 1 shopping guide only when the topic has clear product intent.
-- 1 improvement session for internal links, category pages, search, archive, and sitemap.
-
-Daily automation:
-0. Apply the accelerated blog-time model: one real day equals four internal blog-days, so each six-hour checkpoint should move at least one small decision forward.
-1. Check the current category balance.
-2. Select one topic from the four main areas.
-3. Check whether there is a meaningful trend update worth explaining.
-4. Decide the post type: trend update, AI ethics/use guide, informational, buying criteria, shopping guide, or update.
-5. If the post needs Coupang links, prepare a link request instead of writing fake links.
-6. If the post does not need links, draft and publish directly after validation.
-
-## Stage 2. Optimization
-
-Recommended period: month 3 to month 6.
-
-Goal:
-- Improve posts that already receive impressions or clicks.
-- Add internal links from informational posts to buying criteria and shopping guides.
-- Strengthen trust, structure, and user satisfaction.
-
-Weekly rhythm:
-- 2 new posts.
-- 2 post refreshes.
-- 1 internal-link and category-hub improvement.
-- 1 shopping guide only when a clear buying query exists.
-
-Automation focus:
-- Find posts with weak titles, thin intros, missing next-step links, or unclear category placement.
-- Add comparison sections, checklists, and "who this is for / not for" blocks where useful.
-- Keep affiliate links only in posts with real product-selection intent.
-
-## Stage 3. Monetization System
-
-Recommended period: month 6 to month 12.
-
-Goal:
-- Turn category clusters into monetization paths.
-- Build visitor trust before asking for a purchase click.
-
-Weekly rhythm:
-- 1 to 2 new posts.
-- 2 to 3 refreshes of high-potential posts.
-- 1 product guide or comparison post.
-- 1 conversion review of CTA placement, affiliate notices, and related links.
-
-Automation focus:
-- Connect informational posts to buying-criteria posts.
-- Connect buying-criteria posts to shopping guides.
-- Keep shopping posts focused on situation-based product choice, not aggressive recommendation.
-- Review product cards for correct affiliate attributes.
-- Evaluate whether linked products are actually helpful for the reader's situation, value for money, expected use case, maintenance burden, size, noise, durability, and replacement cycle.
-- Do not recommend a product group just because an affiliate link is available.
-- Prefer evergreen commerce angles: products that solve repeated problems, teach durable selection criteria, or will remain useful beyond a short trend cycle.
-
-## Stage 4. Long-Term Media Operation
-
-Recommended period: after month 12.
-
-Goal:
-- Operate TrendFlow as a compact problem-solving media site.
-- Maintain fewer but stronger new posts.
-- Refresh old posts before they become stale.
-
-Weekly rhythm:
-- 1 new post.
-- 3 refreshes or structural improvements.
-- 1 data review.
-- 1 category-hub or newsletter/checklist asset improvement.
-
-Automation focus:
-- Maintain the strongest topic clusters.
-- Retire or merge overlapping posts.
-- Expand reusable assets such as checklists, templates, and comparison tables.
-- Review monetization paths monthly.
-- Build Lucy-ready assets: AI use principles, ethical decision checklists, product-fit frameworks, and trend interpretation templates that can later become a product or assistant experience.
-
-## AI Answer Verification Rule
-
-AI use articles should teach readers how to verify an answer before using it, not simply how to get more output. For AI answers, check scope, fact/opinion/guess separation, date-sensitive information, fit with the reader's situation, and human responsibility boundaries.
-
-Before publishing an AI use article, check:
-- Whether the answer may be outdated, especially for prices, laws, policies, platform rules, and APIs.
-- Whether the article separates facts, opinions, assumptions, and suggested actions.
-- Whether private information, copyrighted material, and sensitive decisions are handled cautiously.
-- Whether the reader gets a small verification routine they can repeat later.
-
-## Portfolio Evidence Rule
-
-Career and education posts should not stop at recommending more tools, lectures, or certificates. When a post discusses learning, AI work, or career transition, it should help the reader turn activity into evidence.
-
-Before publishing a career or AI-learning post, check:
-- What problem the reader is trying to solve.
-- What role the reader played, especially when AI generated drafts or structure.
-- What failed first and what condition was changed.
-- What output, template, checklist, or before/after evidence remains.
-- Whether AI use is described responsibly without exposing private information, copying copyrighted materials, or overstating the result.
-
-Good career content should help the visitor decide what to record next, not simply what to learn next.
-
-## Coupang Link Automation Policy
-
-Codex must not guess, scrape, or fabricate Coupang Partners links. When the user has enabled the official Coupang Partners API and local environment variables are available, Codex may use the approved API workflow below.
-
-Allowed:
-- Analyze the topic and identify product groups.
-- Search candidate products through the official Coupang Partners API.
-- Use product search API partner URLs directly when they are already `link.coupang.com`.
-- Convert normal `www.coupang.com` product URLs through the official deep link API when needed.
-- Use API-generated Coupang Partners links or links provided by the user.
-- Validate every provided affiliate link for required attributes.
-- Insert affiliate disclosure and GA4 tracking attributes.
-- Explain why each product type is useful, who it fits, and who should skip it.
-- Keep value-for-money and practical fit more important than high-price positioning.
-
-API environment variables:
-
-```text
-COUPANG_PARTNERS_ACCESS_KEY
-COUPANG_PARTNERS_SECRET_KEY
-COUPANG_PARTNERS_SUB_ID   optional
-```
-
-If the Codex app cannot see newly created environment variables yet, use a local `.env` file in the TrendFlow workspace with the same names. `.env` is ignored by git.
-
-Local API helper:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Test
-powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Search -Keyword "desk lamp" -Limit 5 -OutputPath ".trendflow-coupang\desk-lamp.json"
-powershell -ExecutionPolicy Bypass -File scripts/coupang-partners-api.ps1 -Mode Deeplink -Url "https://www.coupang.com/..." -OutputPath ".trendflow-coupang\deeplink.json"
-```
-
-Not allowed:
-- Logging into Coupang Partners automatically.
-- Scraping product pages, reviews, images, or sales copy.
-- Storing Coupang account credentials or private tokens in the repository.
-
-If API credentials are not available or the API call fails, Codex should stop after preparing the article plan and ask the user for links in this format:
-
-```text
-주제:
-[글 주제]
-
-필요한 쿠팡파트너스 링크:
-1. [제품군 / 상황]
-2. [제품군 / 상황]
-3. [제품군 / 상황]
-4. [제품군 / 상황]
-5. [제품군 / 상황]
-
-링크를 주시면 글 본문, 비교표, 제품 카드, CTA, 카테고리, 검색, 아카이브, 사이트맵까지 반영해 발행하겠습니다.
-```
-
-## Daily Operating Decision Tree
-
-1. Is there a user-provided shopping topic and Coupang links?
-   - Yes: publish a shopping guide.
-   - No: continue.
-2. Is there a shopping topic but no links?
-   - Yes: prepare the link request and wait.
-   - No: continue.
-3. Does a category need more foundation content?
-   - Yes: publish an informational post.
-   - No: continue.
-4. Does an existing post have a weak path to the next article?
-   - Yes: refresh internal links and CTA.
-   - No: continue.
-5. Is there no meaningful update?
-   - Report: 오늘은 별도 개선 제안 없음.
-
-## Publishing Validation
-
-Before pushing:
-- New or changed post URL exists.
-- Home latest or series card points to the correct post.
-- Category page is updated.
-- Search data is updated.
-- Archive is updated.
-- Sitemap is updated when a URL is new.
-- `version.txt` is updated.
-- `deploy-check-v###.html` is added.
-- Article body follows the 2,500 to 3,500 Korean character target unless the topic clearly needs a shorter update or longer guide.
-- Paragraphs are easy to scan on mobile.
-- Featured image matches the article topic and is not duplicated from a mismatched article.
-- A short-form reuse angle is recorded when useful.
-- Affiliate posts contain disclosure and link attributes.
-- No private credentials are committed.
-
-After pushing:
-- GitHub Pages build is `built`.
-- `https://trend.it.kr/version.txt` shows the expected version.
-- New post URL opens.
-- Category page opens.
-- Sitemap opens.
-- Search engine submission is done when a new URL is published.
-
-## Search Engine Submission Automation
-
-After a successful deploy, use the combined search submission helper whenever new public URLs are published:
+- TrendFlow는 방문자 중심의 정보 큐레이션과 기준 정리를 맡는다.
+- TopClass Coupang은 제품 적합도, 구매 기준, 수익화 판단을 보조한다.
+- 정보성 글, AI 윤리/활용법, 구매 기준, 쇼핑/리뷰 글은 서로 분리된 트랙처럼 운영하지 않는다.
+- 이미 완료한 작업을 다시 하지 않는다.
+- 한쪽 작업이 진행 중이면 검증이 끝난 뒤 다음 의존 작업을 진행한다.
+- 공개 UI에는 내부 용어를 노출하지 않는다. `TopClass Coupang 통합`, `자동화 흐름`, `가속 시간` 같은 말은 방문자에게 보여주지 않는다.
+
+## 가속 시간 운영 원칙
+
+TrendFlow는 실제 하루 24시간을 내부 운영상 4개의 blog-day로 본다. 즉 실제 6시간이 내부 운영상 하루다.
+
+이 원칙은 발행량을 무조건 4배 늘리기 위한 것이 아니다. 더 빠르게 판단하고, 작게 고치고, 검증하는 반복 루프를 만들기 위한 것이다.
+
+- 실제 6시간마다 운영 체크포인트를 둔다: 03:00, 09:00, 15:00, 21:00 KST.
+- 09:00과 21:00은 깊은 점검이다. 우선순위, 완료 작업, 막힌 지점, 다음 행동, 사용자 입력 필요 여부를 정리한다.
+- 03:00과 15:00은 가벼운 점검이다. 계획이 여전히 유효한지, 작은 수정이 필요한지만 본다.
+- 의미 있는 변화가 없으면 억지 제안을 만들지 않는다.
+- 24시간 지난 글은 내부 검토상 4일 지난 글처럼 보되, SEO 색인, 크롤링, 방문자 반응은 현실 시간 지연을 고려한다.
+- 품질이 흔들리면 발행량보다 검토와 개선 루프를 우선한다.
+
+## 트렌드 판단 원칙
+
+TrendFlow에서 트렌드는 `지금 많이 보이는 것`이 아니라, 과거 변화와 현재 환경, 미래 지속 가능성이 이어지는 패턴이다.
+
+글 주제나 제품군을 고를 때는 아래를 확인한다.
+
+- 과거 신호: 반복된 불편, 이전 구매 실패, 계절 반복, 후기 피로, 기술 한계
+- 현재 맥락: 날씨, 주거, 일 방식, AI/플랫폼 변화, 가격 부담, 사회적 관심, 독자 상황
+- 미래 가치: 반짝 유행 뒤에도 남는 기준인지
+- 적합도 경계: 누구에게 도움이 되고, 누가 굳이 하지 않아도 되는지
+- 표현 방식: `지금 꼭 필요하다`보다 `이런 상황이면 도움이 된다`로 설명하는지
+
+## 실패 원인 점검 원칙
+
+사람들은 계획, 실행, 제품 구매에서 `될 이유`를 먼저 찾기 쉽다. 하지만 실제 결과가 다를 때는 새 방법이나 새 제품을 찾기 전에 왜 안 됐는지 먼저 봐야 한다.
+
+모든 글은 가능하면 아래 관점을 포함한다.
+
+- 실행 환경이 맞았는가?
+- 유지 비용이나 관리 부담이 과하지 않았는가?
+- 사용 빈도와 보관 공간이 현실적인가?
+- 후기, 인기순, AI 추천의 착시가 있었는가?
+- 기대 효과와 실제 문제가 어긋났는가?
+- 줄일 조건을 찾으면 다시 나아질 수 있는가?
+
+좋은 글은 될 이유만 설득하지 않고, 안 되는 조건을 독자가 직접 발견하고 고칠 수 있게 돕는다.
+
+## 벤치마킹 원칙
+
+잘되는 사이트에는 이유가 있다. 다만 레이아웃, 문장, 랭킹, 이미지, 기사 구조를 복사하지 않는다. 작동하는 패턴만 추출해 TrendFlow 방식으로 번역한다.
+
+볼 만한 패턴:
+
+- 결정 먼저: 긴 목록 전에 독자의 불확실성을 줄인다.
+- 방법론 공개: 왜 이 기준으로 고르는지 설명한다.
+- 편집 신뢰: 제휴 링크가 추천을 지배하지 않게 보인다.
+- 상황별 진입: 문제, 예산, 사용 장면, 숙련도, 긴급도별로 들어갈 수 있다.
+- 건너뛰어도 되는 조건: 사지 않아도 되는 사람을 알려준다.
+- 유지 관리: 중요한 글은 새 글보다 보강과 갱신이 중요하다.
+- 작은 다음 행동: 체크리스트, 비교표, 폼, 다음 글로 이어진다.
+
+## 수요 반응형 브랜드 운영
+
+TrendFlow는 단순 최신순 블로그가 아니라 브랜드형 큐레이션 사이트처럼 보여야 한다. 홈의 강조 글, 카테고리 순서, CTA, 내부 링크는 수요에 따라 바꿀 수 있다.
+
+수요 신호:
+
+- Search Console 노출, 쿼리, 클릭이 늘어나는 페이지
+- AI 검증, 콘텐츠 부업, 장마철 공간 관리, 커리어 학습, 구매 기준처럼 커지는 클러스터
+- 계절, 날씨, 학업/업무 주기, 플랫폼 변화
+- 사용자 요청, 폼 응답, 반복 질문
+- 반복 문제를 해결하는 제품군 또는 체크리스트 기회
+
+수요는 명령이 아니라 신호다. 수요가 있어도 얕거나 과장되거나 신뢰를 해치면 더 나은 각도로 바꾼다.
+
+## 글 작성 기준
+
+TrendFlow 글은 친근한 정보 큐레이션 플랫폼처럼 읽혀야 한다.
+
+- 일반 글은 2,500~3,500자 내외를 기본 목표로 한다.
+- 문단은 모바일에서 읽기 좋게 짧게 나눈다.
+- 부드러운 PASONA 흐름을 따른다.
+  - Problem: 독자의 실제 문제를 짚는다.
+  - Affinity / Agitation: 과장 없이 왜 불편한지 공감한다.
+  - Solution: 기준, 루틴, 체크리스트를 제시한다.
+  - Offer: 다음 글, 폼, 체크리스트, 구매 기준 중 가장 자연스러운 길을 제안한다.
+  - Narrowing: 상황, 예산, 공간, 숙련도, 긴급도별로 좁힌다.
+  - Action: 작은 행동 하나로 끝낸다.
+- 공개 글 안에는 쇼츠 전환 포인트, 내부 제작 메모, 자동화 문구를 넣지 않는다.
+- 쇼츠/Reels 확장 아이디어는 README, 감사 노트, 운영 메모에만 남긴다.
+
+## 이미지 기준
+
+- 글 주제와 정확히 맞는 대표 이미지를 쓴다.
+- 무관한 글에 같은 이미지를 반복하지 않는다.
+- 제품 상세페이지 이미지, 리뷰 이미지, 검색 썸네일, 타 기사 스크린샷을 복사하지 않는다.
+- 게티이미지뱅크 등 스톡 이미지는 TrendFlow 사용, 편집, 게시가 허용되는 라이선스일 때만 쓴다.
+- 스톡 이미지를 쓰면 소스, 라이선스 근거, 다운로드 날짜, 편집 내용을 내부 README나 감사 노트에 남긴다.
+- 생성 이미지가 더 적합하면 새로 만든다.
+
+## AI 콘텐츠 기준
+
+AI 입문과 AI 활용법 글은 단순 도구 사용법보다 `어떤 상황에서 어떤 기준으로 써야 하는지`를 알려준다.
+
+확인할 항목:
+
+- 개인정보
+- 편향
+- 환각
+- 출처 확인
+- 날짜가 중요한 정보
+- 저작권
+- 과의존
+- 사람이 직접 판단해야 하는 경계
+
+AI 답변 검증 글은 더 많은 출력을 얻는 법보다 답변을 쓰기 전 확인하는 루틴을 남겨야 한다.
+
+## 커리어 & 교육 콘텐츠 기준
+
+커리어와 교육 글은 더 많은 강의, 자격증, 도구를 권하는 데서 멈추지 않는다.
+
+좋은 커리어 글은 아래를 남긴다.
+
+- 독자가 해결하려는 업무 문제
+- AI를 썼다면 사람이 맡은 역할
+- 처음에 실패한 지점
+- 바꾼 조건
+- 남은 산출물, 템플릿, 체크리스트, 포트폴리오 근거
+- 다음에 기록할 행동
+
+## 콘텐츠 부업 기준
+
+쇼츠, 릴스, 유튜브 부업 글은 장비 구매보다 먼저 주제, 촬영 빈도, 편집 루틴, 예산, 반복 가능성을 본다.
+
+- 바로 제품 링크로 보내지 않는다.
+- 개인 세팅 진단이 필요한 경우 구글폼 CTA를 우선한다.
+- 장비 글은 정보성 글로 시작하고, 명확한 구매 의도가 생겼을 때 쇼핑 글로 이어간다.
+
+## 쇼핑/리뷰 콘텐츠 기준
+
+쇼핑/리뷰 글은 쿠팡파트너스 API를 활용할 수 있지만, API 결과는 연구 입력이다. 상품명, 가격, 배송, 이미지, 상세페이지 문구, 리뷰를 그대로 복사하지 않는다.
+
+필수 원칙:
+
+- 사용자가 준 링크 또는 공식 API로 만든 링크만 사용한다.
+- 제휴 링크에는 `target="_blank"`와 `rel="nofollow noopener sponsored"`를 넣는다.
+- GA4 추적 속성을 유지한다: `data-track`, `data-post-slug`, `data-product-group`, `data-position`.
+- `lptag=AF3446366`을 확인한다.
+- 제품은 누가 쓰면 좋은지, 누가 건너뛰어도 되는지, 장기적으로 남는 가치가 있는지 설명한다.
+- 반복 문제를 해결하는 제품군을 우선한다.
+- 단기 유행, 충동구매, 고가 제품 밀어주기를 피한다.
+
+API가 실패하거나 키가 보이지 않으면 제품군을 정리한 뒤 사용자에게 쿠팡파트너스 링크 3~5개를 요청한다.
+
+## 검색엔진 제출 기준
+
+새 URL이 생기면 가능한 범위에서 검색엔진 제출을 실행한다.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/submit-search-engines.ps1 -Urls "https://trend.it.kr/posts/example-post/","https://trend.it.kr/categories/example-category/","https://trend.it.kr/sitemap.xml" -InspectGoogle
 ```
 
-This helper performs:
-- Naver and Bing IndexNow submission through `scripts/submit-indexnow.ps1`.
-- Google Search Console sitemap submission through `scripts/google-search-console.ps1`.
-- Optional Google URL Inspection API checks for the submitted post/category URLs.
+- Naver / Bing IndexNow는 자동 제출한다.
+- Google Search Console 사이트맵 제출과 URL Inspection은 OAuth 값이 있을 때 실행한다.
+- 일반 블로그 글의 Search Console `색인 생성 요청` 버튼은 공식 일반 API로 대체하지 않는다.
+- Google Indexing API는 일반 TrendFlow 글에 쓰지 않는다.
+- 수동 색인 할당량이 초과되면 사이트맵과 내부 링크를 유지하고 다음 점검 때 다시 확인한다.
 
-Google setup is optional but recommended. If Google credentials are not configured, the helper reports `needs_setup` for Google and still keeps the IndexNow path usable.
+## 단계별 운영
 
-TrendFlow uses the Search Console domain property by default:
+### Stage 1. Foundation Build
+
+추천 기간: 0~3개월
+
+목표:
+
+- 카테고리 깊이 만들기
+- 정보성 글 기반 쌓기
+- 구매/쇼핑 연결은 가볍게 유지하기
+
+주간 리듬:
+
+- 정보성 글 2~3개
+- 구매 기준 글 1개
+- 명확한 상품 의도가 있을 때만 쇼핑 글 1개
+- 내부 링크, 카테고리, 검색, 아카이브, 사이트맵 개선 1회
+
+### Stage 2. Optimization
+
+추천 기간: 3~6개월
+
+목표:
+
+- 노출이나 클릭이 생긴 글을 보강한다.
+- 정보성 글에서 구매 기준 글로 자연스럽게 연결한다.
+- 홈과 카테고리 허브를 문제별 진입 구조로 정리한다.
+
+주간 리듬:
+
+- 신규 글 1~2개
+- 기존 글 보강 2개
+- 내부 링크 / 카테고리 허브 개선 1회
+
+### Stage 3. Monetization System
+
+추천 기간: 6~12개월
+
+목표:
+
+- 정보성 글 → 구매 기준 → 쇼핑 글로 이어지는 수익화 루트를 만든다.
+- 제휴 링크보다 신뢰를 먼저 쌓는다.
+
+주간 리듬:
+
+- 신규 글 1개
+- 고잠재 글 보강 2~3개
+- 제품 가이드 또는 비교 글 1개
+- CTA와 제휴 고지 점검 1회
+
+### Stage 4. Long-Term Media Operation
+
+추천 기간: 12개월 이후
+
+목표:
+
+- 겹치는 글은 합치고, 강한 클러스터를 키운다.
+- 체크리스트, 템플릿, 비교표, 진단 폼을 자산화한다.
+- Lucy 프로젝트로 이어질 수 있는 판단 프레임을 축적한다.
+
+## 6시간 체크포인트 출력
+
+03:00 / 15:00:
 
 ```text
-sc-domain:trend.it.kr
+가벼운 점검:
+[변경 없음 / 작은 수정 필요 / 즉시 조치 필요]
+
+확인한 항목:
+[홈 / 글 / 카테고리 / 검색 / 색인 / 쇼핑 후보]
+
+다음 6시간에 볼 것:
+[1~3개]
 ```
 
-Google Search Console environment variables:
+09:00 / 21:00:
 
 ```text
-GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN
+운영 점검:
+[오늘 상태]
+
+가장 중요한 개선점:
+[1~3개]
+
+오늘 바로 할 일:
+[Codex가 바로 할 수 있는 일]
+
+사용자 입력 필요:
+[없음 / 쿠팡 링크 / 승인 / 이미지 소스 / 폼 링크]
+
+다음 6시간 재확인:
+[1~3개]
 ```
 
-or:
+## 발행 전 검증
 
-```text
-GOOGLE_SEARCH_CONSOLE_CLIENT_ID
-GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET
-GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN
-```
-
-Do not commit Google client secrets, refresh tokens, access tokens, or inspection reports. Local Google inspection reports should be written under `.trendflow-google/`, which is ignored by git.
-
-For refresh-token setup, create a Google OAuth Client ID with application type `Desktop app`, store `GOOGLE_SEARCH_CONSOLE_CLIENT_ID` and `GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET` in local `.env`, then run:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/get-google-search-console-refresh-token.ps1 -SaveToEnv
-```
-
-Important boundary:
-- If the daily manual indexing quota is exceeded, skip manual indexing requests, keep the published URL in the sitemap, and revisit manual submission later.
-- Google sitemap submission and URL inspection can be automated.
-- The Search Console "Request indexing" button for normal blog posts cannot be replaced by a general public API.
-- Do not use Google's Indexing API for ordinary TrendFlow articles because it is limited to job posting and livestreaming video pages.
-
-
-## 실패 원인 점검 규칙
-- TrendFlow 글은 될 이유만 모으지 않고 왜 안 됐는지, 왜 안 될 수 있는지를 함께 본다.
-- 계획, 실행, 제품 구매가 기대와 달랐을 때 바로 새 방법이나 새 제품을 찾기보다 환경, 마찰, 유지 비용, 기대 불일치를 먼저 나눈다.
-- 쇼핑/리뷰 글은 제품 장점뿐 아니라 사용자가 안 쓰게 되는 조건, 관리 부담, 보관 문제, 반복 실패 원인을 함께 정리한다.
-- AI 활용 글과 루틴 글도 새 도구 소개보다 멈춘 지점과 수정 가능한 조건을 먼저 확인한다.
-
-
-## 커리어 & 교육 트렌드 운영 기준
-- AI 시대의 직무 전환, 성인 학습, 스킬업, 포트폴리오 기록을 다룬다.
-- 강의나 자격증을 많이 소개하기보다 실제 업무 문제, 산출물, 실패 원인, 다음 행동을 중심으로 정리한다.
-- 쇼핑/리뷰 글과 연결할 때는 장비보다 학습 목적과 사용 환경을 먼저 본다.
-
-
-## V152 Content Side Hustle Category
-
-- Add 콘텐츠 부업 as a content cluster for shorts, reels, YouTube side hustle, creator routines, equipment criteria, and form-based setup diagnosis.
-- Treat creator equipment posts as information-first unless there is clear shopping intent. Before recommending products, check topic, filming frequency, editing routine, budget, and repeated failure causes.
-- Use lead-form CTAs when the reader needs a personalized setup diagnosis instead of immediate product links.
+- 새 글 URL이 존재한다.
+- 홈 최신 글 또는 관련 카드가 올바른 글로 이어진다.
+- 카테고리, 검색, 아카이브, 사이트맵이 갱신됐다.
+- `version.txt`와 `deploy-check-v###.html`은 공개 사이트가 바뀔 때 갱신한다.
+- 글은 모바일에서 읽기 편하다.
+- 대표 이미지는 주제와 맞다.
+- 제휴 글은 고지와 링크 속성을 갖췄다.
+- 민감정보와 로컬 키가 커밋되지 않았다.
