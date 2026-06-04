@@ -39,9 +39,12 @@ Use this rule to speed up judgment, not to lower quality:
 - Each real day should ideally produce four small decisions: one content decision, one UX/navigation decision, one search/distribution decision, and one monetization/product-fit decision.
 
 Automation interpretation:
-- Morning checks should treat the next 12 real hours as two blog-days of execution runway.
-- Evening checks should close the previous two blog-days, identify what did not work, and prepare the next two blog-days.
-- If a six-hour or four-times-a-day automation is added later, each run should behave like a lightweight blog-day checkpoint rather than a full manual audit.
+- Run an operating checkpoint every six real hours: 03:00, 09:00, 15:00, and 21:00 KST.
+- 09:00 and 21:00 are deep checkpoints. They should include priorities, completed work, blockers, next actions, and user-input needs.
+- 03:00 and 15:00 are lightweight checkpoints. They should confirm whether anything changed, whether the current plan is still valid, and whether a small correction is needed.
+- Do not notify the user at every checkpoint if there is no meaningful decision or action. Quiet checks are acceptable.
+- Each six-hour checkpoint should move at least one small decision forward: content, UX/navigation, search/distribution, or monetization/product-fit.
+- Treat 24 real hours as four internal review cycles, but do not confuse this with real SEO speed. Indexing, crawling, and visitor behavior still need real elapsed time.
 
 ## Trend Interpretation Rule
 
@@ -145,7 +148,7 @@ Weekly rhythm:
 - 1 improvement session for internal links, category pages, search, archive, and sitemap.
 
 Daily automation:
-0. Apply the accelerated blog-time model: one real day equals four internal blog-days, so each check should move at least one small decision forward.
+0. Apply the accelerated blog-time model: one real day equals four internal blog-days, so each six-hour checkpoint should move at least one small decision forward.
 1. Check the current category balance.
 2. Select one topic from the four main areas.
 3. Check whether there is a meaningful trend update worth explaining.
