@@ -68,7 +68,7 @@
 
       function start(){
         if(prefersReducedMotion||timer) return;
-        timer=window.setInterval(function(){show(index+1);},10000);
+        timer=window.setInterval(function(){show(index+1);},5000);
       }
 
       dots.forEach(function(dot,i){

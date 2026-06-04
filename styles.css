@@ -2078,6 +2078,15 @@ html[data-theme='dark']{
   background:transparent;
   box-shadow:none;
   backdrop-filter:none;
+  text-align:center;
+}
+.home-brand-hero-v163 .home-hero-slide-v158.is-active{
+  display:flex;
+  width:100%;
+  min-height:292px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 .home-brand-hero-v163 .home-hero-slide-v158 span{
   min-height:32px;
@@ -2086,12 +2095,13 @@ html[data-theme='dark']{
   border-radius:8px;
   background:rgba(255,255,255,.72);
   color:var(--tf-brand-green);
+  justify-content:center;
 }
 .home-brand-title-v163,
 .home-brand-hero-v163 .home-hero-slide-v158 strong{
   display:block;
   max-width:760px;
-  margin:18px 0 0;
+  margin:18px auto 0;
   color:var(--tf-brand-deep);
   font-size:clamp(2.2rem,4.8vw,4.7rem);
   font-weight:950;
@@ -2110,42 +2120,15 @@ html[data-theme='dark']{
 }
 .home-brand-hero-v163 .home-hero-slide-v158 p{
   max-width:680px;
-  margin-top:22px;
+  margin:22px auto 0;
   color:#334155;
   font-size:1.12rem;
   line-height:1.78;
 }
-.home-brand-actions-v163{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-.home-brand-actions-v163 a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:46px;
-  padding:12px 15px;
-  border:1px solid rgba(15,47,52,.14);
-  border-radius:8px;
-  background:rgba(255,255,255,.82);
-  color:#0b2f34;
-  font-weight:950;
-  box-shadow:0 12px 28px rgba(15,23,42,.06);
-}
-.home-brand-actions-v163 a:first-child{
-  background:#0b2f34;
-  color:#fff;
-  border-color:#0b2f34;
-}
-.home-brand-actions-v163 a:hover{
-  transform:translateY(-1px);
-  border-color:rgba(15,118,110,.36);
-}
 .home-brand-hero-v163 .home-hero-dots-v158{
-  left:0;
+  left:50%;
   bottom:18px;
+  transform:translateX(-50%);
 }
 .home-brand-hero-v163 .home-hero-panel-v155{
   min-height:360px;
@@ -2245,18 +2228,12 @@ html[data-theme='dark'] .home-brand-hero-v163{
     url('/assets/featured/ai-era-career-skills-map.png') center right/cover no-repeat;
 }
 html[data-theme='dark'] .home-brand-hero-v163 .home-hero-slide-v158 span,
-html[data-theme='dark'] .home-brand-actions-v163 a,
 html[data-theme='dark'] .home-demand-strip-v163 a,
 html[data-theme='dark'] .home-brand-hero-v163 .home-hero-panel-v155,
 html[data-theme='dark'] .home-brand-hero-v163 .home-hero-panel-v155 a{
   background:rgba(15,23,42,.78);
   border-color:rgba(226,232,240,.16);
   color:#f8fafc;
-}
-html[data-theme='dark'] .home-brand-actions-v163 a:first-child{
-  background:#f8fafc;
-  color:#092f2e;
-  border-color:#f8fafc;
 }
 html[data-theme='dark'] .home-brand-hero-v163 .home-hero-slide-v158 p,
 html[data-theme='dark'] .home-demand-strip-v163 p{
@@ -2310,7 +2287,6 @@ html[data-theme='dark'] .latest-title-wrap{
   .home-brand-hero-v163 .home-hero-slide-v158 p{
     font-size:1rem;
   }
-  .home-brand-actions-v163 a,
   .home-demand-strip-v163 a{
     width:100%;
   }
