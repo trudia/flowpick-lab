@@ -80,6 +80,24 @@ Benchmark rollout rule:
 
 Do not import a pattern just because a famous site uses it. Use it only if it makes TrendFlow easier to understand, more trustworthy, or more useful for the visitor's next decision.
 
+## Demand-Responsive Brand Rule
+
+TrendFlow should feel like a branded editorial curation platform, not a simple chronological blog. The homepage may change its highlighted routes, hero copy, category emphasis, and CTA order based on demand signals, but the core concept must stay consistent: help visitors interpret trends through their own criteria before acting.
+
+Demand signals can include:
+- Search Console impressions, queries, and pages with rising visibility.
+- Internal content clusters that are growing fast, such as AI verification, creator side hustle, rainy-season space care, career learning, or buying criteria.
+- Seasonal and environmental timing, such as weather, school/work cycles, platform changes, and repeated lifestyle problems.
+- User requests, form responses, recurring questions, or posts that naturally lead to follow-up decisions.
+- Shopping or product-fit opportunities only when they solve a repeated reader problem.
+
+Demand-responsive editing rules:
+- Do not rewrite the site every time a topic is popular. Change one homepage slot, category route, CTA, or internal link first.
+- Do not fake popularity metrics. If exact data is unavailable, use cautious wording such as "currently watched route" or "editorial focus".
+- Keep public UI language visitor-friendly. Do not expose internal project terms such as TopClass Coupang sync, automation flow, or accelerated blog-time.
+- Treat demand as a signal, not an order. If a high-demand topic is shallow, misleading, too sales-driven, or not aligned with TrendFlow's trust, explain why and choose a better angle.
+- Preserve the brand pattern: problem first, context second, criteria third, next action last.
+
 ## Editorial Judgment Rule
 
 Follow the user's direction, but do not treat every instruction as automatically optimal. If a request is ambiguous, visually risky, too sales-driven, too AI-like, or likely to weaken visitor trust, state that clearly and propose a better route before implementing.
