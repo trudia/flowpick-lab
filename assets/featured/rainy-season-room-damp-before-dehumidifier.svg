@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Damp room checklist illustration</title>
+  <desc id="desc">A calm room scene with rain outside, indoor laundry, air flow lines, and humidity markers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edf7f5"/>
+      <stop offset="0.52" stop-color="#f8faf7"/>
+      <stop offset="1" stop-color="#e7eef8"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8ddf5"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <path d="M0 540 C160 500 300 560 455 516 C641 464 785 520 948 475 C1054 445 1139 448 1200 470 L1200 675 L0 675 Z" fill="#dceee9"/>
+  <rect x="96" y="78" width="1008" height="520" rx="36" fill="#ffffff" opacity="0.72" filter="url(#shadow)"/>
+  <rect x="146" y="118" width="406" height="285" rx="24" fill="url(#window)" stroke="#b8d2ee" stroke-width="4"/>
+  <line x1="349" y1="118" x2="349" y2="403" stroke="#b8d2ee" stroke-width="4"/>
+  <line x1="146" y1="258" x2="552" y2="258" stroke="#b8d2ee" stroke-width="4"/>
+  <g stroke="#5f8ec1" stroke-width="7" stroke-linecap="round" opacity="0.68">
+    <line x1="205" y1="160" x2="186" y2="207"/>
+    <line x1="276" y1="143" x2="254" y2="198"/>
+    <line x1="430" y1="154" x2="408" y2="211"/>
+    <line x1="500" y1="221" x2="481" y2="272"/>
+    <line x1="239" y1="292" x2="218" y2="346"/>
+    <line x1="392" y1="292" x2="373" y2="340"/>
+  </g>
+  <rect x="690" y="150" width="250" height="168" rx="24" fill="#e9f2ee" stroke="#bfd8cf" stroke-width="4"/>
+  <path d="M738 272 L786 198 L838 272 Z" fill="#ffffff" stroke="#87b7a5" stroke-width="5"/>
+  <circle cx="790" cy="268" r="16" fill="#87b7a5"/>
+  <g fill="none" stroke="#4f9b8b" stroke-width="7" stroke-linecap="round" opacity="0.8">
+    <path d="M608 222 C650 192 678 190 720 209"/>
+    <path d="M611 282 C675 319 738 316 795 284"/>
+    <path d="M606 344 C669 385 766 382 848 342"/>
+  </g>
+  <g stroke="#203743" stroke-width="7" stroke-linecap="round">
+    <line x1="218" y1="473" x2="522" y2="473"/>
+    <line x1="248" y1="473" x2="212" y2="568"/>
+    <line x1="492" y1="473" x2="528" y2="568"/>
+  </g>
+  <g>
+    <path d="M272 472 C266 426 276 386 303 371 C333 390 339 429 329 472 Z" fill="#f6b17a"/>
+    <path d="M351 472 C337 423 350 381 386 368 C423 390 430 429 413 472 Z" fill="#5ba6a0"/>
+    <path d="M437 472 C424 425 437 387 470 374 C499 393 508 431 498 472 Z" fill="#8fb4df"/>
+  </g>
+  <ellipse cx="824" cy="520" rx="188" ry="44" fill="#cfddd8" opacity="0.55"/>
+  <rect x="709" y="396" width="228" height="130" rx="26" fill="#f8fbfb" stroke="#d3e1de" stroke-width="4"/>
+  <circle cx="824" cy="462" r="46" fill="#d9eee8" stroke="#8ac0b0" stroke-width="5"/>
+  <path d="M824 433 C847 453 842 485 824 492 C806 485 801 453 824 433 Z" fill="#4f9b8b"/>
+  <g fill="#0f766e">
+    <circle cx="994" cy="190" r="10" opacity="0.65"/>
+    <circle cx="1025" cy="234" r="7" opacity="0.48"/>
+    <circle cx="979" cy="279" r="8" opacity="0.54"/>
+    <circle cx="1044" cy="315" r="11" opacity="0.45"/>
+  </g>
+  <g stroke="#0f766e" stroke-width="5" stroke-linecap="round" opacity="0.62">
+    <path d="M954 407 C1008 395 1036 411 1078 381"/>
+    <path d="M948 451 C1000 464 1036 450 1082 474"/>
+  </g>
+</svg>
