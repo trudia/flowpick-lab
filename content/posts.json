@@ -1,5 +1,35 @@
 [
   {
+    "slug": "cooling-pad-not-just-cold",
+    "title": "냉감패드, 무조건 차갑다고 좋은 게 아닙니다",
+    "category": "trend-shopping",
+    "summary": "냉감패드를 고를 때 첫 촉감보다 땀, 습기, 세탁, 밀림, 에어컨 사용 환경을 먼저 확인해야 하는 이유를 정리합니다.",
+    "image": "/assets/featured/cooling-pad-not-just-cold.svg",
+    "tags": [
+      "냉감패드",
+      "여름침구",
+      "구매기준",
+      "수면환경",
+      "습기관리"
+    ],
+    "date": "2026-06-08"
+  },
+  {
+    "slug": "air-conditioner-smell-before-deodorizer",
+    "title": "에어컨 냄새, 방향제로 덮으면 안 되는 이유",
+    "category": "trend-shopping",
+    "summary": "에어컨 냄새가 날 때 방향제나 탈취제부터 쓰기 전에 필터, 토출구, 배수, 습기 잔류를 나눠 확인하는 기준입니다.",
+    "image": "/assets/featured/air-conditioner-smell-before-deodorizer.svg",
+    "tags": [
+      "에어컨냄새",
+      "냉방관리",
+      "여름집냄새",
+      "필터청소",
+      "구매기준"
+    ],
+    "date": "2026-06-08"
+  },
+  {
     "slug": "rainy-season-room-damp-before-dehumidifier",
     "title": "방이 눅눅한데 제습기부터 사야 할까? 먼저 볼 5가지",
     "category": "minimal-space",
