@@ -324,6 +324,7 @@ p,
   background:linear-gradient(180deg,var(--tf-bg-soft) 0%,var(--tf-bg) 100%);
 }
 .latest-section .section-head,
+.home-focus-head-v169,
 .category-list-head{
   padding:18px 20px;
   border:1px solid var(--tf-border);
@@ -2656,6 +2657,7 @@ html[data-theme='dark'] .benchmark-side-card-v168 a{
 }
 .home-focus-head-v169{
   margin-bottom:18px;
+  align-items:center;
 }
 .home-focus-grid-v169{
   display:grid;
