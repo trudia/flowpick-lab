@@ -1,6 +1,6 @@
 ---
-title: "장마철 실내 빨래 냄새는 제습기만으로 해결될까?"
-description: "장마철 실내 빨래 냄새는 세제 문제보다 습도와 공기 흐름 문제일 때가 많습니다. 원룸에서 제습기, 서큘레이터, 건조대 위치, 물통 용량, 연속 배수를 함께 봐야 실패를 줄일 수 있습니다."
+title: "실내 빨래 냄새, 제습기만 사면 해결될까?"
+description: "실내 빨래 냄새는 세제보다 습도와 공기 흐름 문제일 수 있습니다. 제습기, 서큘레이터, 건조대 위치 기준을 함께 봅니다."
 slug: "rainy-season-indoor-laundry-smell-dehumidifier-airflow"
 category: "trend-shopping"
 tags:

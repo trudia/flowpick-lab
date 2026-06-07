@@ -1,6 +1,6 @@
 ---
-title: "장마철 신발 냄새는 건조기만 사면 해결될까?"
-description: "장마철 젖은 신발 냄새는 건조기 하나보다 건조, 신발장 제습, 탈취 순서를 함께 봐야 줄일 수 있습니다. 신발 건조기와 제습제, 탈취제 선택 기준을 정리합니다."
+title: "젖은 신발 냄새, 신발건조기만 사면 해결될까?"
+description: "장마철 젖은 신발 냄새는 건조기 하나보다 건조 순서, 신발장 제습, 탈취 기준을 함께 봐야 줄일 수 있습니다."
 slug: "rainy-season-shoe-odor-dryer-dehumidifier"
 category: "trend-shopping"
 tags:

@@ -1,9 +1,9 @@
 ---
-title: "장마 전 원룸 습기와 실내 빨래 냄새는 왜 반복될까?"
+title: "원룸 습기와 실내 빨래 냄새가 계속 돌아오는 이유"
 date: 2026-05-30
 category: minimal-space
 slug: rainy-season-studio-humidity-laundry-smell-routine
-summary: "장마 전부터 원룸 습기와 실내 빨래 냄새가 반복되는 이유를 환기, 빨래 위치, 물기 머무는 자리, 제습·공기 흐름 기준으로 정리합니다."
+summary: "원룸 습기와 실내 빨래 냄새가 반복되는 이유를 환기 시간, 빨래 위치, 물기 머무는 자리, 제습과 공기 흐름 기준으로 나눕니다."
 image: "/assets/featured/rainy-season-studio-dehumidifier-liters.webp"
 tags:
   - 장마전점검

@@ -1,6 +1,6 @@
 ---
-title: "책상 위 케이블과 작은 물건 정리는 무엇부터 사야 할까?"
-description: "책상 위 케이블, 멀티탭, 펜과 작은 물건을 정리할 때 무엇부터 사야 할지 상황별 구매 기준을 정리합니다."
+title: "책상 케이블 정리, 수납함부터 사면 다시 어질러지는 이유"
+description: "케이블, 멀티탭, 작은 물건을 정리하기 전 먼저 봐야 할 사용 빈도, 전원 위치, 숨길 것과 꺼낼 것의 기준을 정리합니다."
 slug: "desk-cable-small-items-organization-guide"
 category: "trend-shopping"
 tags:

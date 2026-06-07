@@ -1,9 +1,9 @@
 ---
-title: "새로운 것을 찾기 전에 왜 안 됐는지 먼저 봐야 하는 이유"
+title: "새 제품을 찾기 전, 왜 안 됐는지 먼저 봐야 하는 이유"
 date: 2026-05-30
 category: trend-shopping
 slug: why-check-failure-cause-before-new-choice
-summary: "계획, 실행, 제품 구매가 생각처럼 이어지지 않을 때 새 방법이나 새 제품부터 찾기보다 막힌 원인을 먼저 확인하는 기준을 정리합니다."
+summary: "계획, 실행, 제품 구매가 기대와 다를 때 새 방법을 찾기보다 환경, 유지 비용, 사용 빈도, 습관 마찰부터 점검하는 기준입니다."
 image: "/assets/featured/buying-criteria-before-reviews.jpg"
 tags:
   - 실패원인

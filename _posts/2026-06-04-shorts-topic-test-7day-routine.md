@@ -1,9 +1,9 @@
 ---
-title: "쇼츠 부업 7일 주제 테스트 루틴"
+title: "쇼츠 부업, 7일만 해보면 계속할 수 있을지 보입니다"
 date: 2026-06-04
 slug: shorts-topic-test-7day-routine
 category: creator-side-hustle
-summary: "쇼츠 부업을 오래 이어가려면 장비보다 먼저 7일 동안 주제, 말하기 방식, 촬영 부담, 반복 가능성을 확인해야 합니다. 시작 전에 실패 원인을 줄이는 주제 테스트 루틴을 정리합니다."
+summary: "쇼츠 부업을 시작하기 전 7일 동안 주제, 말하기 방식, 촬영 부담, 반복 가능성을 확인해 장비 구매 전 실패 가능성을 줄입니다."
 image: "/assets/featured/shorts-topic-test-7day-routine.svg"
 tags:
   - 쇼츠부업

@@ -1,9 +1,9 @@
 ---
-title: "장마철에도 방이 눅눅한 이유: 제습기보다 먼저 봐야 할 5가지 조건"
+title: "방이 눅눅한데 제습기부터 사야 할까? 먼저 볼 5가지"
 date: 2026-06-07
 category: minimal-space
 slug: rainy-season-room-damp-before-dehumidifier
-summary: "장마철 방이 눅눅한 이유를 제습기 구매 전 확인해야 할 물기 위치, 환기 시간, 빨래 거리, 공기 흐름, 생활 패턴 기준으로 정리합니다."
+summary: "장마철 방이 눅눅할 때 제습기를 사기 전 확인해야 할 물기 위치, 환기 타이밍, 실내 빨래 거리, 공기 흐름 기준을 정리합니다."
 image: "/assets/featured/rainy-season-room-damp-before-dehumidifier.svg"
 tags:
   - 장마철습기

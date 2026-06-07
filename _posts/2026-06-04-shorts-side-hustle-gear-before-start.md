@@ -1,9 +1,9 @@
 ---
-title: "쇼츠 부업 시작 전에 장비부터 사면 안 되는 이유"
+title: "쇼츠 부업 장비부터 사도 될까? 시작 전 예산 기준"
 date: 2026-06-04
 slug: shorts-side-hustle-gear-before-start
 category: creator-side-hustle
-summary: "쇼츠 부업은 카메라와 마이크보다 먼저 촬영 빈도, 주제, 편집 루틴, 예산 기준을 정해야 오래 갑니다. 장비를 사기 전에 확인할 최소 세팅 기준을 정리합니다."
+summary: "카메라와 마이크를 사기 전 촬영 빈도, 주제 반복성, 편집 루틴, 예산을 먼저 확인해 지금 필요한 최소 세팅을 좁힙니다."
 image: "/assets/featured/shorts-side-hustle-gear-before-start.png"
 tags:
   - 쇼츠부업

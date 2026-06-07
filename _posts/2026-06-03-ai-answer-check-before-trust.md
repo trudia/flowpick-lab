@@ -1,9 +1,9 @@
 ---
-title: "AI 답변을 그대로 믿기 전에 확인해야 할 5가지"
+title: "AI 답변, 그대로 써도 될까? 실수 줄이는 5가지 확인법"
 date: 2026-06-03
 category: ai-productivity
 slug: ai-answer-check-before-trust
-summary: "AI 답변은 빠르고 그럴듯하지만 그대로 쓰기 전에 범위, 사실, 날짜, 내 상황, 책임 경계를 확인해야 합니다. 실수와 과의존을 줄이는 검증 루틴을 정리합니다."
+summary: "AI 답변을 그대로 쓰기 전에 범위, 사실, 날짜, 출처, 개인정보와 책임 경계를 확인해 실수와 과의존을 줄이는 방법입니다."
 image: "/assets/featured/ai-answer-check-before-trust.png"
 tags:
   - AI검증
