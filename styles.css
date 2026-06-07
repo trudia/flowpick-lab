@@ -2722,23 +2722,6 @@ html[data-theme='dark'] .benchmark-side-card-v168 a{
   content:"→";
   color:#0f766e;
 }
-.home-category-pills-v169{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-top:16px;
-}
-.home-category-pills-v169 a{
-  display:inline-flex;
-  align-items:center;
-  min-height:38px;
-  padding:9px 13px;
-  border:1px solid var(--tf-border);
-  border-radius:999px;
-  background:var(--tf-surface);
-  color:var(--tf-text);
-  font-weight:900;
-}
 .home-latest-compact-v169{
   padding-top:42px;
 }
@@ -2754,8 +2737,7 @@ html[data-theme='dark'] .home-focus-card-v169 > span{
   background:rgba(94,234,212,.11);
   color:#5eead4;
 }
-html[data-theme='dark'] .home-focus-links-v169 a,
-html[data-theme='dark'] .home-category-pills-v169 a{
+html[data-theme='dark'] .home-focus-links-v169 a{
   background:rgba(15,23,42,.72);
   border-color:rgba(226,232,240,.14);
   color:#f8fafc;
@@ -2781,8 +2763,127 @@ html[data-theme='dark'] .home-focus-links-v169 a::after{
   .home-focus-card-v169{
     padding:18px;
   }
-  .home-category-pills-v169 a{
-    flex:1 1 auto;
-    justify-content:center;
+}
+
+/* v170: boxed homepage slider and stronger focus cards */
+.home-simple-hero-v169 .home-hero-slider-v158{
+  position:relative;
+  min-height:286px;
+  padding:32px 72px 32px 32px;
+  border:1px solid rgba(15,23,42,.14);
+  border-radius:8px;
+  background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(240,253,250,.9));
+  box-shadow:0 24px 60px rgba(15,23,42,.12);
+}
+.home-simple-hero-v169 .home-hero-slide-v158.is-active{
+  display:flex;
+  min-height:220px;
+  flex-direction:column;
+  justify-content:center;
+}
+.home-hero-arrows-v170{
+  position:absolute;
+  right:22px;
+  top:50%;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  transform:translateY(-50%);
+  z-index:4;
+}
+.home-hero-arrow-v170{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(15,118,110,.24);
+  border-radius:999px;
+  background:#fff;
+  color:#0f766e;
+  font-size:1.15rem;
+  font-weight:950;
+  line-height:1;
+  cursor:pointer;
+  box-shadow:0 12px 26px rgba(15,23,42,.1);
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease,background-color .16s ease;
+}
+.home-hero-arrow-v170:hover,
+.home-hero-arrow-v170:focus-visible{
+  transform:translateY(-1px);
+  border-color:rgba(15,118,110,.52);
+  box-shadow:0 16px 34px rgba(15,23,42,.14);
+}
+.home-focus-hub-v169{
+  background:linear-gradient(180deg,rgba(248,250,252,.62),rgba(255,255,255,0));
+}
+.home-focus-grid-v169{
+  gap:16px;
+}
+.home-focus-card-v169{
+  border-width:1px;
+  border-color:rgba(15,23,42,.12);
+  box-shadow:0 22px 54px rgba(15,23,42,.11);
+}
+.home-focus-primary-v169{
+  border-color:rgba(15,118,110,.3);
+  box-shadow:0 26px 64px rgba(15,118,110,.15);
+}
+.home-focus-card-v169:hover{
+  transform:translateY(-2px);
+  box-shadow:0 30px 70px rgba(15,23,42,.14);
+}
+.home-focus-card-v169,
+.home-focus-links-v169 a{
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+.home-focus-links-v169 a{
+  border-color:rgba(15,23,42,.12);
+  box-shadow:0 8px 22px rgba(15,23,42,.05);
+}
+.home-focus-links-v169 a:hover,
+.home-focus-links-v169 a:focus-visible{
+  transform:translateX(2px);
+  border-color:rgba(15,118,110,.34);
+  box-shadow:0 12px 28px rgba(15,23,42,.08);
+}
+html[data-theme='dark'] .home-simple-hero-v169 .home-hero-slider-v158{
+  background:linear-gradient(135deg,rgba(15,23,42,.92),rgba(19,78,74,.36));
+  border-color:rgba(226,232,240,.18);
+  box-shadow:0 24px 60px rgba(0,0,0,.34);
+}
+html[data-theme='dark'] .home-hero-arrow-v170{
+  background:rgba(15,23,42,.86);
+  border-color:rgba(94,234,212,.26);
+  color:#5eead4;
+  box-shadow:0 14px 30px rgba(0,0,0,.28);
+}
+html[data-theme='dark'] .home-focus-hub-v169{
+  background:linear-gradient(180deg,rgba(15,23,42,.46),rgba(15,23,42,0));
+}
+html[data-theme='dark'] .home-focus-card-v169{
+  border-color:rgba(226,232,240,.2);
+  box-shadow:0 22px 54px rgba(0,0,0,.3);
+}
+html[data-theme='dark'] .home-focus-primary-v169{
+  border-color:rgba(94,234,212,.32);
+  box-shadow:0 26px 64px rgba(20,184,166,.12);
+}
+@media(max-width:760px){
+  .home-simple-hero-v169 .home-hero-slider-v158{
+    min-height:280px;
+    padding:24px 22px 84px;
+  }
+  .home-simple-hero-v169 .home-hero-slide-v158.is-active{
+    min-height:170px;
+  }
+  .home-hero-arrows-v170{
+    left:22px;
+    right:22px;
+    top:auto;
+    bottom:22px;
+    flex-direction:row;
+    justify-content:space-between;
+    transform:none;
   }
 }
