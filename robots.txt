@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /deploy-check-*.html
+Disallow: /README_*.md
+Disallow: /reports/
+Disallow: /SITE_EXPOSURE_WORKFLOW.md
+Disallow: /BLOG_OPERATION_AUTOMATION_PROCESS.md
+Disallow: /SHOPPING_PUBLISHING_PROCESS.md
 
 Sitemap: https://trend.it.kr/sitemap.xml
 

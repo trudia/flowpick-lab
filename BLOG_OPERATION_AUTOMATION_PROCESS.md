@@ -293,6 +293,8 @@ powershell -ExecutionPolicy Bypass -File scripts/submit-search-engines.ps1 -Urls
 - 새 글 URL이 존재한다.
 - 홈 최신 글 또는 관련 카드가 올바른 글로 이어진다.
 - 카테고리, 검색, 아카이브, 사이트맵이 갱신됐다.
+- `SITE_EXPOSURE_WORKFLOW.md` 기준으로 title, description, canonical, H1, sitemap 포함 여부를 확인한다.
+- 필요하면 `scripts/audit-site-exposure.ps1`로 로컬 노출 진단 리포트를 만든다.
 - `version.txt`와 `deploy-check-v###.html`은 공개 사이트가 바뀔 때 갱신한다.
 - 글은 모바일에서 읽기 편하다.
 - 대표 이미지는 주제와 맞다.
