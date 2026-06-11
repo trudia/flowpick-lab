@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="장마철 양말 젖는 사람들 특징">
+<rect width="1200" height="675" fill="#f3f7fb"/>
+<rect x="88" y="82" width="1024" height="511" rx="42" fill="#fffaf4" opacity=".92"/>
+<circle cx="960" cy="175" r="74" fill="#9bc7d6" opacity=".35"/>
+<circle cx="210" cy="520" r="96" fill="#3f7ea6" opacity=".18"/>
+<path d="M210 430c140-82 272-104 396-66 99 30 188 29 267-3 54-22 111-21 171 3" fill="none" stroke="#3f7ea6" stroke-width="34" stroke-linecap="round" opacity=".32"/>
+<path d="M185 220h830" stroke="#183044" stroke-width="10" stroke-linecap="round" opacity=".18"/>
+<path d="M185 284h640" stroke="#183044" stroke-width="10" stroke-linecap="round" opacity=".12"/>
+<g fill="#3f7ea6">
+<rect x="202" y="342" width="170" height="152" rx="28" opacity=".85"/>
+<rect x="418" y="318" width="170" height="176" rx="28" opacity=".62"/>
+<rect x="634" y="360" width="170" height="134" rx="28" opacity=".78"/>
+</g>
+<text x="184" y="180" fill="#183044" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="48" font-weight="800">장마철 양말 젖는 사람들 특징</text>
+<text x="184" y="560" fill="#183044" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="28" font-weight="700">TrendFlow 기준 큐레이션</text>
+</svg>
