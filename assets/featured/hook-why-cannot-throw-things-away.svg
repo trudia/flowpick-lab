@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="버리고 싶은데 버리지 못하는 이유 대표 이미지">
+<rect width="1200" height="675" fill="#f7f2ea"/>
+<rect x="54" y="54" width="1092" height="567" rx="48" fill="#ffffff" opacity=".88"/>
+<path d="M84 520 C230 450 352 563 492 488 C612 423 742 479 866 421 C950 382 1038 399 1110 438" fill="none" stroke="#d8b98d" stroke-width="36" stroke-linecap="round" opacity=".55"/>
+<circle cx="1062" cy="110" r="72" fill="#7fc8a9" opacity=".22"/>
+<circle cx="92" cy="592" r="98" fill="#8a6746" opacity=".12"/>
+<rect x="94" y="96" width="190" height="42" rx="21" fill="#8a6746"/>
+<text x="189" y="124" text-anchor="middle" fill="#fff" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="900">먼저 볼 기준</text>
+<text x="95" y="178" fill="#3d2c1e" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="50" font-weight="900">버리고 싶은데 버리지</text>
+<text x="95" y="240" fill="#3d2c1e" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="46" font-weight="900">못하는 이유</text>
+<text x="98" y="425" fill="#3d2c1e" opacity=".72" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">필요 없는 물건도 쉽게 버리지 못하는 이유는</text>
+<text x="98" y="459" fill="#3d2c1e" opacity=".72" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">물건에 가능성, 아까움, 추억이 함께 붙어</text>
+<rect x="96" y="508" width="238" height="48" rx="24" fill="#7fc8a9" opacity=".9"/>
+<text x="215" y="540" text-anchor="middle" fill="#3d2c1e" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="900">TrendFlow</text>
+
+    <g transform="translate(690 190)">
+      <rect x="0" y="0" width="335" height="265" rx="38" fill="#fff" opacity=".95"/>
+      <circle cx="78" cy="80" r="50" fill="#d8b98d" opacity=".72"/>
+      <circle cx="238" cy="96" r="62" fill="#7fc8a9" opacity=".42"/>
+      <rect x="72" y="160" width="190" height="28" rx="14" fill="#8a6746" opacity=".22"/>
+      <rect x="105" y="205" width="124" height="18" rx="9" fill="#3d2c1e" opacity=".16"/>
+      <circle cx="285" cy="48" r="32" fill="#ff6b5f"/>
+      <text x="285" y="61" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="900">!</text>
+      <text x="168" y="91" text-anchor="middle" fill="#3d2c1e" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="31" font-weight="900">시야 자극</text>
+      <text x="168" y="137" text-anchor="middle" fill="#8a6746" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="23" font-weight="800">자리부터 정리</text>
+      <text x="168" y="245" text-anchor="middle" fill="#3d2c1e" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700">공간 기준</text>
+    </g>
+</svg>

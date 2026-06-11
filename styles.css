@@ -3026,3 +3026,29 @@ html[data-theme='dark'] .home-simple-hero-v169 .home-hero-slide-v158 p{
     font-size:.9rem;
   }
 }
+
+/* v180 hook image refresh: keep long post titles inside mobile viewports */
+.feature-article-shell,
+.feature-article-main{
+  min-width:0;
+}
+.feature-article-main h1{
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+@media(max-width:680px){
+  .feature-article-main h1{
+    font-size:clamp(25px,6.9vw,30px)!important;
+    line-height:1.16;
+    letter-spacing:-.02em;
+    white-space:normal;
+    word-break:break-all!important;
+    overflow-wrap:anywhere!important;
+    text-wrap:wrap;
+  }
+  .feature-article-main p,
+  .feature-section-text p,
+  .feature-insight-box p{
+    overflow-wrap:anywhere;
+  }
+}

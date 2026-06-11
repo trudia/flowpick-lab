@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="퇴근 후 부업 장비 우선순위 비교 대표 이미지">
+<rect width="1200" height="675" fill="#f5f5ee"/>
+<rect x="54" y="54" width="1092" height="567" rx="48" fill="#ffffff" opacity=".88"/>
+<path d="M84 520 C230 450 352 563 492 488 C612 423 742 479 866 421 C950 382 1038 399 1110 438" fill="none" stroke="#f2c36b" stroke-width="36" stroke-linecap="round" opacity=".55"/>
+<circle cx="1062" cy="110" r="72" fill="#ef7b45" opacity=".22"/>
+<circle cx="92" cy="592" r="98" fill="#2f7d76" opacity=".12"/>
+<rect x="94" y="96" width="190" height="42" rx="21" fill="#2f7d76"/>
+<text x="189" y="124" text-anchor="middle" fill="#fff" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="900">먼저 볼 기준</text>
+<text x="95" y="178" fill="#203d3a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="50" font-weight="900">퇴근 후 부업 장비</text>
+<text x="95" y="240" fill="#203d3a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="46" font-weight="900">우선순위 비교</text>
+<text x="98" y="425" fill="#203d3a" opacity=".72" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">노트북, 마이크, 조명 중 무엇부터 준비할지</text>
+<text x="98" y="459" fill="#203d3a" opacity=".72" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">효과와 가격 부담으로 비교합니다.</text>
+<rect x="96" y="508" width="238" height="48" rx="24" fill="#ef7b45" opacity=".9"/>
+<text x="215" y="540" text-anchor="middle" fill="#203d3a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="900">TrendFlow</text>
+
+    <g transform="translate(690 190)">
+      <rect x="0" y="0" width="335" height="265" rx="38" fill="#fff" opacity=".95"/>
+      <circle cx="78" cy="80" r="50" fill="#f2c36b" opacity=".72"/>
+      <circle cx="238" cy="96" r="62" fill="#ef7b45" opacity=".42"/>
+      <rect x="72" y="160" width="190" height="28" rx="14" fill="#2f7d76" opacity=".22"/>
+      <rect x="105" y="205" width="124" height="18" rx="9" fill="#203d3a" opacity=".16"/>
+      <circle cx="285" cy="48" r="32" fill="#ff6b5f"/>
+      <text x="285" y="61" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="900">!</text>
+      <text x="168" y="91" text-anchor="middle" fill="#203d3a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="31" font-weight="900">장비보다 주제</text>
+      <text x="168" y="137" text-anchor="middle" fill="#2f7d76" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="23" font-weight="800">7일 테스트</text>
+      <text x="168" y="245" text-anchor="middle" fill="#203d3a" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="20" font-weight="700">콘텐츠 루틴</text>
+    </g>
+</svg>
