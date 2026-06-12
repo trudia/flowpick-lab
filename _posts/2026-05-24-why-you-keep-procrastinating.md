@@ -9,7 +9,7 @@ tags:
   - 집중력
   - 완벽주의
   - 습관
-thumbnail: "/assets/featured/why-you-keep-procrastinating.webp"
+thumbnail: "/assets/featured/why-you-keep-procrastinating-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

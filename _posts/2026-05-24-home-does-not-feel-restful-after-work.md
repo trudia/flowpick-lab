@@ -9,7 +9,7 @@ tags:
   - 공간정리
   - 집정리
   - 미니멀
-thumbnail: "/assets/featured/home-does-not-feel-restful-after-work.webp"
+thumbnail: "/assets/featured/home-does-not-feel-restful-after-work-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

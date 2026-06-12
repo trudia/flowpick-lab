@@ -9,7 +9,7 @@ tags:
   - 구매판단
   - 24시간대기
   - 할인심리
-thumbnail: "/assets/featured/impulse-buying-regret-after-few-days.webp"
+thumbnail: "/assets/featured/impulse-buying-regret-after-few-days-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

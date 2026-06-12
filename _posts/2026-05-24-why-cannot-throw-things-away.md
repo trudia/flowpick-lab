@@ -9,7 +9,7 @@ tags:
   - 정리루틴
   - 버리기
   - 추억정리
-thumbnail: "/assets/featured/why-cannot-throw-things-away.webp"
+thumbnail: "/assets/featured/why-cannot-throw-things-away-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

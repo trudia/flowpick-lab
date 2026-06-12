@@ -9,7 +9,7 @@ tags:
   - 신발장제습제
   - 장마철
   - 쿠팡파트너스
-thumbnail: "/assets/featured/rainy-season-shoe-odor-dryer-dehumidifier.png"
+thumbnail: "/assets/featured/rainy-season-shoe-odor-dryer-dehumidifier-photo.webp"
 date: "2026-05-27"
 author: "TrendFlow"
 featured: true

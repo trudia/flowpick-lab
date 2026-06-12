@@ -3,7 +3,7 @@ title: "퇴근 후 30분 집중 루틴 실사용 리뷰"
 date: 2026-05-23
 category: focus-wellbeing
 summary: "퇴근 후 바로 무너지지 않고 30분만 집중하기 위한 환경 설정과 행동 순서를 정리합니다."
-image: "/assets/featured/afterwork-focus-30min-v18.webp"
+image: "/assets/featured/afterwork-focus-30min-v18-photo.webp"
 tags: [집중, 퇴근 후, 루틴]
 ---
 

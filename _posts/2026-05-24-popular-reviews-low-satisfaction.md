@@ -9,7 +9,7 @@ tags:
   - 리뷰확인
   - 실패없는구매
   - 소비습관
-thumbnail: "/assets/featured/popular-reviews-low-satisfaction.webp"
+thumbnail: "/assets/featured/popular-reviews-low-satisfaction-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

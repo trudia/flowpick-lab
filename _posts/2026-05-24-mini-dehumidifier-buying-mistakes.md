@@ -9,7 +9,7 @@ tags:
   - 원룸제습기
   - 장마철
   - 쿠팡파트너스
-thumbnail: "/assets/featured/mini-dehumidifier-buying-mistakes.webp"
+thumbnail: "/assets/featured/mini-dehumidifier-buying-mistakes-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

@@ -9,7 +9,7 @@ tags:
   - 제품추천
   - 쿠팡파트너스
   - 쇼핑리뷰
-thumbnail: "/assets/featured/ai-recommended-product-low-satisfaction.webp"
+thumbnail: "/assets/featured/ai-recommended-product-low-satisfaction-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

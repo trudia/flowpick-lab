@@ -9,7 +9,7 @@ tags:
   - 여름가전
   - 원룸
   - 구매가이드
-thumbnail: "/assets/featured/fan-vs-circulator-when-to-choose.webp"
+thumbnail: "/assets/featured/fan-vs-circulator-when-to-choose-photo.webp"
 date: "2026-05-25"
 author: "TrendFlow"
 featured: true

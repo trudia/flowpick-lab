@@ -9,7 +9,7 @@ tags:
   - 자취템
   - 청소기추천
   - 쿠팡파트너스
-thumbnail: "/assets/featured/one-room-cordless-vacuum-buying-mistakes.webp"
+thumbnail: "/assets/featured/one-room-cordless-vacuum-buying-mistakes-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

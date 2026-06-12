@@ -9,7 +9,7 @@ tags:
   - 비교피로
   - 리뷰기준
   - 쇼핑팁
-thumbnail: "/assets/featured/review-fatigue-cannot-decide.webp"
+thumbnail: "/assets/featured/review-fatigue-cannot-decide-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

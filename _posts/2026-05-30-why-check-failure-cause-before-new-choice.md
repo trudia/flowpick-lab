@@ -4,7 +4,7 @@ date: 2026-05-30
 category: trend-shopping
 slug: why-check-failure-cause-before-new-choice
 summary: "계획, 실행, 제품 구매가 기대와 다를 때 새 방법을 찾기보다 환경, 유지 비용, 사용 빈도, 습관 마찰부터 점검하는 기준입니다."
-image: "/assets/featured/buying-criteria-before-reviews.jpg"
+image: "/assets/featured/buying-criteria-before-reviews-photo.webp"
 tags:
   - 실패원인
   - 구매기준

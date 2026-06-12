@@ -3,7 +3,7 @@ title: "AI 영상 제작 입문 장비 실사용 체크"
 date: 2026-05-23
 category: trend-shopping
 summary: "AI 영상과 쇼츠 제작 입문자가 마이크, 조명, 저장장치를 어떤 순서로 볼지 정리합니다."
-image: "/assets/featured/ai-video-starter-check-v18.webp"
+image: "/assets/featured/ai-video-starter-check-v18-photo.webp"
 tags: [AI영상, 장비, 쇼츠]
 ---
 

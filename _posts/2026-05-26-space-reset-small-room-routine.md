@@ -3,7 +3,7 @@ title: "방 정리 어디서 시작할까? 버리기 전 먼저 볼 3곳"
 date: 2026-05-26
 category: minimal-space
 summary: "공간 정리는 무조건 버리는 일이 아닙니다. 자주 쓰는 자리, 시야 자극, 동선을 먼저 정리해 작은 방에서도 바로 시작하는 기준입니다."
-image: "/assets/featured/space-reset-small-room-routine.jpg"
+image: "/assets/featured/space-reset-small-room-routine-photo.webp"
 tags: [공간정리, 미니멀, 원룸, 정리루틴, 생활습관]
 ---
 

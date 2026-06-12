@@ -9,7 +9,7 @@ tags:
   - 여행용배터리
   - 아이폰액세서리
   - 쿠팡파트너스
-thumbnail: "/assets/featured/power-bank-capacity-buying-mistakes.webp"
+thumbnail: "/assets/featured/power-bank-capacity-buying-mistakes-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

@@ -9,7 +9,7 @@ tags:
   - 공간정리
   - 정리루틴
   - 청소
-thumbnail: "/assets/featured/room-gets-messy-after-cleaning.webp"
+thumbnail: "/assets/featured/room-gets-messy-after-cleaning-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

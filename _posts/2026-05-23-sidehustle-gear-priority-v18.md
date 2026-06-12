@@ -3,7 +3,7 @@ title: "퇴근 후 부업 장비 우선순위 비교"
 date: 2026-05-23
 category: trend-shopping
 summary: "노트북, 마이크, 조명 중 무엇부터 준비할지 효과와 가격 부담으로 비교합니다."
-image: "/assets/featured/sidehustle-gear-priority-v18.webp"
+image: "/assets/featured/sidehustle-gear-priority-v18-photo.webp"
 tags: [부업, 장비, 쇼핑]
 ---
 

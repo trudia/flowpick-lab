@@ -3,7 +3,7 @@ title: "구매 전 후기보다 먼저 봐야 할 4가지 기준"
 date: 2026-05-26
 category: trend-shopping
 summary: "제품 후기를 보기 전 내 사용 상황, 불편 비용, 유지 비용, 보관 부담을 먼저 정리하면 충동구매와 선택 피로를 줄일 수 있습니다."
-image: "/assets/featured/buying-criteria-before-reviews.jpg"
+image: "/assets/featured/buying-criteria-before-reviews-photo.webp"
 tags: [구매기준, 소비습관, 리뷰피로, 비교루틴, 쇼핑팁]
 ---
 

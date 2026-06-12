@@ -4,7 +4,7 @@ date: 2026-05-30
 category: minimal-space
 slug: rainy-season-studio-humidity-laundry-smell-routine
 summary: "원룸 습기와 실내 빨래 냄새가 반복되는 이유를 환기 시간, 빨래 위치, 물기 머무는 자리, 제습과 공기 흐름 기준으로 나눕니다."
-image: "/assets/featured/rainy-season-studio-dehumidifier-liters.webp"
+image: "/assets/featured/rainy-season-studio-dehumidifier-liters-photo.webp"
 tags:
   - 장마전점검
   - 원룸습기

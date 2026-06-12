@@ -3,7 +3,7 @@ title: "집중이 깨졌을 때, 10분 안에 다시 시작하는 방법"
 date: 2026-05-26
 category: focus-wellbeing
 summary: "집중이 깨졌을 때 의지만 밀어붙이지 않고 몸, 화면, 작업 범위를 작게 리셋해 다시 시작하는 10분 회복 루틴입니다."
-image: "/assets/featured/focus-recovery-10-minute-reset.jpg"
+image: "/assets/featured/focus-recovery-10-minute-reset-photo.webp"
 tags: [집중력, 집중회복, 디지털웰빙, 작업루틴, 습관]
 ---
 

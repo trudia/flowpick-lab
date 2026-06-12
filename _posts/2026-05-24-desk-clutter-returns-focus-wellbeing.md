@@ -9,7 +9,7 @@ tags:
   - 미니멀
   - 공간정리
   - 결정피로
-thumbnail: "/assets/featured/desk-clutter-returns-focus-wellbeing.webp"
+thumbnail: "/assets/featured/desk-clutter-returns-focus-wellbeing-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

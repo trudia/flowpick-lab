@@ -9,7 +9,7 @@ tags:
   - 재구매비용
   - 소비습관
   - 구매체크
-thumbnail: "/assets/featured/cheap-product-costs-more-in-the-end.webp"
+thumbnail: "/assets/featured/cheap-product-costs-more-in-the-end-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

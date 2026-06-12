@@ -3,7 +3,7 @@ title: "케이블 정리 전후 체감 차이 리뷰"
 date: 2026-05-23
 category: minimal-space
 summary: "보이는 전선을 줄였을 때 책상 집중감과 청소 편의성이 어떻게 달라지는지 정리합니다."
-image: "/assets/featured/cable-management-review-v18.webp"
+image: "/assets/featured/cable-management-review-v18-photo.webp"
 tags: [케이블, 책상, 정리]
 ---
 

@@ -9,7 +9,7 @@ tags:
   - 장마철
   - 실내빨래
   - 쿠팡파트너스
-thumbnail: "/assets/featured/rainy-season-studio-dehumidifier-liters.webp"
+thumbnail: "/assets/featured/rainy-season-studio-dehumidifier-liters-photo.webp"
 date: "2026-05-25"
 author: "TrendFlow"
 featured: true

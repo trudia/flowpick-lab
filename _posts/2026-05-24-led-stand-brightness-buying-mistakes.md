@@ -9,7 +9,7 @@ tags:
   - 눈피로
   - 공부조명
   - 쿠팡파트너스
-thumbnail: "/assets/featured/led-stand-brightness-buying-mistakes.webp"
+thumbnail: "/assets/featured/led-stand-brightness-buying-mistakes-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

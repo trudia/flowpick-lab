@@ -9,7 +9,7 @@ tags:
   - 데스크오거나이저
   - 모니터받침대
   - 쿠팡파트너스
-thumbnail: "/assets/featured/cable-management-review-v18.webp"
+thumbnail: "/assets/featured/cable-management-review-v18-photo.webp"
 date: "2026-05-29"
 author: "TrendFlow"
 featured: true

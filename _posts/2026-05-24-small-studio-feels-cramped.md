@@ -9,7 +9,7 @@ tags:
   - 공간배치
   - 자취방
   - 공간정리
-thumbnail: "/assets/featured/small-studio-feels-cramped.webp"
+thumbnail: "/assets/featured/small-studio-feels-cramped-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

@@ -9,7 +9,7 @@ tags:
   - 구매기준
   - 쇼핑리뷰
   - 비교루틴
-thumbnail: "/assets/featured/too-many-similar-products-choice-fatigue.webp"
+thumbnail: "/assets/featured/too-many-similar-products-choice-fatigue-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

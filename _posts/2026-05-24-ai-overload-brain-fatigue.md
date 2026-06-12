@@ -9,7 +9,7 @@ tags:
   - 집중력
   - 디지털웰빙
   - 생산성
-thumbnail: "/assets/featured/ai-overload-brain-fatigue.webp"
+thumbnail: "/assets/featured/ai-overload-brain-fatigue-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

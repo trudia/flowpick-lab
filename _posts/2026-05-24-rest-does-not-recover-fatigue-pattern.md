@@ -9,7 +9,7 @@ tags:
   - 디지털웰빙
   - 쇼츠
   - 퇴근후루틴
-thumbnail: "/assets/featured/rest-does-not-recover-fatigue-pattern.webp"
+thumbnail: "/assets/featured/rest-does-not-recover-fatigue-pattern-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

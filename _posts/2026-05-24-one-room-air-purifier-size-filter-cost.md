@@ -9,7 +9,7 @@ tags:
   - 필터비
   - 저소음
   - 쿠팡파트너스
-thumbnail: "/assets/featured/one-room-air-purifier-size-filter-cost.webp"
+thumbnail: "/assets/featured/one-room-air-purifier-size-filter-cost-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

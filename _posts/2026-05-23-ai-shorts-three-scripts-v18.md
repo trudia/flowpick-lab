@@ -3,7 +3,7 @@ title: "AI로 쇼츠 대본을 하루 3개 뽑는 루틴"
 date: 2026-05-23
 category: ai-productivity
 summary: "키워드 하나를 문제형·비교형·체크리스트형 쇼츠 대본으로 확장하는 글쓰기 루틴입니다."
-image: "/assets/featured/ai-shorts-three-scripts-v18.webp"
+image: "/assets/featured/ai-shorts-three-scripts-v18-photo.webp"
 tags: [AI, 쇼츠, 대본]
 ---
 

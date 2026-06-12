@@ -3,7 +3,7 @@ title: "책상 위 물건을 줄이는 7일 정리 루틴"
 date: 2026-05-23
 category: minimal-space
 summary: "하루 10분씩 책상 위 자극을 줄이고 유지하기 쉬운 정리 흐름을 만드는 글입니다."
-image: "/assets/featured/desk-declutter-7days-v18.webp"
+image: "/assets/featured/desk-declutter-7days-v18-photo.webp"
 tags: [책상정리, 미니멀, 공간]
 ---
 

@@ -9,7 +9,7 @@ tags:
   - 결정피로
   - 집정리
   - 시각적피로
-thumbnail: "/assets/featured/too-many-things-make-home-tiring.webp"
+thumbnail: "/assets/featured/too-many-things-make-home-tiring-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true
