@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">냉방비 아끼려면 에어컨 온도보다 이게 먼저입니다</title><desc id="desc">리모컨 온도보다 필터, 햇빛, 실외기 통풍을 먼저 보라는 이미지</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0f2fe"/><stop offset="1" stop-color="#fef3c7"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1f2937" flood-opacity=".18"/></filter></defs>
+<rect width="1200" height="675" rx="44" fill="url(#bg)"/>
+<rect x="64" y="54" width="1072" height="567" rx="36" fill="#fffffb" stroke="#c8e2f3" stroke-width="4" filter="url(#shadow)"/>
+<text x="102" y="124" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#0369a1">냉방비 줄이는 순서</text>
+<text x="102" y="177" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#111827">온도보다 먼저</text>
+<text x="102" y="243" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#111827">새는 조건을 막으세요</text>
+<g transform="translate(688 88)">
+  <rect x="0" y="0" width="340" height="168" rx="30" fill="#dbeafe" stroke="#0284c7" stroke-width="6"/>
+  <path d="M58 70h224M58 112h224" stroke="#0284c7" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+  <circle cx="282" cy="42" r="16" fill="#38bdf8"/>
+  <rect x="58" y="244" width="122" height="238" rx="28" fill="#0ea5e9" stroke="#075985" stroke-width="6"/>
+  <text x="82" y="330" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#fff">26°</text>
+  <rect x="218" y="242" width="196" height="190" rx="24" fill="#fef3c7" stroke="#b45309" stroke-width="6"/>
+  <path d="M260 276h112M260 318h112M260 360h112" stroke="#b45309" stroke-width="11" stroke-linecap="round" opacity=".55"/>
+</g>
+<g transform="translate(102 318)">
+  <rect x="0" y="0" width="470" height="145" rx="26" fill="#eff6ff" stroke="#93c5fd" stroke-width="4"/>
+  <path d="M46 104c76-74 182-74 258 0" fill="none" stroke="#0284c7" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="378" cy="66" r="35" fill="#f97316"/><path d="M378 16v-30M378 148v-30M328 66h-30M458 66h-30M342 30l-22-22M436 30l22-22M342 102l-22 22M436 102l22 22" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#075985"><text x="112" y="522">필터</text><text x="252" y="522">햇빛</text><text x="392" y="522">문틈</text><text x="532" y="522">실외기</text><text x="714" y="522">공기 흐름</text></g>
+</svg>

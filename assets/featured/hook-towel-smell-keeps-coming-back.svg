@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">수건 냄새 계속 나는 집의 공통점</title><desc id="desc">젖은 수건과 빨래 바구니, 습기 표시를 한눈에 보여주는 이미지</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf7f4"/><stop offset="1" stop-color="#fff4e7"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1f2937" flood-opacity=".18"/></filter></defs>
+<rect width="1200" height="675" rx="44" fill="url(#bg)"/>
+<rect x="64" y="54" width="1072" height="567" rx="36" fill="#fffdf8" stroke="#d7e7df" stroke-width="4" filter="url(#shadow)"/>
+<text x="102" y="124" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#0f766e">냄새가 다시 나는 이유</text>
+<text x="102" y="177" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#111827">수건은 세제보다</text>
+<text x="102" y="244" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#111827">젖은 시간이 먼저입니다</text>
+<g transform="translate(690 95)">
+  <rect x="0" y="0" width="310" height="390" rx="34" fill="#d7f0ec" stroke="#0f766e" stroke-width="5"/>
+  <path d="M46 44h220v86c0 40-34 72-76 72H122c-42 0-76-32-76-72z" fill="#ffffff"/>
+  <path d="M76 138h160v214c0 23-18 42-41 42H117c-23 0-41-19-41-42z" fill="#2dd4bf"/>
+  <path d="M102 175h108M102 222h108M102 269h108" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <path d="M-70 342h190l26 112H-96z" fill="#f59e0b" stroke="#92400e" stroke-width="5"/>
+  <path d="M-44 342c18-62 128-62 146 0" fill="none" stroke="#92400e" stroke-width="10" stroke-linecap="round"/>
+</g>
+<g fill="none" stroke="#ef4444" stroke-width="10" stroke-linecap="round" opacity=".78"><path d="M1000 260c44-34 44-86 0-120"/><path d="M1050 302c66-58 66-158 0-218"/></g>
+<g font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#115e59"><text x="112" y="522">사용 후 펼치기</text><text x="354" y="522">세제 줄이기</text><text x="575" y="522">욕실 밖 건조</text></g>
+</svg>
