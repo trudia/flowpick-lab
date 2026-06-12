@@ -4,7 +4,7 @@ date: 2026-06-04
 slug: shorts-topic-test-7day-routine
 category: creator-side-hustle
 summary: "쇼츠 부업을 시작하기 전 7일 동안 주제, 말하기 방식, 촬영 부담, 반복 가능성을 확인해 장비 구매 전 실패 가능성을 줄입니다."
-image: "/assets/featured/shorts-topic-test-7day-routine.svg"
+image: "/assets/featured/shorts-topic-test-7day-routine-photo.webp"
 tags:
   - 쇼츠부업
   - 주제테스트

@@ -3,7 +3,7 @@ title: "AI 답변이 평범한 이유와 질문을 바꾸는 방법"
 date: 2026-05-23
 category: ai-productivity
 summary: "같은 질문을 해도 결과가 달라지는 이유와, 더 구체적이고 실용적인 답변을 얻는 질문 구조를 정리합니다."
-image: "/assets/featured/ai-answer-prompt-question-method.webp"
+image: "/assets/featured/ai-answer-prompt-question-method-photo.webp"
 tags: [AI, 프롬프트, 질문법]
 ---
 

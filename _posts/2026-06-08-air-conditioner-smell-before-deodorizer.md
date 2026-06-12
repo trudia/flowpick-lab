@@ -4,7 +4,7 @@ date: 2026-06-08
 category: trend-shopping
 slug: air-conditioner-smell-before-deodorizer
 summary: "에어컨 냄새가 날 때 방향제나 탈취제부터 쓰기 전에 필터, 토출구, 배수, 습기 잔류를 나눠 확인하는 기준입니다."
-image: "/assets/featured/air-conditioner-smell-before-deodorizer.svg"
+image: "/assets/featured/air-conditioner-smell-before-deodorizer-photo.webp"
 tags:
   - 에어컨냄새
   - 냉방관리

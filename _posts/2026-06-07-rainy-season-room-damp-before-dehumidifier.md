@@ -4,7 +4,7 @@ date: 2026-06-07
 category: minimal-space
 slug: rainy-season-room-damp-before-dehumidifier
 summary: "장마철 방이 눅눅할 때 제습기를 사기 전 확인해야 할 물기 위치, 환기 타이밍, 실내 빨래 거리, 공기 흐름 기준을 정리합니다."
-image: "/assets/featured/rainy-season-room-damp-before-dehumidifier.svg"
+image: "/assets/featured/rainy-season-room-damp-before-dehumidifier-photo.webp"
 tags:
   - 장마철습기
   - 원룸관리

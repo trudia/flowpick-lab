@@ -4,7 +4,7 @@ date: 2026-06-03
 category: ai-productivity
 slug: ai-answer-check-before-trust
 summary: "AI 답변을 그대로 쓰기 전에 범위, 사실, 날짜, 출처, 개인정보와 책임 경계를 확인해 실수와 과의존을 줄이는 방법입니다."
-image: "/assets/featured/ai-answer-check-before-trust.png"
+image: "/assets/featured/ai-answer-check-before-trust-photo.webp"
 tags:
   - AI검증
   - AI윤리

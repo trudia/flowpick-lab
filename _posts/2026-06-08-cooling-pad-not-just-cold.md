@@ -4,7 +4,7 @@ date: 2026-06-08
 category: trend-shopping
 slug: cooling-pad-not-just-cold
 summary: "냉감패드를 고를 때 첫 촉감보다 땀, 습기, 세탁, 밀림, 에어컨 사용 환경을 먼저 확인해야 하는 이유를 정리합니다."
-image: "/assets/featured/cooling-pad-not-just-cold.svg"
+image: "/assets/featured/cooling-pad-not-just-cold-photo.webp"
 tags:
   - 냉감패드
   - 여름침구

@@ -4,7 +4,7 @@ title: "냉방비 아끼려면 에어컨 온도보다 이게 먼저입니다"
 date: 2026-06-12
 category: trend-shopping
 tags: ["냉방비", "에어컨관리", "여름전기요금", "실내온도", "구매기준"]
-image: /assets/featured/hook-cooling-cost-before-ac-temperature.svg
+image: /assets/featured/cooling-cost-before-ac-temperature-photo.webp
 summary: "냉방비를 줄이려면 설정 온도만 낮추거나 올리기보다 필터, 직사광선, 문틈, 실외기 주변, 공기 흐름을 먼저 점검해야 합니다."
 ---
 

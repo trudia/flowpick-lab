@@ -9,7 +9,7 @@ tags:
   - 디지털웰빙
   - 정보과부하
   - 쇼츠
-thumbnail: "/assets/featured/smartphone-time-disappears-focus-wellbeing.webp"
+thumbnail: "/assets/featured/smartphone-time-disappears-focus-wellbeing-photo.webp"
 date: "2026-05-24"
 author: "TrendFlow"
 featured: true

@@ -4,7 +4,7 @@ date: 2026-06-04
 slug: shorts-side-hustle-gear-before-start
 category: creator-side-hustle
 summary: "카메라와 마이크를 사기 전 촬영 빈도, 주제 반복성, 편집 루틴, 예산을 먼저 확인해 지금 필요한 최소 세팅을 좁힙니다."
-image: "/assets/featured/shorts-side-hustle-gear-before-start.png"
+image: "/assets/featured/shorts-side-hustle-gear-before-start-photo.webp"
 tags:
   - 쇼츠부업
   - 콘텐츠제작

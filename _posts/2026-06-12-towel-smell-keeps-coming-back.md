@@ -4,7 +4,7 @@ title: "수건 냄새 계속 나는 집의 공통점"
 date: 2026-06-12
 category: trend-shopping
 tags: ["수건냄새", "장마철세탁", "욕실관리", "세탁루틴", "구매기준"]
-image: /assets/featured/hook-towel-smell-keeps-coming-back.svg
+image: /assets/featured/towel-smell-keeps-coming-back-photo.webp
 summary: "수건 냄새가 반복된다면 섬유유연제보다 젖은 채 머무는 시간, 세제 잔류, 욕실 보관, 세탁조 상태를 먼저 봐야 합니다."
 ---
 

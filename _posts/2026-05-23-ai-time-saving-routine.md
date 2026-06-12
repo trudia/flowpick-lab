@@ -3,7 +3,7 @@ title: "AI를 써도 시간이 줄지 않는 이유와 해결 루틴"
 date: 2026-05-23
 category: ai-productivity
 summary: "AI를 쓰는데도 시간이 더 걸리는 이유를 정리하고, 목적·역할·단계 분리로 작업 시간을 줄이는 실전 루틴을 소개합니다."
-image: "/assets/featured/ai-time-saving-routine.webp"
+image: "/assets/featured/ai-time-saving-routine-photo.webp"
 tags: [AI, 생산성, 루틴]
 ---
 

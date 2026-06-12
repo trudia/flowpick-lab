@@ -4,7 +4,7 @@ date: 2026-06-01
 category: career-education
 slug: ai-era-career-skills-map
 summary: "AI 도구 이름을 좇기보다 업무 흐름, 문제 정의, 데이터 이해, 협업 기록처럼 오래 남는 기술을 먼저 정리합니다."
-image: "/assets/featured/ai-era-career-skills-map.png"
+image: "/assets/featured/ai-era-career-skills-map-photo.webp"
 tags:
   - AI커리어
   - 직무전환

@@ -8,7 +8,7 @@
 - 홈 최신 글 1번 카드 반영
 - 홈 추천 시리즈를 `집중 회복`로 반영
 - 검색/아카이브/사이트맵/posts.json 업데이트
-- 대표 이미지 로컬 WebP 추가: `/assets/featured/smartphone-time-disappears-focus-wellbeing.webp`
+- 대표 이미지 로컬 WebP 추가: `/assets/featured/smartphone-time-disappears-focus-wellbeing-photo.webp`
 
 ## GitHub 업로드 방법
 

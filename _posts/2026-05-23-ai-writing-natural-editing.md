@@ -3,7 +3,7 @@ title: "AI 글이 어색해 보이는 이유와 자연스럽게 고치는 법"
 date: 2026-05-23
 category: ai-productivity
 summary: "AI 초안이 기계적으로 보이는 이유를 이해하고, 사람의 경험과 자연스러운 문장으로 다듬는 수정 루틴을 정리합니다."
-image: "/assets/featured/ai-writing-natural-editing.webp"
+image: "/assets/featured/ai-writing-natural-editing-photo.webp"
 tags: [AI, 글쓰기, 수정]
 ---
 
